@@ -3,6 +3,8 @@ import java.util.Scanner;
 /**
  * Created by rjr on 8/9/2017.
  */
+
+// REFACTORED VERSION (NOW WITH METHODS!!!)
 public class Main {
 
 
@@ -23,18 +25,17 @@ public class Main {
     public static void main(String[] args) {
 
 
-        // Reading user input for the initial prime number
-        Scanner in = new Scanner(System.in);
-        System.out.print("Please input the number to analyze");
-        int num = in.nextInt();
-        System.out.println("Checking...");
+        int x = 525;
+        int y = 99;
+        int z = 3;
 
         int ctr = 0;
         int ctr1 = 0;
         int ctr2 = 0;
 
+     public int primeCheck(int num) {
 
-        // Looping through and checking if the number is prime
+         int ctr = 0;
         for(int i = 2; i < num; i++) {
 
             if(num % i == 0) {
@@ -42,7 +43,13 @@ public class Main {
                 ctr++;
             }
         }
-        System.out.println(ctr);
+
+        return ctr;
+
+    }
+
+        // Looping through and checking if the number is prime
+
 
         // Looping through if the number is not prime, and finding the next lowest prime
         if(ctr > 1) {
