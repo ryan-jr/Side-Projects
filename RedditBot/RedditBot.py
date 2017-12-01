@@ -31,4 +31,28 @@ def authenticate():
 
 
 
+def fetchdata(url):
+'''
+* Function to retrieve data
+* Takes the site URL as input
+* Returns data retrieved from the page
+'''
+	r = requests.get(url)
+	soup = BeautifulSout(r.content, 'html.parser')
+
+	tag = soup.find('p')
+	data = ''
+	while True:
+		if isinstance(tag, bs4.element.Tag):
+			if(tag.name == 'h2'):
+				break
+			if (tag.name == 'h3'):
+				tag = tag.nextSibling
+			else:
+				data = data + '\n' + tag.next 
+				tag = tag.nextSibling
+		else:
+			tag = tag.nextSibling
+
+	return data
 
