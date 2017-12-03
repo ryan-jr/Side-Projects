@@ -1,5 +1,5 @@
 # add
-git add - A
+git add .
 
 # commit
 git commit -m "Adding journal from today"
