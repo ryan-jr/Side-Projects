@@ -1,0 +1,3 @@
+# jrnl
+STR = date + "%m-%d-%y"
+echo $STR

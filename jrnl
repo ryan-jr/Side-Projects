@@ -1,0 +1,62 @@
+2017
+====
+
+December
+--------
+
+### 2017-12-02 14:32, Ok so I finished the first chapter of Grokking Algorithims 
+
+
+ 
+
+### 2017-12-02 14:34, today: 
+
+
+ 
+
+### 2017-12-02 14:37, Binary search is OLog(n)(fast) Traveling salesman is On!(slow). 
+
+Log is the reciprocal of exponentiation Log(base2)(256 = 8 <=> 2^8 = 256.  Big O notation does a number of things, it lets you compare number of ops, represents/measures the growth of an algo and it establishes WORST CASE runtime.
+
+ 
+
+### 2017-12-02 14:56, OK, I just had my first derp moment where I forgot to include __ and it broke my program, and I had to use a diff checker to find it 
+
+
+ 
+
+### 2017-12-02 15:00, 3 Books: A. 
+
+Algos  B.  Automate the Boring Stuff C.  Data Structures  3 Classes: A.  Java-MOOC.fi B.  Python 0 to hero C.  Udemy-Tim Bukchata Java 3 problem sets: A.  Project Euler B.  Reddit Daily Programmer C.  FizzBuzz type stuff Projects: A.  Pong B.  Chess C.  Open Source Contribution(s)  Future Stuff: A.  Learn Python The Hard Way  B.  Advent of Code C.  Coding Train D.  Cracking the Coding Interview E.  Cave of Programming
+
+ 
+
+### 2017-12-02 18:22, OK, so the fizzbuzz type problem I decided to tackle today was to reverse a string. 
+
+The initial thought I had was to just do a while loop with a counter and the length of the string and have python print everything together without the newline.  After I solved it to my satisfaction, I found that the other ways of solving it are to use the slicing stride [::-1] to print the string, use "".join(reversed(string)), and use a for loop to print out the string into an empty string from right to left.
+
+ 
+
+### 2017-12-02 18:24, Oh yeah, and this is the best site I've found on interviews in general: https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions 
+
+
+ 
+
+### 2017-12-03 09:53, OK, so I wrote a quick shell script to help automate uploading to github for me(I do the work, but I'm terrible about uploading, it's like doing the homework but forgetting to turn it in). 
+
+So now I'm going to write a Python script to export the journal to md file and upload it to pages.
+
+ 
+
+### 2017-12-03 09:58, Oh yeah, so I had to troubleshoot getting the shell script to work. 
+
+It's pretty straightforward in that you write the standard git commands (add, push, etc...) into a notepad file and save it as .sh.  I then used the Windows task scheduler, but for some reason it was failing every time.  After reading through StackOverflow it seemed like it wasn't starting in the right place, even though the script was in the directory/filetree I wanted it to be in. I ended up starting it in the right dir as an option.
+
+ 
+
+### 2017-12-03 11:48, .sh is a weird amalgamation of bash and windows commands, for example there is no pause command in bash, but I can use it in my windows script that is useing the bash date command...oooookkkk 
+
+
+ 
+
+### 2017-12-03 12:07, OK, so bash doesn't like it when you have spaces before/after when you declare a variable...blah  
