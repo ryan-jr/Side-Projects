@@ -105,3 +105,34 @@ for i in list1:
     
 print(value)
 ```
+
+## 4.  Reverse a sentence
+
+The problem: Given a sentence, reverse the order of the words within it.  
+
+The solution: Split the words of the sentence into an array/list and pop the words from the 0th position and insert them into an empty list.  
+
+
+``Python3
+# Reverse a sentence
+
+sentence = "Doug likes dogs"
+list1 = []
+
+x = sentence.split(" ")
+
+for i in x:
+  y = x.pop(0)
+  print(y)
+  list1.insert(0, y)
+  
+y = x.pop(0)
+list1.insert(0, y)
+print(list1)
+sentence = " ".join(list1)
+print(sentence)
+
+
+
+
+```
