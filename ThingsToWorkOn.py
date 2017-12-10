@@ -3,7 +3,7 @@ import random
 
 bookList = ["Algos", "Automate the Boring Stuff", "Data Structures"]
 classList = ["Java MOOC", "Python 0 to hero", "Udemy-Tim Buckchata"]
-projectList = ["Pon", "Chess", "Tic Tac Toe"]
+projectList = ["Pong", "Chess", "Tic Tac Toe"]
 
 futureStuff = "LPTHW, Advent of Code, Coding Train, CTCI, Cave of Programming, Open Source Contrib, Patterns/Derek Banas, Sams Java"
 
