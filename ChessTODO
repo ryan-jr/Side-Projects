@@ -1,0 +1,21 @@
+# TODO: THE BOARD
+# Every board has squares(64)
+# Have the board draw 64 squares 
+# Those squares need to be labeled from left to right A - H 
+# and bottom to Top 1 - 8
+# Each of the squares needs to contain the piece it (may) hold and its notation
+
+
+# TODO: Pieces 
+# Each pieces has state (Captured or not caputred?)
+# Each piece has behavior 
+# That behavior includes what constitues a valid move...hrmmmmm
+# 
+
+# TODO: INPUT 
+# The user should input the starting square and the ending square 
+# I think this is where the CPU should calc if it's a valid move or not 
+#
+
+
+# TODO: NOTATION 
