@@ -7,7 +7,7 @@ Created on Sun Dec 10 19:30:11 2017
 
 """
 Create a text based blackjack/21 game
-Must be one player versus and automated dealer
+Must be one player versus an automated dealer
 The player can stand/hit
 The player must be able to pick the betting amount
 You need to keep track of the players total money
@@ -18,30 +18,37 @@ You need to alert the player of wins, losses, busts, etc...
 
 from blackjackcards import Blackjackcards
 
-def keepPlaying(q):
-    q = input("Would you like to keep playing (Y or N): ")
-    print(q)
-    return q
+dealer = Blackjackcards()
+player = Blackjackcards()
+
+def keepPlaying(data):
+    data = input("Keep playing Y or N?: ")
+    return data
 
 
 
 
-
-
-
-
-
-q = ""
+# Tracking variables
+userInput = ""
 cardCtr = 0
+playerCardCtr = 0
+dealerCardCtr = 0
 
 
-while q != "N" or q != "n":
-    if q == "N" or q == "n":
+# While loop to play the game
+while userInput != "N" or userInput != "n":
+    if userInput == "N" or userInput == "n":
         print("Exiting")
         break
     elif cardCtr >= 21:
-       q = keepPlaying(q)
+       userInput = keepPlaying(userInput)
+       dealerAmt = dealer.deal()
+       playerAmt = player.deal()
+       print("Dealer amount: ", dealerAmt)
+       print("Player amount: ", playerAmt)
+       
     
     cardCtr += 1
+    print(cardCtr)
     
 
