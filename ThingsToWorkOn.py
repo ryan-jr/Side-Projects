@@ -10,13 +10,12 @@ futureStuff = "LPTHW, Coding Train, CTCI, Cave of Programming, Open Source Contr
 # More future stuff: https://tryenlight.github.io/neural-network
 # More stuff: https://docs.google.com/document/d/1TyqD2_oDtiQIh_Y55J5RfeA91JJECc97xYIKM112H9I/edit
 # More stuff: Exercism.io
-<<<<<<< HEAD
+
 # More stuff: Vacation Management Software
 # More stuff: Interface to control the database queue/flow
 # More stuff: KPIs based on the data
 # More stuff: Letter generator that creates PDFs
-=======
->>>>>>> 002983780043363e1bec494d6bfe5692c213d634
+
 
 rand = random.randint(0,2)
 print(bookList[rand])
