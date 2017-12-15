@@ -13,35 +13,34 @@ Created on Wed Dec 13 22:28:37 2017
 # Each of the squares needs to contain the piece it (may) hold and its notation
 
 
-def square():                                                    
-    for i in range(0, 4):
-        if i == 0:
-            print("*" * 5)
-        elif i == 3:
-            print("*" * 5)
-        else:
-            print("*" + "   " + "*")
   
 
 def row():
-    print("*" * 40, end="") 
-
-def vert1(data="  "):
-    print("*", data, "*", end="")
+    print("*" * 20) 
     
 
-def vert2( data2="  "):
-    print("*", data2, "*", end="")
+def vert1(data="  "):
+    print("*", data, end="", sep="")
+    
+
+def vert2( data2="   "):
+    
+    print(data2, "*", end="")
+    
+    
            
             
 def square2(data="  "):
     row()
+    
+    for i in range(0, 4):
+        vert1("C1")
     print()
-    vert1()
-    print()
-    vert2()
-    print()
-    row()
+    print("*", end="")
+    for i in range(0, 4):
+        vert2("N")
+    print()    
+    
     
         
 """
@@ -50,7 +49,22 @@ for i in range(0, 17):
         print()
     else:
         square()
+        
+        
+
+def square():                                                    
+    for i in range(0, 4):
+        if i == 0:
+            print("*" * 5)
+        elif i == 3:
+            print("*" * 5)
+        else:
+            print("*" + "   " + "*")
 """
+for i in range(0, 8):
+    square2()
+    
+row()
 
 
     
