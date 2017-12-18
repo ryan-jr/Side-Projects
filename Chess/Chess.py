@@ -15,35 +15,29 @@ from string import ascii_lowercase
 # Each of the squares needs to contain the piece it (may) hold and its notation
 
 
-def row():
-    print("-" * 25) 
+def drawRows(ctr):
+  
+  vals = []
+  
+  a = 64
+  while a >= 0:
+    vals.append(a)
+    a -= 1
+  
+  for i in range(0, 1):
+    print("---" * 10)
     
-
-def vert1(data="  "):
-    print("|", data, end="", sep="")
+  for i in range(0, 8):
+    print("| " + str(vals[ctr + i]), end="")
     
-
-def vert2(data2="   "):
+  print("|")
+  for i in range(0, 8):
+    print("| " + "XX", end="")
     
-    print(data2, "|", end="")
-    
-    
-def square2(number):
-    
-    row()
-    for i in range(0, 8): 
-        vert1(number + i)
-    print("|")
-    print("|", end="")
-    for i in range(0, 8):
-        vert2("N")
-    print()  
-    
-    
-    
-# printing the rows of squares with a start, stop, and step
-for i in range(0, 56, 7):
-    square2(i)
+  print("|")
+  
+for x in range(0, 64, 8):
+  drawRows(x)
     
 """
 ctr = 0
