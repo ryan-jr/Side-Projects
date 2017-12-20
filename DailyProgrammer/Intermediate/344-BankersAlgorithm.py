@@ -38,21 +38,60 @@ def filereader(sequence):
     data = [int(x) for x in data]
     print(data)
     
-    
+    print(len(data))
     return data
     
     
     
-container = []  
-  
+ 
+
+"""
+
+Begin main program here
+
+"""
+
+# So many variables to initalize!
+container = []
+allocDict = {"A":0, "B":0, "C":0}
+maxDict = {"A":0, "B":0, "C":0}
+availDict = {"A":0, "B":0, "C":0}
+procDict = {"Initalize":[], "P0":[], "P1":[], 
+            "P2":[], "P3":[], "P4":[]}
+initalCtr = 1
+
+# Open the data from the original file
 with open("344-BA.txt", "r") as f:
     while True:
         line = f.readline()
         container.append(filereader(line))
         if not line:
-            print("Hello")
             break
         
 
+# Flattening the list out so that we can add it to the 
+# procDict correctly
+temp = []
+for data in container:
+    temp += data
+container = temp
 print(container)
+
+# Mapping the keys/values to the correct proccess
+for k, v in procDict.items():
+    print(k)
+    if k is "Initalize":
+        procDict[k] = container[0:3]
+        del container[0:3]
+    else:
+        procDict[k] = container[0:6]
+        del container[0:6]
+        
+temp = procDict["Initalize"]
+availDict["A"] = temp[0]
+availDict["B"] = temp[1]
+availDict["C"] = temp[2]
+print(availDict)
+
+
 
