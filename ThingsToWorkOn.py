@@ -7,10 +7,13 @@ projectList = ["Pong", "Chess", "Reddit r/dailyprogrammer"]
 
 futureStuff = "LPTHW(), Coding Train, CTCI, Cave of Programming, Open Source Contrib, Patterns/Derek Banas, Sams Java, SCAI, https://teachyourselfcs.com/"
 
+
 # More future stuff: https://tryenlight.github.io/neural-network
 # More stuff: https://docs.google.com/document/d/1TyqD2_oDtiQIh_Y55J5RfeA91JJECc97xYIKM112H9I/edit
 # More stuff: Exercism.io
 # OSS: Test.py, Teammates
+# Making my own music player in Python
+# Going through learningpython.net
 
 
 # More stuff: Vacation Management Software
