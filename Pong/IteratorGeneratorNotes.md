@@ -48,3 +48,128 @@ def fibbo(n):
 
 * The big takeaway is that the yield keyword causes a function to turn into a generator and saves a TON of memory for large use cases.  
 
+# Section 16: Lecture 88: Collections Module - Counter
+
+
+* THe collections module implements a number of speicalized collections inculding namedTuple, OrderedDict, etc...
+
+* The counter of the collections module, the elements are stored as keys and the counter is stored as values
+
+
+```
+# Counter
+from collections import Counter
+
+# Counting number of times an element occurs in a list
+l = [1, 2, 3, 12, 10, 10]
+Counter(l)	# {10: 2, 1: 1, 2: 1, 3: 1, 12: 1}
+
+# This is super powerful and awesome
+
+
+# Counting the number of occurances of a letter in a string
+s = "aabccc"
+Counter(s)	# {"c": 3, "a":2, "b":1}
+
+# Counting the number of times a word occurs in a sentence
+
+s = "Hello world"
+words = s.split()
+Counter(words)	# {Hello: 1, world: 1}
+
+
+# Applying counter methods
+c = Counter(words)
+
+c.most_common(1)	# Returns [("Hello", 1), ("World", 1)] a tuple of the words that occur the number of times specified
+
+sum(c.values())	# 2 (Returns the total number of words in the sentence)
+
+
+### Other methods
+c.clear() 	# resets all counts 
+list(c)		# Returns a list of all unique elements
+set(c)		# Returns a set of the sentence (Sets are dicts without values)
+c.items()	# Convert c to a list of element, count pairs
+Counter(dict(list_of_pairs))	# Convert from a list of elment, count pairs
+c.most_common()[:-n-1:-1] 	# n least common elements
+c += Counter()		# remove zero and negative counts
+
+
+```
+
+
+## Defaultdict
+
+* dictionary like object that provides all methods provided by dicts but takes the first argument as the default data type for the dictionary.  
+
+* THIS DOES NOT REPORT/RETURN A KEY ERROR
+
+```Python3
+
+from collections import defaultdict
+
+# Normal dictionary
+
+d = {"k1": 1}	
+d["k1"]		# 1
+d["k2"]		# KeyError
+
+# Defaultdict
+d = defaultdict(object)
+d["one"]	#<object at 0x40dfd0> (No error!)
+
+```
+
+
+## OrderedDict
+
+* a dictionary subclass that remembers the order in which its contents are added
+
+```python3
+
+# Normal dict
+
+d = {}
+d["a"] = "A"
+d["b"] = "B"
+d["c"] = "C"
+
+for k, v in d.items()
+	print(k, v)		# a A, c C, b B
+
+
+# A normal dictionary is just a mapping that does not retain the order
+
+d = OrderedDict()
+d["a"] = "A"
+d["b"] = "B"
+d["c"] = "C"
+
+for k, v in d.items()
+	print(k, v)		# a A, , b B, c C
+
+```
+
+
+## Namedtuple
+
+* t = (1, 2, 3)
+* t[0] 	# 1
+
+
+```python3
+
+from collection simport namedtuple
+
+Dog = namedtuple("Dog", "age breed name")
+
+sam = Dog(age = 2, breed = "Lab", name = "Sammy")
+
+
+
+
+```
+
+
+
