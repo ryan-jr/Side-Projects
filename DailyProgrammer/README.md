@@ -1,4 +1,9 @@
 # Reddit r/dailyprogrammer challenges
+***
+
+This is a checklist to keep track of the Reddit r/dailyprogrammer challenges that I've done/acomplished.  
+
+
 
 ## Easy
 - [ ] Easy Programming Challenge:  1
