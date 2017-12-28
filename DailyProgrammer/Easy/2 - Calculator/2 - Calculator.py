@@ -27,6 +27,8 @@ def day(amount):
             N/A
   
   """
+
+
   if amount >= 365:
     return ("{0:.2f} dollar(s)".format(round(amount/365,2)))
   else:
@@ -79,6 +81,7 @@ def month(amount):
     return ("{0:.2f} cents".format(round(amount / 12, 2)))
 
 
+# Taking an input from the user and checking for easy errors
 
 amount = input("How much would you like to save this year?: ")
 try:
