@@ -8,7 +8,7 @@ This is a checklist to keep track of the Reddit r/dailyprogrammer challenges tha
 ## Easy
 - [X] Easy Programming Challenge:  1 - Name, age, username
 - [X] Easy Programming Challenge:  2 - Calculator
-- [ ] Easy Programming Challenge:  3
+- [X] Easy Programming Challenge:  3 - Ceaser Cipher
 - [ ] Easy Programming Challenge:  4
 - [ ] Easy Programming Challenge:  5
 - [ ] Easy Programming Challenge:  6
