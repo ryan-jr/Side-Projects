@@ -17,7 +17,7 @@ futureStuff = "LPTHW(), Coding Train, CTCI, Cave of Programming, Open Source Con
 
 
 # More stuff: Vacation Management Software
-# More stuff: Interface to control the database queue/flow
+# More stuff: Interface to control the database queue/flow+
 # More stuff: KPIs based on the data
 # More stuff: Letter generator that creates PDFs
 # More stuff: Learnpython/finance engine 

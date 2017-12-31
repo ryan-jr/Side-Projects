@@ -1,0 +1,1400 @@
+[2017-12-22] Challenge #345 [Hard] 2D Triangle Mesh Generator
+/r/dailyprogrammer/comments/7ljqhl/20171222_challenge_345_hard_2d_triangle_mesh/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+17 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7ljqhl/20171222_challenge_345_hard_2d_triangle_mesh/
+[2017-12-15] Challenge #344 [Hard] Write a Web Client
+/r/dailyprogrammer/comments/7jzy8k/20171215_challenge_344_hard_write_a_web_client/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+37 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7jzy8k/20171215_challenge_344_hard_write_a_web_client/
+[2017-12-13] Challenge #344 [Intermediate] Banker's Algorithm
+/r/dailyprogrammer/comments/7jkfu5/20171213_challenge_344_intermediate_bankers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+polypeptide147
+https://www.reddit.com/user/polypeptide147
+60 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7jkfu5/20171213_challenge_344_intermediate_bankers/
+[2017-12-11] Challenge #344 [Easy] Baum-Sweet Sequence
+/r/dailyprogrammer/comments/7j33iv/20171211_challenge_344_easy_baumsweet_sequence/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+162 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7j33iv/20171211_challenge_344_easy_baumsweet_sequence/
+[2017-12-08] Challenge #343 [Hard] Procedural music generation
+/r/dailyprogrammer/comments/7ifbd5/20171208_challenge_343_hard_procedural_music/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+19 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7ifbd5/20171208_challenge_343_hard_procedural_music/
+[2017-12-06] Challenge #343 [Intermediate] Mozart's Musical Dice
+/r/dailyprogrammer/comments/7i1ib1/20171206_challenge_343_intermediate_mozarts/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+44 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7i1ib1/20171206_challenge_343_intermediate_mozarts/
+[2017-12-04] Challenge #343 [Easy] Major scales
+/r/dailyprogrammer/comments/7hhyin/20171204_challenge_343_easy_major_scales/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+146 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7hhyin/20171204_challenge_343_easy_major_scales/
+[2017-12-01] Challenge #342 [Hard] Snake in a Box
+/r/dailyprogrammer/comments/7gvned/20171201_challenge_342_hard_snake_in_a_box/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+26 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7gvned/20171201_challenge_342_hard_snake_in_a_box/
+[2017-11-29] Challenge #342 [Intermediate] ASCII85 Encoding and Decoding
+/r/dailyprogrammer/comments/7gdsy4/20171129_challenge_342_intermediate_ascii85/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+49 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7gdsy4/20171129_challenge_342_intermediate_ascii85/
+[2017-11-27] Challenge #342 [Easy] Polynomial Division
+/r/dailyprogrammer/comments/7fvy7z/20171127_challenge_342_easy_polynomial_division/
+self.dailyprogrammer
+/r/dailyprogrammer/
+MasterAgent47
+https://www.reddit.com/user/MasterAgent47
+41 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7fvy7z/20171127_challenge_342_easy_polynomial_division/
+[2017-11-24] Challenge #341 [Hard] Finding a Map Subsection
+/r/dailyprogrammer/comments/7f5uyg/20171124_challenge_341_hard_finding_a_map/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Garth5689
+https://www.reddit.com/user/Garth5689
+29 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7f5uyg/20171124_challenge_341_hard_finding_a_map/
+[2017-11-22] Challenge #341 [Intermediate] Listening for Incoming Aircraft
+/r/dailyprogrammer/comments/7es7gj/20171122_challenge_341_intermediate_listening_for/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+57 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7es7gj/20171122_challenge_341_intermediate_listening_for/
+[2017-11-21] Challenge #341 [Easy] Repeating Numbers
+/r/dailyprogrammer/comments/7eh6k8/20171121_challenge_341_easy_repeating_numbers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+MasterAgent47
+https://www.reddit.com/user/MasterAgent47
+136 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7eh6k8/20171121_challenge_341_easy_repeating_numbers/
+[2017-11-17] Challenge #340 [Hard] Write a Web Crawler
+/r/dailyprogrammer/comments/7dlaeq/20171117_challenge_340_hard_write_a_web_crawler/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+24 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7dlaeq/20171117_challenge_340_hard_write_a_web_crawler/
+[2017-11-14] Challenge #340 [Intermediate] Walk in a Minefield
+/r/dailyprogrammer/comments/7d4yoe/20171114_challenge_340_intermediate_walk_in_a/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+114 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7d4yoe/20171114_challenge_340_intermediate_walk_in_a/
+[2017-11-13] Challenge #340 [Easy] First Recurring Character
+/r/dailyprogrammer/comments/7cnqtw/20171113_challenge_340_easy_first_recurring/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+273 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7cnqtw/20171113_challenge_340_easy_first_recurring/
+[2017-11-10] Challenge #339 [Hard] Severing the Power Grid
+/r/dailyprogrammer/comments/7c4bju/20171110_challenge_339_hard_severing_the_power/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+36 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7c4bju/20171110_challenge_339_hard_severing_the_power/
+[2017-11-08] Challenge #339 [Intermediate] A car renting problem
+/r/dailyprogrammer/comments/7btzrw/20171108_challenge_339_intermediate_a_car_renting/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+92 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7btzrw/20171108_challenge_339_intermediate_a_car_renting/
+[2017-11-06] Challenge #339 [Easy] Fixed-length file processing
+/r/dailyprogrammer/comments/7b5u96/20171106_challenge_339_easy_fixedlength_file/
+self.dailyprogrammer
+/r/dailyprogrammer/
+i3aizey
+https://www.reddit.com/user/i3aizey
+99 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7b5u96/20171106_challenge_339_easy_fixedlength_file/
+[2017-11-02] Challenge #338 [Intermediate] Maze turner
+/r/dailyprogrammer/comments/7aae56/20171102_challenge_338_intermediate_maze_turner/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+45 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7aae56/20171102_challenge_338_intermediate_maze_turner/
+[2017-10-30] Challenge #338 [Easy] What day was it again?
+/r/dailyprogrammer/comments/79npf9/20171030_challenge_338_easy_what_day_was_it_again/
+self.dailyprogrammer
+/r/dailyprogrammer/
+i3aizey
+https://www.reddit.com/user/i3aizey
+91 comments
+https://www.reddit.com/r/dailyprogrammer/comments/79npf9/20171030_challenge_338_easy_what_day_was_it_again/
+[2017-10-26] Challenge #337 [Intermediate] Scrambled images
+/r/dailyprogrammer/comments/78twyd/20171026_challenge_337_intermediate_scrambled/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+61 comments
+https://www.reddit.com/r/dailyprogrammer/comments/78twyd/20171026_challenge_337_intermediate_scrambled/
+[2017-10-23] Challenge #337 [Easy] Minimize & Maximize
+/r/dailyprogrammer/comments/784fgr/20171023_challenge_337_easy_minimize_maximize/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Garth5689
+https://www.reddit.com/user/Garth5689
+61 comments
+https://www.reddit.com/r/dailyprogrammer/comments/784fgr/20171023_challenge_337_easy_minimize_maximize/
+[2017-10-20] Challenge #336 [Hard] Van der Waerden numbers
+/r/dailyprogrammer/comments/77m6l4/20171020_challenge_336_hard_van_der_waerden/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+27 comments
+https://www.reddit.com/r/dailyprogrammer/comments/77m6l4/20171020_challenge_336_hard_van_der_waerden/
+[2017-10-18] Challenge #336 [Intermediate] Repetitive Rubik's Cube
+/r/dailyprogrammer/comments/776lcz/20171018_challenge_336_intermediate_repetitive/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Garth5689
+https://www.reddit.com/user/Garth5689
+27 comments
+https://www.reddit.com/r/dailyprogrammer/comments/776lcz/20171018_challenge_336_intermediate_repetitive/
+[2017-10-16] Challenge #336 [Easy] Cannibal numbers
+/r/dailyprogrammer/comments/76qk58/20171016_challenge_336_easy_cannibal_numbers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+220 comments
+https://www.reddit.com/r/dailyprogrammer/comments/76qk58/20171016_challenge_336_easy_cannibal_numbers/
+[2017-10-11] Challenge #335 [Intermediate] Scoring a Cribbage Hand
+/r/dailyprogrammer/comments/75p1cs/20171011_challenge_335_intermediate_scoring_a/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+110 comments
+https://www.reddit.com/r/dailyprogrammer/comments/75p1cs/20171011_challenge_335_intermediate_scoring_a/
+[2017-10-09] Challenge #335 [Easy] Consecutive Distance Rating
+/r/dailyprogrammer/comments/759fha/20171009_challenge_335_easy_consecutive_distance/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+150 comments
+https://www.reddit.com/r/dailyprogrammer/comments/759fha/20171009_challenge_335_easy_consecutive_distance/
+[2017-10-06] Challenge #334 [Hard] Dinosaurs
+/r/dailyprogrammer/comments/74np6k/20171006_challenge_334_hard_dinosaurs/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+29 comments
+https://www.reddit.com/r/dailyprogrammer/comments/74np6k/20171006_challenge_334_hard_dinosaurs/
+[2017-10-04] Challenge #334 [Intermediate] Carpet Fractals
+/r/dailyprogrammer/comments/748ba7/20171004_challenge_334_intermediate_carpet/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+35 comments
+https://www.reddit.com/r/dailyprogrammer/comments/748ba7/20171004_challenge_334_intermediate_carpet/
+[2017-09-29] Challenge #333 [Hard] Build a Web API-driven Data Site
+/r/dailyprogrammer/comments/739j8c/20170929_challenge_333_hard_build_a_web_apidriven/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+24 comments
+https://www.reddit.com/r/dailyprogrammer/comments/739j8c/20170929_challenge_333_hard_build_a_web_apidriven/
+[2017-09-27] Challenge #333 [Intermediate] Beer Street and Gin Lane
+/r/dailyprogrammer/comments/72s7xp/20170927_challenge_333_intermediate_beer_street/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+42 comments
+https://www.reddit.com/r/dailyprogrammer/comments/72s7xp/20170927_challenge_333_intermediate_beer_street/
+[2017-09-26] Challenge #333 [Easy] Packet Assembler
+/r/dailyprogrammer/comments/72ivih/20170926_challenge_333_easy_packet_assembler/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+184 comments
+https://www.reddit.com/r/dailyprogrammer/comments/72ivih/20170926_challenge_333_easy_packet_assembler/
+[2017-09-22] Challenge #332 [Hard] Skyscrapers and CEO's peculiar requirements
+/r/dailyprogrammer/comments/71pzlb/20170922_challenge_332_hard_skyscrapers_and_ceos/
+self.dailyprogrammer
+/r/dailyprogrammer/
+i3aizey
+https://www.reddit.com/user/i3aizey
+15 comments
+https://www.reddit.com/r/dailyprogrammer/comments/71pzlb/20170922_challenge_332_hard_skyscrapers_and_ceos/
+[2017-09-20] Challenge #332 [Intermediate] Training for Summiting Everest
+/r/dailyprogrammer/comments/71gbqj/20170920_challenge_332_intermediate_training_for/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+64 comments
+https://www.reddit.com/r/dailyprogrammer/comments/71gbqj/20170920_challenge_332_intermediate_training_for/
+[2017-09-15] Challenge #331 [Hard] Interactive Interpreter
+/r/dailyprogrammer/comments/7096nu/20170915_challenge_331_hard_interactive/
+self.dailyprogrammer
+/r/dailyprogrammer/
+i3aizey
+https://www.reddit.com/user/i3aizey
+38 comments
+https://www.reddit.com/r/dailyprogrammer/comments/7096nu/20170915_challenge_331_hard_interactive/
+[2017-09-13] Challenge #331 [Intermediate] Sum of digits of x raised to n
+/r/dailyprogrammer/comments/6zvjre/20170913_challenge_331_intermediate_sum_of_digits/
+self.dailyprogrammer
+/r/dailyprogrammer/
+MasterAgent47
+https://www.reddit.com/user/MasterAgent47
+86 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6zvjre/20170913_challenge_331_intermediate_sum_of_digits/
+[2017-09-11] Challenge #331 [Easy] The Adding Calculator
+/r/dailyprogrammer/comments/6ze9z0/20170911_challenge_331_easy_the_adding_calculator/
+self.dailyprogrammer
+/r/dailyprogrammer/
+MasterAgent47
+https://www.reddit.com/user/MasterAgent47
+129 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6ze9z0/20170911_challenge_331_easy_the_adding_calculator/
+[2017-09-08] Challenge #330 [Hard] Mini-Chess Positions
+/r/dailyprogrammer/comments/6yu31a/20170908_challenge_330_hard_minichess_positions/
+self.dailyprogrammer
+/r/dailyprogrammer/
+den510
+https://www.reddit.com/user/den510
+45 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6yu31a/20170908_challenge_330_hard_minichess_positions/
+[2017-09-06] Challenge #330 [Intermediate] Check Writer
+/r/dailyprogrammer/comments/6yep7x/20170906_challenge_330_intermediate_check_writer/
+self.dailyprogrammer
+/r/dailyprogrammer/
+den510
+https://www.reddit.com/user/den510
+89 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6yep7x/20170906_challenge_330_intermediate_check_writer/
+[2017-09-04] Challenge #330 [Easy] Surround the circles
+/r/dailyprogrammer/comments/6y19v2/20170904_challenge_330_easy_surround_the_circles/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Garth5689
+https://www.reddit.com/user/Garth5689
+106 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6y19v2/20170904_challenge_330_easy_surround_the_circles/
+[Monthly Challenge #22 - September, 2017] Procedural Bacteria / Fungus / Virus • r/proceduralgeneration
+https://www.reddit.com/r/proceduralgeneration/comments/6xr1c0/monthly_challenge_22_september_2017_procedural/
+reddit.com
+/domain/reddit.com/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+1 comment
+https://www.reddit.com/r/dailyprogrammer/comments/6xsn1c/monthly_challenge_22_september_2017_procedural/
+[2017-09-01] Challenge #329 [Hard] Implementing a Templating Engine
+/r/dailyprogrammer/comments/6xfdv3/20170901_challenge_329_hard_implementing_a/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+12 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6xfdv3/20170901_challenge_329_hard_implementing_a/
+[2017-08-31] Challenge #329 [Intermediate] Solve the Water Bucket Riddle
+/r/dailyprogrammer/comments/6x77p1/20170831_challenge_329_intermediate_solve_the/
+self.dailyprogrammer
+/r/dailyprogrammer/
+sceleris927
+https://www.reddit.com/user/sceleris927
+50 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6x77p1/20170831_challenge_329_intermediate_solve_the/
+[2017-8-28] Challenge #329 [Easy] Nearest Lucky Numbers
+/r/dailyprogrammer/comments/6wjscp/2017828_challenge_329_easy_nearest_lucky_numbers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+MasterAgent47
+https://www.reddit.com/user/MasterAgent47
+65 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6wjscp/2017828_challenge_329_easy_nearest_lucky_numbers/
+[2017-08-25] Challenge #328 [Hard] Subset Sum Automata
+/r/dailyprogrammer/comments/6vyihu/20170825_challenge_328_hard_subset_sum_automata/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+21 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6vyihu/20170825_challenge_328_hard_subset_sum_automata/
+[17-08-23] Challenge #328 [Intermediate] Pyramid sliding
+/r/dailyprogrammer/comments/6vi9ro/170823_challenge_328_intermediate_pyramid_sliding/
+self.dailyprogrammer
+/r/dailyprogrammer/
+i3aizey
+https://www.reddit.com/user/i3aizey
+82 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6vi9ro/170823_challenge_328_intermediate_pyramid_sliding/
+[17-08-21] Challenge #328 [Easy] Latin Squares
+/r/dailyprogrammer/comments/6v29zk/170821_challenge_328_easy_latin_squares/
+self.dailyprogrammer
+/r/dailyprogrammer/
+MasterAgent47
+https://www.reddit.com/user/MasterAgent47
+137 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6v29zk/170821_challenge_328_easy_latin_squares/
+[2017-08-18] Challenge #327 [Hard] Calculating Costas Arrays
+/r/dailyprogrammer/comments/6uifb0/20170818_challenge_327_hard_calculating_costas/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+25 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6uifb0/20170818_challenge_327_hard_calculating_costas/
+[2017-08-11] Challenge #326 [Hard] Multifaceted alphabet blocks
+/r/dailyprogrammer/comments/6t0zua/20170811_challenge_326_hard_multifaceted_alphabet/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+65 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6t0zua/20170811_challenge_326_hard_multifaceted_alphabet/
+[2017-08-09] Challenge #326 [Intermediate] Scrabble in Reverse
+/r/dailyprogrammer/comments/6sld01/20170809_challenge_326_intermediate_scrabble_in/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+22 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6sld01/20170809_challenge_326_intermediate_scrabble_in/
+[2017-08-7] Challenge #326 [Easy] Nearest Prime Numbers
+/r/dailyprogrammer/comments/6s70oh/2017087_challenge_326_easy_nearest_prime_numbers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+121 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6s70oh/2017087_challenge_326_easy_nearest_prime_numbers/
+[2017-08-05] Challenge #325 [Hard] Generating mazes
+/r/dailyprogrammer/comments/6rqwxk/20170805_challenge_325_hard_generating_mazes/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+11 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6rqwxk/20170805_challenge_325_hard_generating_mazes/
+[2017-08-03] Challenge #325 [Intermediate] Arrow maze
+/r/dailyprogrammer/comments/6rb98p/20170803_challenge_325_intermediate_arrow_maze/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+42 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6rb98p/20170803_challenge_325_intermediate_arrow_maze/
+[2017-08-01] Challenge #325 [Easy] Color maze
+/r/dailyprogrammer/comments/6qutez/20170801_challenge_325_easy_color_maze/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+80 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6qutez/20170801_challenge_325_easy_color_maze/
+[2017-07-17] Challenge #324 [Easy] "manual" square root procedure (intermediate)
+/r/dailyprogrammer/comments/6nstip/20170717_challenge_324_easy_manual_square_root/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+55 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6nstip/20170717_challenge_324_easy_manual_square_root/
+[2017-07-14] Challenge #323 [Hard] Difference coverage
+/r/dailyprogrammer/comments/6n8qb7/20170714_challenge_323_hard_difference_coverage/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+28 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6n8qb7/20170714_challenge_323_hard_difference_coverage/
+[2017-07-12] Challenge #323 [Intermediate] Parsing Postal Addresses
+/r/dailyprogrammer/comments/6mtvbk/20170712_challenge_323_intermediate_parsing/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+24 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6mtvbk/20170712_challenge_323_intermediate_parsing/
+[2017-07-10] Challenge #323 [Easy] 3SUM
+/r/dailyprogrammer/comments/6melen/20170710_challenge_323_easy_3sum/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+153 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6melen/20170710_challenge_323_easy_3sum/
+[2017-07-07] Challenge #322 [Hard] Static HTTP Server
+/r/dailyprogrammer/comments/6lti17/20170707_challenge_322_hard_static_http_server/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+31 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6lti17/20170707_challenge_322_hard_static_http_server/
+[2017-07-05] Challenge #322 [Intermediate] Largest Palindrome
+/r/dailyprogrammer/comments/6ldv3m/20170705_challenge_322_intermediate_largest/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+97 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6ldv3m/20170705_challenge_322_intermediate_largest/
+[2017-07-03] Challenge #322 [Easy] All Pairs Test Generator
+/r/dailyprogrammer/comments/6l3hd8/20170703_challenge_322_easy_all_pairs_test/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+46 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6l3hd8/20170703_challenge_322_easy_all_pairs_test/
+[2017-06-30] Challenge #321 [Hard] Circle Splitter
+/r/dailyprogrammer/comments/6ksmh5/20170630_challenge_321_hard_circle_splitter/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Elite6809
+https://www.reddit.com/user/Elite6809
+49 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6ksmh5/20170630_challenge_321_hard_circle_splitter/
+[2017-06-29] Challenge #321 [Intermediate] Affine Cipher Solver
+/r/dailyprogrammer/comments/6k123x/20170629_challenge_321_intermediate_affine_cipher/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+50 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6k123x/20170629_challenge_321_intermediate_affine_cipher/
+[2017-06-27] Challenge #321 [Easy] Talking Clock
+/r/dailyprogrammer/comments/6jr76h/20170627_challenge_321_easy_talking_clock/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+237 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6jr76h/20170627_challenge_321_easy_talking_clock/
+[2017-06-24] Challenge #320 [Hard] Path to Philosophy
+/r/dailyprogrammer/comments/6j7k3x/20170624_challenge_320_hard_path_to_philosophy/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+44 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6j7k3x/20170624_challenge_320_hard_path_to_philosophy/
+[2017-06-21] Challenge #320 [Intermediate] War (card game)
+/r/dailyprogrammer/comments/6ilyfi/20170621_challenge_320_intermediate_war_card_game/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+67 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6ilyfi/20170621_challenge_320_intermediate_war_card_game/
+[2017-06-19] Challenge #320 [Easy] Spiral Ascension
+/r/dailyprogrammer/comments/6i60lr/20170619_challenge_320_easy_spiral_ascension/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+163 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6i60lr/20170619_challenge_320_easy_spiral_ascension/
+[2017-06-16] Challenge #319 [Hard] Worm Wars 2 - Network Epidemiology
+/r/dailyprogrammer/comments/6hm5j2/20170616_challenge_319_hard_worm_wars_2_network/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+21 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6hm5j2/20170616_challenge_319_hard_worm_wars_2_network/
+[2016-06-14] Challenge #319 [Intermediate] Worm Wars 1 - Basic Epidemiology
+/r/dailyprogrammer/comments/6h9woe/20160614_challenge_319_intermediate_worm_wars_1/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+47 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6h9woe/20160614_challenge_319_intermediate_worm_wars_1/
+[2017-06-12] Challenge #319 [Easy] Condensing Sentences
+/r/dailyprogrammer/comments/6grwny/20170612_challenge_319_easy_condensing_sentences/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+143 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6grwny/20170612_challenge_319_easy_condensing_sentences/
+[2017-06-09] Challenge #318 [Hard] Ladder Logic
+/r/dailyprogrammer/comments/6g8ey0/20170609_challenge_318_hard_ladder_logic/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+7 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6g8ey0/20170609_challenge_318_hard_ladder_logic/
+DailyProgrammer is one of the Trending Subreddits for 2017-06-07!
+https://www.reddit.com/r/trendingsubreddits/comments/6frugf/trending_subreddits_for_20170607_rdailyprogrammer/
+reddit.com
+/domain/reddit.com/
+jnazario
+https://www.reddit.com/user/jnazario
+7 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6ft754/dailyprogrammer_is_one_of_the_trending_subreddits/
+[2017-06-07] Challenge #318 [Intermediate] 2020 - NBA Revolution
+/r/dailyprogrammer/comments/6ft96y/20170607_challenge_318_intermediate_2020_nba/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+28 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6ft96y/20170607_challenge_318_intermediate_2020_nba/
+[ANNOUNCE] Seeking Moderators
+/r/dailyprogrammer/comments/6fm3yy/announce_seeking_moderators/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+22 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6fm3yy/announce_seeking_moderators/
+[2017-06-05] Challenge #318 [Easy] Countdown Game Show
+/r/dailyprogrammer/comments/6fe9cv/20170605_challenge_318_easy_countdown_game_show/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+131 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6fe9cv/20170605_challenge_318_easy_countdown_game_show/
+[2017-06-02] Challenge #317 [Hard] Poker Odds
+/r/dailyprogrammer/comments/6eublu/20170602_challenge_317_hard_poker_odds/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+36 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6eublu/20170602_challenge_317_hard_poker_odds/
+[2017-05-31] Challenge #317 [Intermediate] Counting Elements
+/r/dailyprogrammer/comments/6eerfk/20170531_challenge_317_intermediate_counting/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+100 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6eerfk/20170531_challenge_317_intermediate_counting/
+[2017-05-29] Challenge #317 [Easy] Collatz Tag System
+/r/dailyprogrammer/comments/6e08v6/20170529_challenge_317_easy_collatz_tag_system/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+132 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6e08v6/20170529_challenge_317_easy_collatz_tag_system/
+[2017-05-26] Challenge #316 [Hard] Longest Uncrossed Knight's Path
+/r/dailyprogrammer/comments/6dgiig/20170526_challenge_316_hard_longest_uncrossed/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+20 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6dgiig/20170526_challenge_316_hard_longest_uncrossed/
+[2017-05-24] Challenge #316 [Intermediate] Sydney tourist shopping cart
+/r/dailyprogrammer/comments/6d29om/20170524_challenge_316_intermediate_sydney/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+62 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6d29om/20170524_challenge_316_intermediate_sydney/
+[2017-05-22] Challenge #316 [Easy] Knight's Metric
+/r/dailyprogrammer/comments/6coqwk/20170522_challenge_316_easy_knights_metric/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+90 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6coqwk/20170522_challenge_316_easy_knights_metric/
+[2017-05-18] Challenge #315 [Intermediate] Game of life that has a twist
+/r/dailyprogrammer/comments/6bumxo/20170518_challenge_315_intermediate_game_of_life/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+28 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6bumxo/20170518_challenge_315_intermediate_game_of_life/
+[2017-05-15] Challenge #315 [Easy] XOR Multiplication
+/r/dailyprogrammer/comments/6ba9id/20170515_challenge_315_easy_xor_multiplication/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+106 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6ba9id/20170515_challenge_315_easy_xor_multiplication/
+[2017-05-12] Chalenge #314 [Hard] Finding Point Nemo
+/r/dailyprogrammer/comments/6arlw4/20170512_chalenge_314_hard_finding_point_nemo/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+47 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6arlw4/20170512_chalenge_314_hard_finding_point_nemo/
+[2017-05-10] Challenge #314 [Intermediate] Comparing Rotated Words
+/r/dailyprogrammer/comments/6aefs1/20170510_challenge_314_intermediate_comparing/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+80 comments
+https://www.reddit.com/r/dailyprogrammer/comments/6aefs1/20170510_challenge_314_intermediate_comparing/
+[2017-05-08] Challenge #314 [Easy] Concatenated Integers
+/r/dailyprogrammer/comments/69y21t/20170508_challenge_314_easy_concatenated_integers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+221 comments
+https://www.reddit.com/r/dailyprogrammer/comments/69y21t/20170508_challenge_314_easy_concatenated_integers/
+[2017-05-05] Challenge #313 [Hard] Embedded word list
+/r/dailyprogrammer/comments/69fxq8/20170505_challenge_313_hard_embedded_word_list/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+74 comments
+https://www.reddit.com/r/dailyprogrammer/comments/69fxq8/20170505_challenge_313_hard_embedded_word_list/
+[2017-05-03] Challenge #313 [Intermediate] PGM image manipulation
+/r/dailyprogrammer/comments/68zsoo/20170503_challenge_313_intermediate_pgm_image/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+45 comments
+https://www.reddit.com/r/dailyprogrammer/comments/68zsoo/20170503_challenge_313_intermediate_pgm_image/
+[2017-05-01] Challenge #313 [Easy] Subset sum
+/r/dailyprogrammer/comments/68oda5/20170501_challenge_313_easy_subset_sum/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+308 comments
+https://www.reddit.com/r/dailyprogrammer/comments/68oda5/20170501_challenge_313_easy_subset_sum/
+[2017-04-28] Challenge #312 [Hard] Text Summarizer
+/r/dailyprogrammer/comments/683w4s/20170428_challenge_312_hard_text_summarizer/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+20 comments
+https://www.reddit.com/r/dailyprogrammer/comments/683w4s/20170428_challenge_312_hard_text_summarizer/
+[2017-04-26] Challenge #312 [Intermediate] Next largest number
+/r/dailyprogrammer/comments/67q3s6/20170426_challenge_312_intermediate_next_largest/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+112 comments
+https://www.reddit.com/r/dailyprogrammer/comments/67q3s6/20170426_challenge_312_intermediate_next_largest/
+[2017-04-24] Challenge #312 [Easy] L33tspeak Translator
+/r/dailyprogrammer/comments/67dxts/20170424_challenge_312_easy_l33tspeak_translator/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+109 comments
+https://www.reddit.com/r/dailyprogrammer/comments/67dxts/20170424_challenge_312_easy_l33tspeak_translator/
+[2017-04-21] Challenge #311 [Hard] Procedural Dungeon Generation
+/r/dailyprogrammer/comments/66p87v/20170421_challenge_311_hard_procedural_dungeon/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+18 comments
+https://www.reddit.com/r/dailyprogrammer/comments/66p87v/20170421_challenge_311_hard_procedural_dungeon/
+[2017-04-19] Challenge #311 [Intermediate] IPv4 Subnet Calculator
+/r/dailyprogrammer/comments/669u44/20170419_challenge_311_intermediate_ipv4_subnet/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+59 comments
+https://www.reddit.com/r/dailyprogrammer/comments/669u44/20170419_challenge_311_intermediate_ipv4_subnet/
+[2017-04-17] Challenge #311 [Easy] Jolly Jumper
+/r/dailyprogrammer/comments/65vgkh/20170417_challenge_311_easy_jolly_jumper/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+180 comments
+https://www.reddit.com/r/dailyprogrammer/comments/65vgkh/20170417_challenge_311_easy_jolly_jumper/
+[2017-04-14] Challenge #310 [Hard] The Guards and the Mansion
+/r/dailyprogrammer/comments/65fkwh/20170414_challenge_310_hard_the_guards_and_the/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+17 comments
+https://www.reddit.com/r/dailyprogrammer/comments/65fkwh/20170414_challenge_310_hard_the_guards_and_the/
+[2017-04-12] Challenge #310 [Intermediate] Simplifying square roots
+/r/dailyprogrammer/comments/64y4cf/20170412_challenge_310_intermediate_simplifying/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+46 comments
+https://www.reddit.com/r/dailyprogrammer/comments/64y4cf/20170412_challenge_310_intermediate_simplifying/
+[2017-04-10] Challenge #310 [Easy] Kids Lotto
+/r/dailyprogrammer/comments/64jesw/20170410_challenge_310_easy_kids_lotto/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+65 comments
+https://www.reddit.com/r/dailyprogrammer/comments/64jesw/20170410_challenge_310_easy_kids_lotto/
+[2017-04-07] Challenge #309 [Hard] Patterns overlap
+/r/dailyprogrammer/comments/641zpj/20170407_challenge_309_hard_patterns_overlap/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+20 comments
+https://www.reddit.com/r/dailyprogrammer/comments/641zpj/20170407_challenge_309_hard_patterns_overlap/
+[2017-04-05] Challenge #309 [Intermediate] Sequential/Finite state machines
+/r/dailyprogrammer/comments/63n40x/20170405_challenge_309_intermediate/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+17 comments
+https://www.reddit.com/r/dailyprogrammer/comments/63n40x/20170405_challenge_309_intermediate/
+[2017-03-31] Challenge #308 [Hard] Slider Game Puzzle
+/r/dailyprogrammer/comments/62ktmx/20170331_challenge_308_hard_slider_game_puzzle/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+32 comments
+https://www.reddit.com/r/dailyprogrammer/comments/62ktmx/20170331_challenge_308_hard_slider_game_puzzle/
+[2017-03-27] Challenge #308 [Easy] Let it burn
+/r/dailyprogrammer/comments/61ub0j/20170327_challenge_308_easy_let_it_burn/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+35 comments
+https://www.reddit.com/r/dailyprogrammer/comments/61ub0j/20170327_challenge_308_easy_let_it_burn/
+[2017-03-22] Challenge #307 [Intermediate] Scrabble problem
+/r/dailyprogrammer/comments/611tqx/20170322_challenge_307_intermediate_scrabble/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+62 comments
+https://www.reddit.com/r/dailyprogrammer/comments/611tqx/20170322_challenge_307_intermediate_scrabble/
+[2017-03-20] Challenge #307 [Easy] base 255 part1
+/r/dailyprogrammer/comments/60ibay/20170320_challenge_307_easy_base_255_part1/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+28 comments
+https://www.reddit.com/r/dailyprogrammer/comments/60ibay/20170320_challenge_307_easy_base_255_part1/
+Weekly #27 - Mini Challenges
+/r/dailyprogrammer/comments/60b63i/weekly_27_mini_challenges/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+55 comments
+https://www.reddit.com/r/dailyprogrammer/comments/60b63i/weekly_27_mini_challenges/
+[2017-03-17] Challenge #306 [Hard] Generate Strings to Match a Regular Expression
+/r/dailyprogrammer/comments/5zxebw/20170317_challenge_306_hard_generate_strings_to/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+47 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5zxebw/20170317_challenge_306_hard_generate_strings_to/
+[2017-03-15] Challenge #306 [Intermediate] Gray Code
+/r/dailyprogrammer/comments/5zj7e4/20170315_challenge_306_intermediate_gray_code/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+51 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5zj7e4/20170315_challenge_306_intermediate_gray_code/
+[2017-03-13] Challenge #306 [Easy] Pandigital Roman Numbers
+/r/dailyprogrammer/comments/5z4f3z/20170313_challenge_306_easy_pandigital_roman/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+68 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5z4f3z/20170313_challenge_306_easy_pandigital_roman/
+[2017-03-10] Challenge #305 [Hard] Numbers for Sale
+/r/dailyprogrammer/comments/5yoo87/20170310_challenge_305_hard_numbers_for_sale/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+49 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5yoo87/20170310_challenge_305_hard_numbers_for_sale/
+[2017-03-08] Challenge #305 [Intermediate] The Best Conjunction
+/r/dailyprogrammer/comments/5yaiin/20170308_challenge_305_intermediate_the_best/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+25 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5yaiin/20170308_challenge_305_intermediate_the_best/
+[2017-03-06] Challenge #305 [Easy] Permutation base
+/r/dailyprogrammer/comments/5xu7sz/20170306_challenge_305_easy_permutation_base/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+30 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5xu7sz/20170306_challenge_305_easy_permutation_base/
+[2017-03-03] Challenge #304 [Hard] Generating a fractal using affine transformation
+/r/dailyprogrammer/comments/5xaoxb/20170303_challenge_304_hard_generating_a_fractal/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+26 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5xaoxb/20170303_challenge_304_hard_generating_a_fractal/
+[2017-03-01] Challenge #304 [Intermediate] Horse Race Sorting
+/r/dailyprogrammer/comments/5ww6o5/20170301_challenge_304_intermediate_horse_race/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+34 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5ww6o5/20170301_challenge_304_intermediate_horse_race/
+[2017-02-28] Challenge #304 [Easy] Little Accountant
+/r/dailyprogrammer/comments/5wnbsi/20170228_challenge_304_easy_little_accountant/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+45 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5wnbsi/20170228_challenge_304_easy_little_accountant/
+[2017-02-24] Challenge #303 [Hard] Escaping a dangerous maze
+/r/dailyprogrammer/comments/5vwwzg/20170224_challenge_303_hard_escaping_a_dangerous/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+24 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5vwwzg/20170224_challenge_303_hard_escaping_a_dangerous/
+[2017-02-21] Challenge #303 [Easy] Ricochet
+/r/dailyprogrammer/comments/5vb1wf/20170221_challenge_303_easy_ricochet/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+75 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5vb1wf/20170221_challenge_303_easy_ricochet/
+[2017-02-10] Challenge #302 [Hard] ASCII Histogram Maker: Part 2 - The Proper Histogram
+/r/dailyprogrammer/comments/5t7l07/20170210_challenge_302_hard_ascii_histogram_maker/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+29 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5t7l07/20170210_challenge_302_hard_ascii_histogram_maker/
+[2017-02-08] Challenge #302 [Intermediate] ASCII Histogram Maker: Part 1 - The Simple Bar Chart
+/r/dailyprogrammer/comments/5st2so/20170208_challenge_302_intermediate_ascii/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+65 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5st2so/20170208_challenge_302_intermediate_ascii/
+[2017-02-06] Challenge #302 [Easy] Spelling with Chemistry
+/r/dailyprogrammer/comments/5seexn/20170206_challenge_302_easy_spelling_with/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+96 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5seexn/20170206_challenge_302_easy_spelling_with/
+[2017-02-03] Challenge #301 [Hard] Guitar Tablature
+/r/dailyprogrammer/comments/5rt1cj/20170203_challenge_301_hard_guitar_tablature/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+43 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5rt1cj/20170203_challenge_301_hard_guitar_tablature/
+[2017-02-02] Challenge #301 [Easy/Intemerdiate] Looking for patterns
+/r/dailyprogrammer/comments/5rlpz1/20170202_challenge_301_easyintemerdiate_looking/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+76 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5rlpz1/20170202_challenge_301_easyintemerdiate_looking/
+[2017-01-28] Challenge #300 [Hard] Let's make some noise part 3
+/r/dailyprogrammer/comments/5qp3ou/20170128_challenge_300_hard_lets_make_some_noise/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+10 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5qp3ou/20170128_challenge_300_hard_lets_make_some_noise/
+[2017-01-26] Challenge #300 [Easy/Intermediate] Let's make some noise part 2
+/r/dailyprogrammer/comments/5q9cll/20170126_challenge_300_easyintermediate_lets_make/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+40 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5q9cll/20170126_challenge_300_easyintermediate_lets_make/
+[2017-01-23] Challenge #300 [Easy] Let's make some noise
+/r/dailyprogrammer/comments/5prdgb/20170123_challenge_300_easy_lets_make_some_noise/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+77 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5prdgb/20170123_challenge_300_easy_lets_make_some_noise/
+[2017-01-13] Challenge #299 [Hard] Functional Graph solving
+/r/dailyprogrammer/comments/5nr86m/20170113_challenge_299_hard_functional_graph/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+17 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5nr86m/20170113_challenge_299_hard_functional_graph/
+[2017-01-11] Challenge #299 [Intermediate] From Maze to graph
+/r/dailyprogrammer/comments/5nciz5/20170111_challenge_299_intermediate_from_maze_to/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+18 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5nciz5/20170111_challenge_299_intermediate_from_maze_to/
+[2017-01-09] Challenge #298 [Hard] Functional Maze solving
+/r/dailyprogrammer/comments/5mzr6x/20170109_challenge_298_hard_functional_maze/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+31 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5mzr6x/20170109_challenge_298_hard_functional_maze/
+[2017-01-04] Challenge #298 [Intermediate] Too many or too few Parentheses
+/r/dailyprogrammer/comments/5m034l/20170104_challenge_298_intermediate_too_many_or/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+46 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5m034l/20170104_challenge_298_intermediate_too_many_or/
+[2017-01-2] Challenge #298 [Easy] Too many Parentheses
+/r/dailyprogrammer/comments/5llkbj/2017012_challenge_298_easy_too_many_parentheses/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+97 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5llkbj/2017012_challenge_298_easy_too_many_parentheses/
+[2016-12-30] Challenge #297 [Hard] Parentheses trees
+/r/dailyprogrammer/comments/5l42dx/20161230_challenge_297_hard_parentheses_trees/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+27 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5l42dx/20161230_challenge_297_hard_parentheses_trees/
+[2016-12-23] Challenge #296 [Hard] Flood Fill Puzzle Game
+/r/dailyprogrammer/comments/5jxeal/20161223_challenge_296_hard_flood_fill_puzzle_game/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+35 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5jxeal/20161223_challenge_296_hard_flood_fill_puzzle_game/
+[2016-12-22] Challenge #296 [Intermediate] Intersecting Area Of Overlapping Rectangles
+/r/dailyprogrammer/comments/5jpt8v/20161222_challenge_296_intermediate_intersecting/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+65 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5jpt8v/20161222_challenge_296_intermediate_intersecting/
+[2016-12-19] Challenge #296 [Easy] The Twelve Days of...
+/r/dailyprogrammer/comments/5j6ggm/20161219_challenge_296_easy_the_twelve_days_of/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+272 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5j6ggm/20161219_challenge_296_easy_the_twelve_days_of/
+[2016-12-16] Challenge #295 [Hard] Advanced pacman
+/r/dailyprogrammer/comments/5iq4ix/20161216_challenge_295_hard_advanced_pacman/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+49 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5iq4ix/20161216_challenge_295_hard_advanced_pacman/
+[2016-12-15] Challenge #295 [Intermediate] Seperated Spouses
+/r/dailyprogrammer/comments/5ijb4z/20161215_challenge_295_intermediate_seperated/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+59 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5ijb4z/20161215_challenge_295_intermediate_seperated/
+[2016-12-12] Challenge #295 [Easy] Letter by letter
+/r/dailyprogrammer/comments/5hy8sm/20161212_challenge_295_easy_letter_by_letter/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+269 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5hy8sm/20161212_challenge_295_easy_letter_by_letter/
+[2016-12-09] Challenge #294 [Hard] Rack management 3
+/r/dailyprogrammer/comments/5hcd0x/20161209_challenge_294_hard_rack_management_3/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+21 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5hcd0x/20161209_challenge_294_hard_rack_management_3/
+[2016-12-07] Challenge #294 [Intermediate] Rack management 2
+/r/dailyprogrammer/comments/5h40ml/20161207_challenge_294_intermediate_rack/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+55 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5h40ml/20161207_challenge_294_intermediate_rack/
+[2016-12-05] Challenge #294 [Easy] Rack management 1
+/r/dailyprogrammer/comments/5go843/20161205_challenge_294_easy_rack_management_1/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+252 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5go843/20161205_challenge_294_easy_rack_management_1/
+[2016-11-25] Challenge #293 [Hard] Zombies 2 - Your Princess is in Another Castle!
+/r/dailyprogrammer/comments/5etds6/20161125_challenge_293_hard_zombies_2_your/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+12 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5etds6/20161125_challenge_293_hard_zombies_2_your/
+[2016-11-24] Challenge #293 [Intermediate] Defusing the second bomb
+/r/dailyprogrammer/comments/5emuuy/20161124_challenge_293_intermediate_defusing_the/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+69 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5emuuy/20161124_challenge_293_intermediate_defusing_the/
+[2016-11-21] Challenge #293 [Easy] Defusing the bomb
+/r/dailyprogrammer/comments/5e4mde/20161121_challenge_293_easy_defusing_the_bomb/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+213 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5e4mde/20161121_challenge_293_easy_defusing_the_bomb/
+[2016-11-15] Challenge #292 [Easy] Increasing range parsing
+/r/dailyprogrammer/comments/5d1l7v/20161115_challenge_292_easy_increasing_range/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+54 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5d1l7v/20161115_challenge_292_easy_increasing_range/
+[2016-11-11] Challenge #291 [Hard] Spaghetti Wiring
+/r/dailyprogrammer/comments/5cetzo/20161111_challenge_291_hard_spaghetti_wiring/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Blackshell
+https://www.reddit.com/user/Blackshell
+12 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5cetzo/20161111_challenge_291_hard_spaghetti_wiring/
+[2016-11-09] Challenge #291 [Intermediate] Reverse Polish Notation Calculator
+/r/dailyprogrammer/comments/5c5jx9/20161109_challenge_291_intermediate_reverse/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Blackshell
+https://www.reddit.com/user/Blackshell
+99 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5c5jx9/20161109_challenge_291_intermediate_reverse/
+[2016-11-07] Challenge #291 [Easy] Goldilocks' Bear Necessities
+/r/dailyprogrammer/comments/5bn0b7/20161107_challenge_291_easy_goldilocks_bear/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Blackshell
+https://www.reddit.com/user/Blackshell
+197 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5bn0b7/20161107_challenge_291_easy_goldilocks_bear/
+[2016-11-04] Challenge #290 [Hard] Gophers and Robot Dogs
+/r/dailyprogrammer/comments/5b5fc8/20161104_challenge_290_hard_gophers_and_robot_dogs/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+13 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5b5fc8/20161104_challenge_290_hard_gophers_and_robot_dogs/
+[2016-11-02] Challenge #290 [Intermediate] Blinking LEDs
+/r/dailyprogrammer/comments/5as91q/20161102_challenge_290_intermediate_blinking_leds/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+59 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5as91q/20161102_challenge_290_intermediate_blinking_leds/
+[2016-10-31] Challenge #290 [Easy] Kaprekar Numbers
+/r/dailyprogrammer/comments/5aemnn/20161031_challenge_290_easy_kaprekar_numbers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+145 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5aemnn/20161031_challenge_290_easy_kaprekar_numbers/
+[2016-10-28] Challenge #289 [Hard] "Spot it!" cards generator
+/r/dailyprogrammer/comments/59vml0/20161028_challenge_289_hard_spot_it_cards/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+8 comments
+https://www.reddit.com/r/dailyprogrammer/comments/59vml0/20161028_challenge_289_hard_spot_it_cards/
+[2016-10-27] Challenge #289 [Intermediate] Metro trip planner
+/r/dailyprogrammer/comments/59mnxa/20161027_challenge_289_intermediate_metro_trip/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+23 comments
+https://www.reddit.com/r/dailyprogrammer/comments/59mnxa/20161027_challenge_289_intermediate_metro_trip/
+[2016-10-24] Challenge #289 [Easy] It's super effective!
+/r/dailyprogrammer/comments/5961a5/20161024_challenge_289_easy_its_super_effective/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+120 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5961a5/20161024_challenge_289_easy_its_super_effective/
+[2016-10-21] Challenge #288 [Hard] Adjacent Numbers problems
+/r/dailyprogrammer/comments/58n2ca/20161021_challenge_288_hard_adjacent_numbers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+69 comments
+https://www.reddit.com/r/dailyprogrammer/comments/58n2ca/20161021_challenge_288_hard_adjacent_numbers/
+[2016-10-19] Challenge #288 [Intermediate] Stars and Stripes and Vertices
+/r/dailyprogrammer/comments/589txl/20161019_challenge_288_intermediate_stars_and/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+29 comments
+https://www.reddit.com/r/dailyprogrammer/comments/589txl/20161019_challenge_288_intermediate_stars_and/
+[2016-10-17] Challenge #288 [Easy] Detecting Alliteration
+/r/dailyprogrammer/comments/57zcbm/20161017_challenge_288_easy_detecting_alliteration/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+75 comments
+https://www.reddit.com/r/dailyprogrammer/comments/57zcbm/20161017_challenge_288_easy_detecting_alliteration/
+[2016-10-14] Challenge #287 [Hard] Word Numbers
+/r/dailyprogrammer/comments/57fzcv/20161014_challenge_287_hard_word_numbers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+11 comments
+https://www.reddit.com/r/dailyprogrammer/comments/57fzcv/20161014_challenge_287_hard_word_numbers/
+[2016-10-12] Challenge #287 [Intermediate] Mathagrams
+/r/dailyprogrammer/comments/576o8o/20161012_challenge_287_intermediate_mathagrams/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+58 comments
+https://www.reddit.com/r/dailyprogrammer/comments/576o8o/20161012_challenge_287_intermediate_mathagrams/
+[2016-10-10] Challenge #287 [Easy] Kaprekar's Routine
+/r/dailyprogrammer/comments/56tbds/20161010_challenge_287_easy_kaprekars_routine/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Cosmologicon
+https://www.reddit.com/user/Cosmologicon
+246 comments
+https://www.reddit.com/r/dailyprogrammer/comments/56tbds/20161010_challenge_287_easy_kaprekars_routine/
+Weekly #26 - Mini Challenges
+/r/dailyprogrammer/comments/56mfgz/weekly_26_mini_challenges/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+35 comments
+https://www.reddit.com/r/dailyprogrammer/comments/56mfgz/weekly_26_mini_challenges/
+[2016-10-07] Challenge #286 [Hard] Rush Hour Solver
+/r/dailyprogrammer/comments/56bh88/20161007_challenge_286_hard_rush_hour_solver/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+20 comments
+https://www.reddit.com/r/dailyprogrammer/comments/56bh88/20161007_challenge_286_hard_rush_hour_solver/
+[PSA] [Monthly Challenge #11 - October, 2016] - Procedural Ghosts and Jack-o-Lanterns! • /r/proceduralgeneration
+https://www.reddit.com/r/proceduralgeneration/comments/55xkud/monthly_challenge_11_october_2016_procedural/
+reddit.com
+/domain/reddit.com/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+comment
+https://www.reddit.com/r/dailyprogrammer/comments/55z8r6/psa_monthly_challenge_11_october_2016_procedural/
+[2016-10-05] Challenge #286 [Intermediate] Zeckendorf Representations of Positive Integers
+/r/dailyprogrammer/comments/55zdxx/20161005_challenge_286_intermediate_zeckendorf/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+75 comments
+https://www.reddit.com/r/dailyprogrammer/comments/55zdxx/20161005_challenge_286_intermediate_zeckendorf/
+[2016-10-03] Challenge #286 [Easy] Reverse Factorial
+/r/dailyprogrammer/comments/55nior/20161003_challenge_286_easy_reverse_factorial/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+320 comments
+https://www.reddit.com/r/dailyprogrammer/comments/55nior/20161003_challenge_286_easy_reverse_factorial/
+[2016-09-30] Challenge #285 [Hard] Math Proofs
+/r/dailyprogrammer/comments/557wyy/20160930_challenge_285_hard_math_proofs/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+28 comments
+https://www.reddit.com/r/dailyprogrammer/comments/557wyy/20160930_challenge_285_hard_math_proofs/
+[2016-09-28] Challenge #285 [Intermediate] Cross Platform/Language Data Encoding part 2
+/r/dailyprogrammer/comments/54wihd/20160928_challenge_285_intermediate_cross/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+4 comments
+https://www.reddit.com/r/dailyprogrammer/comments/54wihd/20160928_challenge_285_intermediate_cross/
+[2016-09-26] Challenge #285 [Easy] Cross Platform/Language Data Encoding part 1
+/r/dailyprogrammer/comments/54lu54/20160926_challenge_285_easy_cross/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+22 comments
+https://www.reddit.com/r/dailyprogrammer/comments/54lu54/20160926_challenge_285_easy_cross/
+[2016-09-23] Challenge #284 [Hard] Winning the Tournament
+/r/dailyprogrammer/comments/545a7x/20160923_challenge_284_hard_winning_the_tournament/
+self.dailyprogrammer
+/r/dailyprogrammer/
+G33kDude
+https://www.reddit.com/user/G33kDude
+25 comments
+https://www.reddit.com/r/dailyprogrammer/comments/545a7x/20160923_challenge_284_hard_winning_the_tournament/
+[2016-09-21] Challenge #284 [Intermediate] Punch Card Creator
+/r/dailyprogrammer/comments/53sw7z/20160921_challenge_284_intermediate_punch_card/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+31 comments
+https://www.reddit.com/r/dailyprogrammer/comments/53sw7z/20160921_challenge_284_intermediate_punch_card/
+[2016-09-19] Challenge #284 [Easy] Wandering Fingers
+/r/dailyprogrammer/comments/53ijnb/20160919_challenge_284_easy_wandering_fingers/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+120 comments
+https://www.reddit.com/r/dailyprogrammer/comments/53ijnb/20160919_challenge_284_easy_wandering_fingers/
+[2016-09-16] Challenge #283 [Hard] Guarding the Coast
+/r/dailyprogrammer/comments/5320ey/20160916_challenge_283_hard_guarding_the_coast/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+15 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5320ey/20160916_challenge_283_hard_guarding_the_coast/
+[2016-09-12] Challenge #283 [Easy] Anagram Detector
+/r/dailyprogrammer/comments/52enht/20160912_challenge_283_easy_anagram_detector/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+203 comments
+https://www.reddit.com/r/dailyprogrammer/comments/52enht/20160912_challenge_283_easy_anagram_detector/
+[2016-09-09] Challenge #282 [Hard] Hidato
+/r/dailyprogrammer/comments/51wg0j/20160909_challenge_282_hard_hidato/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+19 comments
+https://www.reddit.com/r/dailyprogrammer/comments/51wg0j/20160909_challenge_282_hard_hidato/
+[2016-09-07] Challenge #282 [Intermediate] The final Quixo move
+/r/dailyprogrammer/comments/51l1j1/20160907_challenge_282_intermediate_the_final/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+36 comments
+https://www.reddit.com/r/dailyprogrammer/comments/51l1j1/20160907_challenge_282_intermediate_the_final/
+[2016-09-05] Challenge #282 [Easy] Unusual Bases
+/r/dailyprogrammer/comments/5196fi/20160905_challenge_282_easy_unusual_bases/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+100 comments
+https://www.reddit.com/r/dailyprogrammer/comments/5196fi/20160905_challenge_282_easy_unusual_bases/
