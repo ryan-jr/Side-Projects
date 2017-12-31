@@ -46,6 +46,33 @@ Super helpful for associating the correct URL with the correct post:
 https://stackoverflow.com/questions/2407398/how-to-merge-lists-into-a-list-of-tuples
 https://stackoverflow.com/questions/3940128/how-can-i-reverse-a-list-in-python
 
+Helpful for zipping everything together:
+    https://www.reddit.com/r/learnpython/comments/10kuw5/why_is_using_zip_giving_me_zip_object_at/?st=jbu5r8sm&sh=d4aa5692
+    
+Now finding stuff in the tuple:
+    https://www.w3resource.com/python-exercises/tuple/python-tuple-exercise-14.php
+    
+    
+I really need to use in and not in more:
+    https://stackoverflow.com/questions/3437059/does-python-have-a-string-contains-substring-method
+    
+    
+data validation/scrubbing is certainly a thing...I just lost a half hour because
+the right prepend wasn't in place, so it was making the zip off by one
+
+These numbers are annoying the crap out of me right now:
+    print(len(dateList))        # 144
+print(len(difficultyList))  # 142
+print(len(idList))          # 144
+print(len(titleList))       # 144
+
+     That's because the difficulty list is off by two for some reason....ugh
+     
+...Turns out I had to remove the weekly, monthly, and mini challenges...sorry :(
+
+        
+Finally got everything sorted out and put into a final list
+
 """
 
 

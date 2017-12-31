@@ -326,14 +326,6 @@ Garth5689
 https://www.reddit.com/user/Garth5689
 106 comments
 https://www.reddit.com/r/dailyprogrammer/comments/6y19v2/20170904_challenge_330_easy_surround_the_circles/
-[Monthly Challenge #22 - September, 2017] Procedural Bacteria / Fungus / Virus • r/proceduralgeneration
-https://www.reddit.com/r/proceduralgeneration/comments/6xr1c0/monthly_challenge_22_september_2017_procedural/
-reddit.com
-/domain/reddit.com/
-fvandepitte
-https://www.reddit.com/user/fvandepitte
-1 comment
-https://www.reddit.com/r/dailyprogrammer/comments/6xsn1c/monthly_challenge_22_september_2017_procedural/
 [2017-09-01] Challenge #329 [Hard] Implementing a Templating Engine
 /r/dailyprogrammer/comments/6xfdv3/20170901_challenge_329_hard_implementing_a/
 self.dailyprogrammer
@@ -574,14 +566,6 @@ jnazario
 https://www.reddit.com/user/jnazario
 7 comments
 https://www.reddit.com/r/dailyprogrammer/comments/6g8ey0/20170609_challenge_318_hard_ladder_logic/
-DailyProgrammer is one of the Trending Subreddits for 2017-06-07!
-https://www.reddit.com/r/trendingsubreddits/comments/6frugf/trending_subreddits_for_20170607_rdailyprogrammer/
-reddit.com
-/domain/reddit.com/
-jnazario
-https://www.reddit.com/user/jnazario
-7 comments
-https://www.reddit.com/r/dailyprogrammer/comments/6ft754/dailyprogrammer_is_one_of_the_trending_subreddits/
 [2017-06-07] Challenge #318 [Intermediate] 2020 - NBA Revolution
 /r/dailyprogrammer/comments/6ft96y/20170607_challenge_318_intermediate_2020_nba/
 self.dailyprogrammer
@@ -590,14 +574,6 @@ jnazario
 https://www.reddit.com/user/jnazario
 28 comments
 https://www.reddit.com/r/dailyprogrammer/comments/6ft96y/20170607_challenge_318_intermediate_2020_nba/
-[ANNOUNCE] Seeking Moderators
-/r/dailyprogrammer/comments/6fm3yy/announce_seeking_moderators/
-self.dailyprogrammer
-/r/dailyprogrammer/
-jnazario
-https://www.reddit.com/user/jnazario
-22 comments
-https://www.reddit.com/r/dailyprogrammer/comments/6fm3yy/announce_seeking_moderators/
 [2017-06-05] Challenge #318 [Easy] Countdown Game Show
 /r/dailyprogrammer/comments/6fe9cv/20170605_challenge_318_easy_countdown_game_show/
 self.dailyprogrammer
@@ -838,14 +814,6 @@ Godspiral
 https://www.reddit.com/user/Godspiral
 28 comments
 https://www.reddit.com/r/dailyprogrammer/comments/60ibay/20170320_challenge_307_easy_base_255_part1/
-Weekly #27 - Mini Challenges
-/r/dailyprogrammer/comments/60b63i/weekly_27_mini_challenges/
-self.dailyprogrammer
-/r/dailyprogrammer/
-jnazario
-https://www.reddit.com/user/jnazario
-55 comments
-https://www.reddit.com/r/dailyprogrammer/comments/60b63i/weekly_27_mini_challenges/
 [2017-03-17] Challenge #306 [Hard] Generate Strings to Match a Regular Expression
 /r/dailyprogrammer/comments/5zxebw/20170317_challenge_306_hard_generate_strings_to/
 self.dailyprogrammer
@@ -1159,5 +1127,5 @@ https://www.reddit.com/user/Blackshell
 12 comments
 https://www.reddit.com/r/dailyprogrammer/comments/5cetzo/20161111_challenge_291_hard_spaghetti_wiring/
 [2016-11-09] Challenge #291 [Intermediate] Reverse Polish Notation Calculator
-/r/dailyprogrammer/comments/5c5jx9/20161109_challenge_291_intermediate_reverse/
-self.dailyprogrammer
+https://www.reddit.com/r/dailyprogrammer/comments/5c5jx9/20161109_challenge_291_intermediate_reverse/
+

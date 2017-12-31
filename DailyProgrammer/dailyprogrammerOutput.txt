@@ -1398,3 +1398,115 @@ fvandepitte
 https://www.reddit.com/user/fvandepitte
 100 comments
 https://www.reddit.com/r/dailyprogrammer/comments/5196fi/20160905_challenge_282_easy_unusual_bases/
+[2016-09-02] Challenge #281 [Hard] Minesweeper Solver
+/r/dailyprogrammer/comments/50s3ax/20160902_challenge_281_hard_minesweeper_solver/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+35 comments
+https://www.reddit.com/r/dailyprogrammer/comments/50s3ax/20160902_challenge_281_hard_minesweeper_solver/
+[2016-08-31] Challenge #281 [Intermediate] Dank usernames
+/r/dailyprogrammer/comments/50hbtp/20160831_challenge_281_intermediate_dank_usernames/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+79 comments
+https://www.reddit.com/r/dailyprogrammer/comments/50hbtp/20160831_challenge_281_intermediate_dank_usernames/
+[2016-08-29] Challenge #281 [Easy] Something about bases
+/r/dailyprogrammer/comments/504rdh/20160829_challenge_281_easy_something_about_bases/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+125 comments
+https://www.reddit.com/r/dailyprogrammer/comments/504rdh/20160829_challenge_281_easy_something_about_bases/
+[2016-08-26] Challenge #280 [Hard] Free Flow Solver
+/r/dailyprogrammer/comments/4zog32/20160826_challenge_280_hard_free_flow_solver/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+25 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4zog32/20160826_challenge_280_hard_free_flow_solver/
+[2016-08-24] Challenge #280 [Intermediate] Anagram Maker
+/r/dailyprogrammer/comments/4zcly2/20160824_challenge_280_intermediate_anagram_maker/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+50 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4zcly2/20160824_challenge_280_intermediate_anagram_maker/
+[2016-08-22] Challenge #280 [Easy] 0 to 100, Real Quick
+/r/dailyprogrammer/comments/4z04vj/20160822_challenge_280_easy_0_to_100_real_quick/
+self.dailyprogrammer
+/r/dailyprogrammer/
+jnazario
+https://www.reddit.com/user/jnazario
+180 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4z04vj/20160822_challenge_280_easy_0_to_100_real_quick/
+[2016-08-18] Challenge #279 [Intermediate] Text Reflow
+/r/dailyprogrammer/comments/4ybbcz/20160818_challenge_279_intermediate_text_reflow/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+74 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4ybbcz/20160818_challenge_279_intermediate_text_reflow/
+[2016-08-16] Challenge #279 [Easy] Uuencoding
+/r/dailyprogrammer/comments/4xy6i1/20160816_challenge_279_easy_uuencoding/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+71 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4xy6i1/20160816_challenge_279_easy_uuencoding/
+[2016-08-08] Challenge #278 [Easy/Med] Weave insert Part 1
+/r/dailyprogrammer/comments/4wqzph/20160808_challenge_278_easymed_weave_insert_part_1/
+self.dailyprogrammer
+/r/dailyprogrammer/
+Godspiral
+https://www.reddit.com/user/Godspiral
+70 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4wqzph/20160808_challenge_278_easymed_weave_insert_part_1/
+[Weekly #25] Escape the trolls
+/r/dailyprogrammer/comments/4vrb8n/weekly_25_escape_the_trolls/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+45 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4vrb8n/weekly_25_escape_the_trolls/
+[ANN] Only one challenge this week
+/r/dailyprogrammer/comments/4vr831/ann_only_one_challenge_this_week/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+3 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4vr831/ann_only_one_challenge_this_week/
+[2016-07-29] Challenge #277 [Hard] Trippy Julia fractals
+/r/dailyprogrammer/comments/4v5h3u/20160729_challenge_277_hard_trippy_julia_fractals/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+69 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4v5h3u/20160729_challenge_277_hard_trippy_julia_fractals/
+[2016-07-27] Challenge #277 [Intermediate] Fake coins
+/r/dailyprogrammer/comments/4utlaz/20160727_challenge_277_intermediate_fake_coins/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+49 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4utlaz/20160727_challenge_277_intermediate_fake_coins/
+[2016-07-25] Challenge #277 [Easy] Simplifying fractions
+/r/dailyprogrammer/comments/4uhqdb/20160725_challenge_277_easy_simplifying_fractions/
+self.dailyprogrammer
+/r/dailyprogrammer/
+fvandepitte
+https://www.reddit.com/user/fvandepitte
+248 comments
+https://www.reddit.com/r/dailyprogrammer/comments/4uhqdb/20160725_challenge_277_easy_simplifying_fractions/
