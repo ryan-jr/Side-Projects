@@ -41,7 +41,73 @@ Useful stuff for replacing the words:
     https://ubuntuforums.org/archive/index.php/t-331589.html
     
 Having functions in your return statements is a good idea
+
+Making a capitalized version of stopwords:
+https://stackoverflow.com/questions/29334276/capitalize-first-letter-of-the-first-word-in-a-list-in-python
+
+Making sure to know how join works is pretty nice...
+https://stackoverflow.com/questions/493819/python-join-why-is-it-string-joinlist-instead-of-list-joinstring
+
+I love having a findAll methdod in my toolbox...sooooo useful already
+
+
+Useful for understanding the job hunt: https://blog.stephanbehnke.com/how-i-learned-to-stop-worrying-and-love-the-job-hunt-in-toronto/
+
+
+I tried to replace part of a tuple that was in a list, then I realized I could
+replace the tuple itself, which is what I wanted in the first place
+https://stackoverflow.com/questions/9479184/replace-a-tuple-inside-of-a-list-by-its-first-entry
+
+
+I have to regularly remember that zipping something doesn't make it a list, and it
+isn't easily printable
+https://stackoverflow.com/questions/19777612/python-range-and-zip-object-type
+
+Well dang that was easy to turn a list of tuples into a dict:
+    dict(scoreTuples)    # wayyyyy to easy and I love it
+
+
+
+
+"The purpose of this paper is to extend existing research on entrepreneurial team formation under a competence-based perspective by empirically testing the influence of the sectoral context on that dynamics. We use inductive, theory-building design to understand how different sectoral characteristics moderate the influence of entrepreneurial opportunity recognition on subsequent entrepreneurial team formation. A sample of 195 founders who teamed up in the nascent phase of Interned-based and Cleantech sectors is analysed. The results suggest a twofold moderating effect of the sectoral context. First, a technologically more challenging sector (i.e. Cleantech) demands technically more skilled entrepreneurs, but at the same time, it requires still fairly commercially experienced and economically competent individuals. Furthermore, the business context also appears to exert an important influence on team formation dynamics: data reveals that individuals are more prone to team up with co-founders possessing complementary know-how when they are starting a new business venture in Cleantech rather than in the Internet-based sector. Overall, these results stress how the business context cannot be ignored when analysing entrepreneurial team formation dynamics by offering interesting insights on the matter to prospective entrepreneurs and interested policymakers."
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+TODO: Ok, so I've got it done, should I add an average text analyzer? So that it can calculate the overall score against the number of unique words?
 """
+
+from collections import Counter
+
+def findAll(c, string):
+  """Finds all indicies/instances of a character in a string 
+  
+     Given a string and a character c,  the method finds all instances/indicies 
+     of the character and returns a list with the indicies of where the character 
+     occurs.  
+     
+     Args:
+     c: The character passed in that the method will find 
+     string: The string to iterate over and find the character in 
+     
+     Returns:
+     returns a list findList that contains the indicies of where the character occurs 
+     
+     Raises:
+     N/A
+  
+  """
+  
+  findList = []
+  ctr = 0
+  stringList = list(string)
+  for char in stringList:
+    if c == char:
+      findList.append(ctr)
+      ctr += 1
+    else:
+      ctr += 1 
+    
+  return findList
+
 
 
 def paraScore(paraString, stopWords):
@@ -59,14 +125,59 @@ def paraScore(paraString, stopWords):
         
     Raises:
         N/A
+        
+        
     """
+    # Going through and capitalizing stopwords to potentially remove them later
+    capitalizedStopWords = []
+    ctr = 0
+    for i in stopWords:
+        capitalizedStopWords.append(stopWords[ctr].capitalize())
+        ctr += 1
 
+    
+    paraString = paraString.split(" ")
+
+    # Looping through and removing the stopwords 
     for word in stopWords:
-        pass
-       # print(word)
-            
-    print(paraString)
+        if word in paraString:
+            indexList = findAll(word, paraString)
+            for i in indexList:
+                paraString[i] = ""
+    
+    for word in capitalizedStopWords:
+       if word in paraString:
+            indexList = findAll(word, paraString)
+            for i in indexList:
+                paraString[i] = ""
+      
+    # Using filter to get rid of uneccessary spaces
+    # Doing that removes 84!!! (unncessary) elements from the list
+    paraString = list(filter(None, paraString))
 
+    
+    # Finding the most interesting/most used words in the list to score
+    data = Counter(paraString)
+    commonWordList = data.most_common()
+    avg = 0
+    ctr = 0
+    for i in commonWordList:
+        print(i)
+        avg += i[1]
+        if commonWordList[ctr][1] < 2:
+            commonWordList[ctr] = ""
+        ctr += 1
+    print(avg/len(commonWordList))
+    commonWordList = list(filter(None, commonWordList))
+    
+    
+    
+    commonWords = []
+    for i in commonWordList:
+        commonWords.append(i[0])
+        
+    
+    return commonWords
 
 def stripText(paraString):
     """Takes in a string of text and removes what we don't want/need
@@ -102,21 +213,57 @@ def stripText(paraString):
     return paraString
        
     
+ 
+def sentenceScore(interestingWords, sentenceList):
+    """Scores each sentece based upon how many interesting words it has
     
+    Arguments:
+        interestingWords: A list of words that has been determined to be interesting
+        sentenceList: A list of sentences contained in the text that was originally
+                      passed in
+                      
+    Returns:
+        Returns a summary of the text based on the score of sentences
+        
+    Raises:
+        N/A
+    """
+    score = 0
+    sentences = []
+    scores = []
+    
+    
+    for sentence in sentenceList:
+        sentences.append(sentence.split(" "))
+        
+    for lists in sentences:
+        score = 0
+        for words in lists:
+            if words in interestingWords:
+                score += 1
+        scores.append(score)
+        
+    
+    sentenceScore = list(zip(sentenceList, scores))
+    sentenceScore = dict(sentenceScore)
 
+    
+    for k, v in sentenceScore.items():
+        if v >= 2:
+            print(k)
+        
 # Reading stopwords, putting them into a list
 f = open("stopWords.txt", "r")
 stopList = f.readlines()
 stopList = list(map(lambda s: s.strip(), stopList))
+print(stopList)
 
-
-paraString = "The purpose of this paper is to extend existing research on entrepreneurial team formation under a competence-based perspective by empirically testing the influence of the sectoral context on that dynamics. We use inductive, theory-building design to understand how different sectoral characteristics moderate the influence of entrepreneurial opportunity recognition on subsequent entrepreneurial team formation. A sample of 195 founders who teamed up in the nascent phase of Interned-based and Cleantech sectors is analysed. The results suggest a twofold moderating effect of the sectoral context. First, a technologically more challenging sector (i.e. Cleantech) demands technically more skilled entrepreneurs, but at the same time, it requires still fairly commercially experienced and economically competent individuals. Furthermore, the business context also appears to exert an important influence on team formation dynamics: data reveals that individuals are more prone to team up with co-founders possessing complementary know-how when they are starting a new business venture in Cleantech rather than in the Internet-based sector. Overall, these results stress how the business context cannot be ignored when analysing entrepreneurial team formation dynamics by offering interesting insights on the matter to prospective entrepreneurs and interested policymakers."
+paraString = "This case describes the establishment of a new Cisco Systems R&D facility in Shanghai, China, and the great concern that arises when a collaborating R&D site in the United States is closed down. What will that closure do to relationships between the Shanghai and San Jose business units? Will they be blamed and accused of replacing the U.S. engineers? How will it affect other projects? The case also covers aspects of the site's establishment, such as securing an appropriate building, assembling a workforce, seeking appropriate projects, developing managers, building teams, evaluating performance, protecting intellectual property, and managing growth. Suitable for use in organizational behavior, human resource management, and strategy classes at the MBA and executive education levels, the material dramatizes the challenges of changing a U.S.-based company into a global competitor."
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 paraString = stripText(paraString)
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-paraScore(paraString, stopList)
-paraList = paraString.split(". ")
-print(paraList)
-
+interestingWordList = paraScore(paraString, stopList)
+sentenceList = paraString.split(". ")
+sentenceScore(interestingWordList, sentenceList)
