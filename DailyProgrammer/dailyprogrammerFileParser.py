@@ -88,8 +88,18 @@ print("---------|----------|----------|----------|----------")
 for i in finalList:
     redditTable(i[0], i[1], i[2], i[3], i[4])
     
-    
+hardList = []
+easyList = []
+InterList = []
 
+
+for i in finalList:
+    if i[2] == "Hard":
+        hardList.append(i[3])
+        hardList.append(i[4])
+        
+for i in hardList:
+    print(i)
 
 
 
