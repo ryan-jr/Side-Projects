@@ -891,3 +891,4 @@ This is a checklist to keep track of the Reddit r/dailyprogrammer challenges tha
 - [ ] Hard Programming Challenge:  289
 - [ ] Hard Programming Challenge:  290
 - [ ] Hard Programming Challenge:  291
+- [X] Hard Programming Challenge:  312 - Text Summarizer

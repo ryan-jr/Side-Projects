@@ -67,6 +67,7 @@ Well dang that was easy to turn a list of tuples into a dict:
     dict(scoreTuples)    # wayyyyy to easy and I love it
 
 
+"This case describes the establishment of a new Cisco Systems R&D facility in Shanghai, China, and the great concern that arises when a collaborating R&D site in the United States is closed down. What will that closure do to relationships between the Shanghai and San Jose business units? Will they be blamed and accused of replacing the U.S. engineers? How will it affect other projects? The case also covers aspects of the site's establishment, such as securing an appropriate building, assembling a workforce, seeking appropriate projects, developing managers, building teams, evaluating performance, protecting intellectual property, and managing growth. Suitable for use in organizational behavior, human resource management, and strategy classes at the MBA and executive education levels, the material dramatizes the challenges of changing a U.S.-based company into a global competitor."
 
 
 "The purpose of this paper is to extend existing research on entrepreneurial team formation under a competence-based perspective by empirically testing the influence of the sectoral context on that dynamics. We use inductive, theory-building design to understand how different sectoral characteristics moderate the influence of entrepreneurial opportunity recognition on subsequent entrepreneurial team formation. A sample of 195 founders who teamed up in the nascent phase of Interned-based and Cleantech sectors is analysed. The results suggest a twofold moderating effect of the sectoral context. First, a technologically more challenging sector (i.e. Cleantech) demands technically more skilled entrepreneurs, but at the same time, it requires still fairly commercially experienced and economically competent individuals. Furthermore, the business context also appears to exert an important influence on team formation dynamics: data reveals that individuals are more prone to team up with co-founders possessing complementary know-how when they are starting a new business venture in Cleantech rather than in the Internet-based sector. Overall, these results stress how the business context cannot be ignored when analysing entrepreneurial team formation dynamics by offering interesting insights on the matter to prospective entrepreneurs and interested policymakers."
@@ -76,6 +77,10 @@ TODO: Ok, so I've got it done, should I add an average text analyzer? So that it
 """
 
 from collections import Counter
+import statistics
+import re
+from collections import OrderedDict
+from operator import itemgetter
 
 def findAll(c, string):
   """Finds all indicies/instances of a character in a string 
@@ -109,6 +114,34 @@ def findAll(c, string):
   return findList
 
 
+
+def sentenceOrder(s, sentenceList):
+    """Arranges sentences in a chronological order
+    
+        Takes in a mean value and a dictionary of sentence keys that have
+        rankings/scores associated with them as values.  From this we filter out
+        all of the sentneces below the mean, and arrange the sentences in a chronological
+        order
+    
+    Args:
+        mean: A mean value calculated from all of the sentence scores
+        sentenceScoreDict: A dictionary with sentence/score key/value pairs
+    
+    Returns:
+        N/A
+        
+    Raises:
+        N/A
+        
+        
+    """
+    # TODO: What do I do if the highest score is the last item in dicitonary???
+    # I think I would fail over into printing the first 3 keys
+    
+    return sentenceList.index(s)
+    
+        
+    
 
 def paraScore(paraString, stopWords):
     """Takes in a string of text and removes the stopwords
@@ -152,30 +185,48 @@ def paraScore(paraString, stopWords):
                 paraString[i] = ""
       
     # Using filter to get rid of uneccessary spaces
-    # Doing that removes 84!!! (unncessary) elements from the list
     paraString = list(filter(None, paraString))
 
     
     # Finding the most interesting/most used words in the list to score
     data = Counter(paraString)
     commonWordList = data.most_common()
-    avg = 0
+    
+    # This section of the code is constructed to find a good value to 
+    # establish what is "interesting/relevant" in the text provided
+    # To do this we calculate both the median and the mode to try and get tendencies of both
     ctr = 0
+    median = 0
+    medianList = []
+    
+    
+    
     for i in commonWordList:
-        print(i)
-        avg += i[1]
-        if commonWordList[ctr][1] < 2:
+        val = i[1]
+        medianList.append(val)
+        
+    # Getting the median and mode for comparative values
+    median = statistics.median(medianList)
+    mode = statistics.mode(medianList)
+
+    # Filtering out the mode to prevent an akward distribution
+    medianList = list(filter(lambda x: x > mode, medianList))
+    median = statistics.median(medianList)   
+    
+    
+    for i in commonWordList:
+        if commonWordList[ctr][1] < median:
             commonWordList[ctr] = ""
         ctr += 1
-    print(avg/len(commonWordList))
+
     commonWordList = list(filter(None, commonWordList))
-    
     
     
     commonWords = []
     for i in commonWordList:
         commonWords.append(i[0])
         
+    
     
     return commonWords
 
@@ -194,7 +245,7 @@ def stripText(paraString):
     """
 
     
-    excludeList = ["(", ")", "[", "]"]
+    excludeList = ["(", ")", "[", "]", "U.", "S.", "U.S."]
     
     if "(" in paraString:
         x = paraString.find(excludeList[0])
@@ -209,6 +260,12 @@ def stripText(paraString):
         y = paraString.find(excludeList[3])
         
         paraString = paraString[0:x] + "" + paraString[y + 1:-1]
+        
+    if "U.S." in paraString:
+        x = paraString.find(excludeList[4])
+        y = paraString.find(excludeList[5])
+        
+        paraString = paraString[0:x] + "US" + paraString[y + 2: -1]
     
     return paraString
        
@@ -231,7 +288,7 @@ def sentenceScore(interestingWords, sentenceList):
     score = 0
     sentences = []
     scores = []
-    
+
     
     for sentence in sentenceList:
         sentences.append(sentence.split(" "))
@@ -242,28 +299,68 @@ def sentenceScore(interestingWords, sentenceList):
             if words in interestingWords:
                 score += 1
         scores.append(score)
-        
-    
-    sentenceScore = list(zip(sentenceList, scores))
-    sentenceScore = dict(sentenceScore)
+
+    # Taking care of anything that is a zero score in both the index and the sentence list
+    scoreIndex = []
+    ctr = 0
+    for i in scores:
+        if i == 0:
+            scoreIndex.append(ctr)
+        ctr += 1
 
     
-    for k, v in sentenceScore.items():
-        if v >= 2:
-            print(k)
+    
+    for i in scoreIndex:
+        sentenceList[i] = ""
         
+    sentenceList = list(filter(None, sentenceList))
+    scores = list(filter(lambda x: x > 0, scores))
+    
+    
+    mean = statistics.mean(scores)
+    
+    sentenceScore = list(zip(sentenceList, scores))    
+    
+    print(interestingWords)
+    
+    sentenceScore = dict(sentenceScore)
+    sortedScores = OrderedDict(sorted(sentenceScore.items(), key = itemgetter(1), reverse = True))
+    
+    chronoList = []
+    for i, k in enumerate(sortedScores):
+        if i < 3:
+            x = sentenceOrder(k, sentenceList)
+            chronoList.append(x)
+
+    chronoList = sorted(chronoList)
+    for i in chronoList:
+        print(sentenceList[i])
+    """
+    for k, v in sentenceScore.items():
+        if v < mean:
+            pass
+    """
+    
+    
+    
+     
+    
 # Reading stopwords, putting them into a list
 f = open("stopWords.txt", "r")
 stopList = f.readlines()
 stopList = list(map(lambda s: s.strip(), stopList))
-print(stopList)
 
-paraString = "This case describes the establishment of a new Cisco Systems R&D facility in Shanghai, China, and the great concern that arises when a collaborating R&D site in the United States is closed down. What will that closure do to relationships between the Shanghai and San Jose business units? Will they be blamed and accused of replacing the U.S. engineers? How will it affect other projects? The case also covers aspects of the site's establishment, such as securing an appropriate building, assembling a workforce, seeking appropriate projects, developing managers, building teams, evaluating performance, protecting intellectual property, and managing growth. Suitable for use in organizational behavior, human resource management, and strategy classes at the MBA and executive education levels, the material dramatizes the challenges of changing a U.S.-based company into a global competitor."
 
+
+paraString = ""
+
+with open("dataIn.txt", "r", encoding="utf8") as dataFile:
+    paraString = dataFile.read().replace("\n", " ")
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-paraString = stripText(paraString)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  
+paraString = stripText(paraString)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 interestingWordList = paraScore(paraString, stopList)
+paraString = re.sub("[?!]", ".", paraString)
 sentenceList = paraString.split(". ")
 sentenceScore(interestingWordList, sentenceList)
