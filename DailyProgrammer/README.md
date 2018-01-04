@@ -11,7 +11,7 @@ This is a checklist to keep track of the Reddit r/dailyprogrammer challenges tha
 - [X] Easy Programming Challenge:  3 - Ceaser Cipher
 - [ ] Easy Programming Challenge:  4
 - [X] Easy Programming Challenge:  5 - Username/Password
-- [ ] Easy Programming Challenge:  6
+- [X] Easy Programming Challenge:  6 - Pi to 30 digits
 - [ ] Easy Programming Challenge:  7
 - [ ] Easy Programming Challenge:  8
 - [ ] Easy Programming Challenge:  9
