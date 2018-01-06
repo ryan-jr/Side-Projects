@@ -91,10 +91,10 @@ for i in morseFlatList:
 
 listValues = []
 for i in morseFlatList:
-   print(list(key for key, value in translateDict.items() if value == i))
+   listValues.append((list(key for key, value in translateDict.items() if value == i)))
     
-print(listValues)
-        
+listValues = flattenList(listValues)
+print(" ".join(listValues))
 
 """
 

@@ -12,9 +12,9 @@ This is a checklist to keep track of the Reddit r/dailyprogrammer challenges tha
 - [ ] Easy Programming Challenge:  4
 - [X] Easy Programming Challenge:  5 - Username/Password
 - [X] Easy Programming Challenge:  6 - Pi to 30 digits
-- [ ] Easy Programming Challenge:  7
-- [ ] Easy Programming Challenge:  8
-- [ ] Easy Programming Challenge:  9
+- [X] Easy Programming Challenge:  7 - Morse Code
+- [X] Easy Programming Challenge:  8 - 99 Bottles of Beer
+- [ ] Easy Programming Challenge:  9 - Sort Digits
 - [ ] Easy Programming Challenge:  10
 - [ ] Easy Programming Challenge:  11
 - [ ] Easy Programming Challenge:  12
