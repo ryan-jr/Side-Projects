@@ -9,14 +9,14 @@ This is a checklist to keep track of the Reddit r/dailyprogrammer challenges tha
 - [X] Easy Programming Challenge:  1 - Name, age, username
 - [X] Easy Programming Challenge:  2 - Calculator
 - [X] Easy Programming Challenge:  3 - Ceaser Cipher
-- [ ] Easy Programming Challenge:  4
+- [X] Easy Programming Challenge:  4 - Password Generator
 - [X] Easy Programming Challenge:  5 - Username/Password
 - [X] Easy Programming Challenge:  6 - Pi to 30 digits
 - [X] Easy Programming Challenge:  7 - Morse Code
 - [X] Easy Programming Challenge:  8 - 99 Bottles of Beer
-- [ ] Easy Programming Challenge:  9 - Sort Digits
-- [ ] Easy Programming Challenge:  10
-- [ ] Easy Programming Challenge:  11
+- [X] Easy Programming Challenge:  9 - Sort Digits
+- [X] Easy Programming Challenge:  10 - US PTNs
+- [X] Easy Programming Challenge:  11 - Day of the week
 - [ ] Easy Programming Challenge:  12
 - [ ] Easy Programming Challenge:  13
 - [ ] Easy Programming Challenge:  14
