@@ -7,73 +7,6 @@ Created on Sun Dec 31 16:44:10 2017
 https://www.reddit.com/r/dailyprogrammer/comments/683w4s/20170428_challenge_312_hard_text_summarizer/?st=jbuzvkww&sh=6b3755be
 
 
-
-# Step 1: Import the stopwords in a list
-# Step 2: Grab the text you want to analyze
-# Step 3: Split the text you want to analyze into various sentences
-# Step 4: Analyze each of the words in those sentences
-    4A: Assign the words a value: positive, negative, neutral, or null (if it's a stopword)
-    4B: After cutting out each word that is a stopword, create 2 dicts
-        One for the sentence and one for the paragraph/text overall 
-    4C: The greater the count, the more important the word/concept/sentence is and it should
-        be included/ranked higher 
-# Step 5: We will return at most 2 sentences, so return the 2 highest ranked sentences
-
-Journal:
-    Ok, I think I'm doing too much with step 4A, so I'll likely include it in the next .  Reading through the steps a second time, I think the second part of 4B, might be too much as well, so for right now I'll just concentrate on the first half of 4B.  
-    
-    
-    https://stackoverflow.com/questions/3849509/how-to-remove-n-from-a-list-element
-    ITERABLE VAR HERE = list(map(lambda s: s.strip(), ITERABLE(LIST/DICT HERE)))
-    
-So at some point I want to extend this to grab newspaper articles, luckily the newspaper
-library already does that... https://github.com/codelucas/newspaper
-
-For now I'll just import the paragraph as a string and work from there
-
-This was useful for the stopwords list I'm using: https://www.ranks.nl/stopwords
-
-Ok, we don't want to remove the stopwords, but we DO want them to modify the sentence score
-and possibly the paragraph score?
-
-Useful stuff for replacing the words:
-    https://stackoverflow.com/questions/3271478/check-list-of-words-in-another-string
-    https://ubuntuforums.org/archive/index.php/t-331589.html
-    
-Having functions in your return statements is a good idea
-
-Making a capitalized version of stopwords:
-https://stackoverflow.com/questions/29334276/capitalize-first-letter-of-the-first-word-in-a-list-in-python
-
-Making sure to know how join works is pretty nice...
-https://stackoverflow.com/questions/493819/python-join-why-is-it-string-joinlist-instead-of-list-joinstring
-
-I love having a findAll methdod in my toolbox...sooooo useful already
-
-
-Useful for understanding the job hunt: https://blog.stephanbehnke.com/how-i-learned-to-stop-worrying-and-love-the-job-hunt-in-toronto/
-
-
-I tried to replace part of a tuple that was in a list, then I realized I could
-replace the tuple itself, which is what I wanted in the first place
-https://stackoverflow.com/questions/9479184/replace-a-tuple-inside-of-a-list-by-its-first-entry
-
-
-I have to regularly remember that zipping something doesn't make it a list, and it
-isn't easily printable
-https://stackoverflow.com/questions/19777612/python-range-and-zip-object-type
-
-Well dang that was easy to turn a list of tuples into a dict:
-    dict(scoreTuples)    # wayyyyy to easy and I love it
-
-
-"This case describes the establishment of a new Cisco Systems R&D facility in Shanghai, China, and the great concern that arises when a collaborating R&D site in the United States is closed down. What will that closure do to relationships between the Shanghai and San Jose business units? Will they be blamed and accused of replacing the U.S. engineers? How will it affect other projects? The case also covers aspects of the site's establishment, such as securing an appropriate building, assembling a workforce, seeking appropriate projects, developing managers, building teams, evaluating performance, protecting intellectual property, and managing growth. Suitable for use in organizational behavior, human resource management, and strategy classes at the MBA and executive education levels, the material dramatizes the challenges of changing a U.S.-based company into a global competitor."
-
-
-"The purpose of this paper is to extend existing research on entrepreneurial team formation under a competence-based perspective by empirically testing the influence of the sectoral context on that dynamics. We use inductive, theory-building design to understand how different sectoral characteristics moderate the influence of entrepreneurial opportunity recognition on subsequent entrepreneurial team formation. A sample of 195 founders who teamed up in the nascent phase of Interned-based and Cleantech sectors is analysed. The results suggest a twofold moderating effect of the sectoral context. First, a technologically more challenging sector (i.e. Cleantech) demands technically more skilled entrepreneurs, but at the same time, it requires still fairly commercially experienced and economically competent individuals. Furthermore, the business context also appears to exert an important influence on team formation dynamics: data reveals that individuals are more prone to team up with co-founders possessing complementary know-how when they are starting a new business venture in Cleantech rather than in the Internet-based sector. Overall, these results stress how the business context cannot be ignored when analysing entrepreneurial team formation dynamics by offering interesting insights on the matter to prospective entrepreneurs and interested policymakers."
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-TODO: Ok, so I've got it done, should I add an average text analyzer? So that it can calculate the overall score against the number of unique words?
 """
 
 from collections import Counter
@@ -135,14 +68,10 @@ def sentenceOrder(s, sentenceList):
         
         
     """
-    # TODO: What do I do if the highest score is the last item in dicitonary???
-    # I think I would fail over into printing the first 3 keys
     
     return sentenceList.index(s)
     
         
-    
-
 def paraScore(paraString, stopWords):
     """Takes in a string of text and removes the stopwords
     
@@ -316,9 +245,6 @@ def sentenceScore(interestingWords, sentenceList):
     sentenceList = list(filter(None, sentenceList))
     scores = list(filter(lambda x: x > 0, scores))
     
-    
-    mean = statistics.mean(scores)
-    
     sentenceScore = list(zip(sentenceList, scores))    
     
     print(interestingWords)
@@ -335,16 +261,11 @@ def sentenceScore(interestingWords, sentenceList):
     chronoList = sorted(chronoList)
     for i in chronoList:
         print(sentenceList[i])
-    """
-    for k, v in sentenceScore.items():
-        if v < mean:
-            pass
-    """
     
-    
-    
-     
-    
+
+
+### Begin main()
+
 # Reading stopwords, putting them into a list
 f = open("stopWords.txt", "r")
 stopList = f.readlines()
@@ -354,13 +275,12 @@ stopList = list(map(lambda s: s.strip(), stopList))
 
 paraString = ""
 
+
 with open("dataIn.txt", "r", encoding="utf8") as dataFile:
     paraString = dataFile.read().replace("\n", " ")
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-  
-paraString = stripText(paraString)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-interestingWordList = paraScore(paraString, stopList)
+paraString = stripText(paraString)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        interestingWordList = paraScore(paraString, stopList)
 paraString = re.sub("[?!]", ".", paraString)
 sentenceList = paraString.split(". ")
 sentenceScore(interestingWordList, sentenceList)
