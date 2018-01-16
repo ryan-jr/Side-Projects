@@ -1,0 +1,40 @@
+def isPalindrome(word):
+  
+"""Function to check if a word is a palindrome 
+  
+  
+"""
+  
+boolean = True
+  
+  
+forward = list(word.lower())
+  
+print(forward)
+  
+backward = "".join((reversed(word.lower())))
+  
+print(backward)
+
+  
+for count, letter in enumerate(forward):
+    
+if letter == backward[count]:
+      
+pass
+    
+else:
+      
+boolean = False
+      
+break
+      
+  
+  
+
+return boolean
+
+
+
+
+print(isPalindrome("Racecar"))
