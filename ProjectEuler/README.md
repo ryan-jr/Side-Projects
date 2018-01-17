@@ -168,3 +168,50 @@ x = primeCheck(200000)
 print(x[10000])
 
 ```
+
+
+### Problem 10
+
+```Python3
+
+"""
+https://webcache.googleusercontent.com/search?q=cache:iCzGJ4ouWmkJ:https://projecteuler.net/problem%3D10+&cd=1&hl=en&ct=clnk&gl=us
+
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million.
+
+"""
+
+# Using the sieve to check for prime numbers as per:
+# https://inventwithpython.com/hacking/chapter23.html
+
+import math
+
+def primeCheck(size):
+  """Returns a list of prime numbers using the sieve of Eratosthenes
+  
+  """
+  # Intializing the sieve
+  sieve = [True] * size
+  sieve[0] = False
+  sieve[1] = False
+  
+  for i in range(2, int(math.sqrt(size)) + 1):
+    pointer = i * 2 
+    while pointer < size:
+      sieve[pointer] = False
+      pointer += i
+      
+  primes = []
+  for i in range(size):
+    if sieve[i] == True:
+      primes.append(i)
+  print(len(primes))
+  return primes
+  
+x = primeCheck(2000000)
+y = sum(x)
+print(y)
+
+```
