@@ -170,7 +170,9 @@ print(x[10000])
 ```
 
 
-### Problem 7
+### Problem 8
+
+```Python3
 
 """
 The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
@@ -204,7 +206,7 @@ while ctr <= length - 13:
   ctr += 1
   
 print(total)
-
+```
 
 ### Problem 10
 
