@@ -1,0 +1,29 @@
+3991347 Puerto Penasco
+5287262 Buckeye
+5552301 Avondale
+5295985 Glendale
+5308480 Peoria
+5303752 Maricopa
+5308655 Phoenix
+5304391 Mesa
+5288636 Casa Grande
+5294167 Eloy
+5303705 Marana
+5294902 Florence
+5295903 Gilbert
+7310164 San Tan Valley
+5295177 Fountain Hills
+5551535 Apache Junction
+4004886 Heroica Nogales
+5306611 Nogales
+5296802 Green Valley
+5312544 Sahuarita
+5318313 Tucson
+5316890 Tanque Verde
+5314328 Sierra Vista
+5307540 Oro Valley
+4019260 Agua Prieta
+5551498 Anthem
+5309842 Prescott
+5308305 Payson
+5294810 Flagstaff
