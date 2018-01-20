@@ -8,7 +8,7 @@ B.  Python, Java, Javascript (rank order)
 
 C.  Coding projects include hackathon stuff, Text summarizer...
 
-D.  More stuff that's included in the python standard library.  Map, zip, etc... More CS concepts: Space allocation, etc..., Testing frameworks/paradigms, What is CI and how does it work?  Maintainable/clean code.  How does AWS/heroku deployment work.  AGILE/SCRUM.  
+D.  More stuff that's included in the python standard library.  Map, zip, etc... More CS concepts: Space allocation, etc..., Testing frameworks/paradigms, What is CI and how does it work?  Maintainable/clean code.  How does AWS/heroku deployment work.  AGILE/SCRUM.  Sentiment Analysis, Logistics, and business cases (Writing PDFs, letters, and customer databases/note taking apps)
 
 E.  Software Engineer, Software Developer, Junior Developer
 
@@ -24,6 +24,7 @@ B.  I liked it because it was a challenge, but not something that I was going to
 C.  I was unhappy with how little support I felt I had.  I was unhappy with how vauge the endgoal was.  I was unhappy with the lack of planning/benchmarks/timelines.  I didn't fully understand Flask/Django in order to complete the project so it rushed it.  
 
 D.  For me, that means understanding how to write an API and effectively interact with it.  Be a full stack web developer from Python, to Django/Flask to JS.  
+
 
 E.  Write an API, understand how to host something on Heroku/for a hackathon, having my own portfolio site beyond github pages.  
 
