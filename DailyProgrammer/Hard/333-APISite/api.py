@@ -1,25 +1,27 @@
-from flask import Flask, request
-from flask_restful import Resource, Api
-from sqlalchemy import create_engine
-from json import dumps 
+from flask_restful import *
+from flask import *
+import records 
+import json 
+import os  
+import flask
+import tablib
 
-e = create_engine('sqlite:///out.db')
 
 app = Flask (__name__)
-api = Api(app)
 
-class FIPS(Resource):
-	def get(self):
-		# Connect to DB 
-		connection = e.connect()
+dataset = tablib.Dataset()
+with open(os.path.join(os.path.dirname(__file__), "out.csv")) as f:
+	dataset.csv = f.read() 
 
-		# Query the db and return JSON 
-		query = connection.execute("select distinct FIPS from out")
-		return {'FIPS': [i[0] for i in query.cursor.fetchall()]}
 
-api.add_resource(FIPS, '/')
+@app.route("/")
+def index():
+	return flask.jsonify(eval(str(dataset)))
+
 
 if __name__ == "__main__":
-	app.run()
+	app.run(debug = True)
 
-# C:\Users\rjr\documents\github\sideprojects\dailyprogrammer\hard\333-apisite
+
+# TODO, get rid of zero width spaces as found...https://stackoverflow.com/questions/14844687/invalid-character-in-identifier
+# You tried to jsonify and json.dumps things but both resulted in a "not serializable object" error
