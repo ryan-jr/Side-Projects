@@ -17,14 +17,12 @@ with open("belowSeventy.txt", "r") as f:
     x = f.readlines()
     
 ctr = 0  
-
-# Creating a list of words from the dictionary
 x = list(map(lambda s: s.strip(), x))
 
-# Opening the text file, splitting each line into words and evalutating it.
 with open("poetry.txt", "r") as f:
     for line in f:
         ctr = 0
+        print("Parsing line!", datetime.datetime.now())
         for word in line.split():
             if len(word) >= 15 or len(word) <= 2:
                 pass
@@ -33,8 +31,15 @@ with open("poetry.txt", "r") as f:
                     if word in x:
                         ctr += 1
                         if ctr >= 4:
+                            print(ctr)
+                            print("Output to console!", datetime.datetime.now())
                             g.write(line)
                             break
+                                
+                                
+                                        
+    
+print(datetime.datetime.now())
 """
 # appending the line if if one of the words from poetry matches 
                 if word in poetryWords:
