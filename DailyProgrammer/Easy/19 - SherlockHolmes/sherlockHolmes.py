@@ -17,12 +17,11 @@ y = 0
 
 with open("SherlockHolmes.txt", "r") as f:
         x = f.readlines()
-        while x:
-            print(x)
-            if lookup in x: # 18
-                f.tell()
-            elif lookup2 in x: # 12693
-                f.tell()
+        z = list(str(x))
+        for i in z:
+            y += 1
+            if i == "*":
+                print("Character number:", y)
 
    
     
@@ -35,11 +34,5 @@ with open("SherlockHolmes.txt", "r") as f:
 # Counters for lines that I want to exclude from the char count
 
 
-
-    x = f.readlines()
-    z = list(str(x))
-    
-    for i in z:
-        y += 1
              
 """
