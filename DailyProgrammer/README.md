@@ -17,15 +17,15 @@ This is a checklist to keep track of the Reddit r/dailyprogrammer challenges tha
 - [X] Easy Programming Challenge:  9 - Sort Digits
 - [X] Easy Programming Challenge:  10 - US PTNs
 - [X] Easy Programming Challenge:  11 - Day of the week
-- [ ] Easy Programming Challenge:  12
-- [ ] Easy Programming Challenge:  13
-- [ ] Easy Programming Challenge:  14
-- [ ] Easy Programming Challenge:  15
-- [ ] Easy Programming Challenge:  16
-- [ ] Easy Programming Challenge:  17
-- [ ] Easy Programming Challenge:  18
-- [ ] Easy Programming Challenge:  19
-- [ ] Easy Programming Challenge:  20
+- [X] Easy Programming Challenge:  12 - Permutations of a String
+- [X] Easy Programming Challenge:  13 - Day of the Year
+- [X] Easy Programming Challenge:  14 - Reverse part of a List
+- [X] Easy Programming Challenge:  15 - Left or right Justify
+- [X] Easy Programming Challenge:  16 - Remove characters from a String
+- [X] Easy Programming Challenge:  17 - Build the Pyramids
+- [X] Easy Programming Challenge:  18 - Letters to Numbers
+- [X] Easy Programming Challenge:  19 - Primes Below 2000
+- [X] Easy Programming Challenge:  20
 - [ ] Easy Programming Challenge:  21
 - [ ] Easy Programming Challenge:  22
 - [ ] Easy Programming Challenge:  23

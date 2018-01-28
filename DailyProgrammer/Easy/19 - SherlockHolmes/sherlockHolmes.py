@@ -3,25 +3,55 @@
 Created on Thu Jan 25 22:41:13 2018
 
 @author: rjr
+
+
+Challenge #19 will use The Adventures of Sherlock Holmes from Project Gutenberg.
+
+Write a program that counts the number of alphanumeric characters there are in The Adventures of Sherlock Holmes. Exclude the Project Gutenberg header and footer, book title, story titles, and chapters. Post your code and the alphanumeric character count.
+
+https://www.reddit.com/r/dailyprogrammer/comments/qlwrc/372012_challenge_19_easy/
 """
 
 excludeList = ["I. A Scandal in Bohemia", "II. The Red-headed League", "III. A Case of Identity",
     "IV. The Boscombe Valley Mystery", "V. The Five Orange Pips", "VI. The Man with the Twisted Lip",
     "VII. The Adventure of the Blue Carbuncle", "VIII. The Adventure of the Speckled Band", 
     "IX. The Adventure of the Engineer's Thumb", "X. The Adventure of the Noble Bachelor",
-    "XI. The Adventure of the Beryl Coronet", "XII. The Adventure of the Copper Beeches", "ADVENTURE"]
+    "XI. The Adventure of the Beryl Coronet", "XII. The Adventure of the Copper Beeches", "ADVENTURE", "Title: The Adventures of Sherlock Holmes"]
 
 lookup = "*** START OF THIS PROJECT GUTENBERG EBOOK THE ADVENTURES OF SHERLOCK HOLMES ***"
 lookup2 = "*** END OF THIS PROJECT GUTENBERG EBOOK THE ADVENTURES OF SHERLOCK HOLMES ***"
 y = 0
+ctr = 0
+linesList = []
+otherCtr = 0
 
 with open("SherlockHolmes.txt", "r") as f:
         x = f.readlines()
+        for line in x:
+            line = line.strip()
+            if line in excludeList:
+                print("Passing")
+                pass
+            else:
+                linesList.append(line)
+        
+        
+        linesList = linesList[45:12680]
+        for j in linesList:
+            for k in j:
+                if k.isalpha() or k.isalnum():
+                    otherCtr += 1
         z = list(str(x))
+        z = z[669:627384]
+        z = list(map(lambda s: s.strip(), z))
         for i in z:
-            y += 1
-            if i == "*":
-                print("Character number:", y)
+            if i.isalpha() or i.isalnum():
+                ctr += 1
+                
+print(ctr)
+print()
+print(otherCtr)
+                
 
    
     
@@ -32,7 +62,10 @@ with open("SherlockHolmes.txt", "r") as f:
 """
 
 # Counters for lines that I want to exclude from the char count
-
+for i in z:
+            y += 1
+            if i == "*":
+                print("Character number:", y)
 
              
 """
