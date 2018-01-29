@@ -10,6 +10,13 @@ Challenge #19 will use The Adventures of Sherlock Holmes from Project Gutenberg.
 Write a program that counts the number of alphanumeric characters there are in The Adventures of Sherlock Holmes. Exclude the Project Gutenberg header and footer, book title, story titles, and chapters. Post your code and the alphanumeric character count.
 
 https://www.reddit.com/r/dailyprogrammer/comments/qlwrc/372012_challenge_19_easy/
+
+Challenges:
+    1.  How to add everything up from a set of readlines
+    2.  Not using file.seek in order to skip past certain lines 
+    3.  Figuring out where/how to start/stop
+    4.  Not knowing the correct output (I'm assuming I'm correct)
+        judging by the ranges that others are posting (432,139 to 431,301)
 """
 
 excludeList = ["I. A Scandal in Bohemia", "II. The Red-headed League", "III. A Case of Identity",
@@ -41,12 +48,7 @@ with open("SherlockHolmes.txt", "r") as f:
             for k in j:
                 if k.isalpha() or k.isalnum():
                     otherCtr += 1
-        z = list(str(x))
-        z = z[669:627384]
-        z = list(map(lambda s: s.strip(), z))
-        for i in z:
-            if i.isalpha() or i.isalnum():
-                ctr += 1
+
                 
 print(ctr)
 print()
@@ -66,6 +68,13 @@ for i in z:
             y += 1
             if i == "*":
                 print("Character number:", y)
+                
+        z = list(str(x))
+        z = z[669:627384]
+        z = list(map(lambda s: s.strip(), z))
+        for i in z:
+            if i.isalpha() or i.isalnum():
+                ctr += 1
 
              
 """

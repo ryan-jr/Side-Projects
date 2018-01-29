@@ -16,11 +16,24 @@ You need to alert the player of wins, losses, busts, etc...
 # Let's extend it to play 100 times, and after 100 times calculate win %
 """
 
-from blackjackcards import Blackjackcards
+import deckofcards
 
-dealer = Blackjackcards()
-player = Blackjackcards()
+deck = deckofcards.Deck()
+deck.shuffle()
 
+player = deckofcards.Player()
+dealer = deckofcards.Player2()
+
+player.draw(deck).draw(deck)
+player.showHand()
+player.getValues()
+
+
+dealer.draw(deck).draw(deck)
+dealer.showHand()
+
+
+"""
 def keepPlaying(data):
     data = input("Keep playing Y or N?: ")
     return data
@@ -51,4 +64,4 @@ while userInput != "N" or userInput != "n":
     cardCtr += 1
     print(cardCtr)
     
-
+"""
