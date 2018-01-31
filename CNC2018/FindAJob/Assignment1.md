@@ -1,3 +1,9 @@
+```
+
+Create a list of companies you'd like to work for and an analysis of them, their size, websites, reviews/other information
+
+```
+
 A.  Companies I want to work for:
 
 1.  Amazon
@@ -10,6 +16,8 @@ C.  [Link](https://www.amazon.jobs/location/phoenix-area-az?offset=10&result_lim
 
 D.  Yes
 
+E.  4 stars on glassdoor(1,800 reviews).  I think I'd be Ok here, large ecosystem, and developer support.  
+
 * Meetup
 
 A.  200+ employees
@@ -18,7 +26,7 @@ C.  New York
 
 D.  [Link](https://www.meetup.com/jobs/)
 
-E.  Yes
+E.  4 stars on glassdoor(40 reviews).  Seems like a nice small startup.  
 
 * Penske 
 
@@ -30,6 +38,8 @@ C. [Link](https://penske.jobs/)
 
 D.  Yes
 
+E.  3 stars on glassdoor(238 reviews).  This seems like a more rigid environment to work in.  
+
 * Twilio
 
 A.  500+ employees 
@@ -39,6 +49,8 @@ B. SF
 C. [Link](https://www.twilio.com/company/jobs)
 
 D.  Yes
+
+E.  4 stars on glassdoor(93 reviews).  This seems like a cool startup to work for and lear from.  
 
 * Horizon
 
