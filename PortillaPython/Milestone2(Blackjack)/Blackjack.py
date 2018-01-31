@@ -26,12 +26,16 @@ dealer = deckofcards.Player2()
 
 player.draw(deck).draw(deck)
 player.showHand()
-player.getValues()
+x = player.getValues()
+print("Player has:", x) 
+
+
 
 
 dealer.draw(deck).draw(deck)
 dealer.showHand()
-
+y = dealer.getValues()
+print("Dealer has:", y) 
 
 """
 def keepPlaying(data):

@@ -10,7 +10,7 @@ Created on Tue Jan 30 17:07:35 2018
 import requests, os, bs4
 
 # Start the URL and store the comics
-url = "http://xkcd.com"
+url = "https://www.scfta.org/events/detail.aspx?id=16205"
 os.makedirs("xkcd", exist_ok = True)
 
 # Download the page

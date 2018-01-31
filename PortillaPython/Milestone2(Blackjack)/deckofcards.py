@@ -78,18 +78,18 @@ class Player(object):
     def getValues(self):
         for i in self.hand:
             self.values.append(i.showValue())
-        
-        
-        print(sum(self.values))
-        
-        #self.ctr = 
+
+        return sum(self.values)
+         
             
             
             
             
 class Player2(object):
-    def __init__(self):
+    def __init__(self, ctr = 0):
         self.hand = []
+        self.values = []
+        self.ctr = []
         
     def draw(self, deck):
         self.hand.append(deck.drawCard())
@@ -98,5 +98,11 @@ class Player2(object):
     def showHand(self):
         for card in self.hand:
             card.show()
+            
+    def getValues(self):
+        for i in self.hand:
+            self.values.append(i.showValue())
+        
+        return sum(self.values)
 
     
