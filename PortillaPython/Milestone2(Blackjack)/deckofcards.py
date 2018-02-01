@@ -5,41 +5,38 @@ Created on Sun Jan 28 17:42:04 2018
 @author: rjr
 """
 
-# I want to sum up all the values from the values part of the class and show them
-
-
-# Cards
 
 import random
 
 class Card(object):
+    """Class to create cards to be used in our game of Blackjack.
+    
+    
+    
+    Methods:
+        show: prints the value and suit of the card
+        showValue: returns the value of the card
+        
+    """
+    
     def __init__(self, suit, val):
         self.suit = suit
         self.value = val
-        
-        
         
     def show(self):
         print("{} of {}".format(self.value, self.suit))
         
     def showValue(self):
-        
-        #print("{}".format(self.value))
         return self.value
-        
     
 class Deck(object):
     def __init__(self):
         self.cards = []
-        #self.values = []
         self.build()
-        
-        
         
     def build(self):
         for s in ["Spades", "Clubs", "Hearts", "Diamonds"]:
             for v in range(2, 14):
-                #self.values.append(v)
                 self.cards.append(Card(s, v))
            
     def show(self):
@@ -54,11 +51,7 @@ class Deck(object):
             
     def drawCard(self):
         return self.cards.pop()
-    
-    """
-    def addCards(self):
-        return sum(self.values)
-    """ 
+
 class Player(object):
     def __init__(self, ctr = 0):
         self.hand = []
@@ -76,9 +69,13 @@ class Player(object):
             card.show()
             
     def getValues(self):
-        for i in self.hand:
-            self.values.append(i.showValue())
-
+        if self.ctr == 0:
+            self.ctr += 2
+            for i in self.hand:
+                self.values.append(i.showValue())
+        else:
+            self.values.append(self.hand[-1].showValue())
+            
         return sum(self.values)
          
             
@@ -89,7 +86,7 @@ class Player2(object):
     def __init__(self, ctr = 0):
         self.hand = []
         self.values = []
-        self.ctr = []
+        self.ctr = 0
         
     def draw(self, deck):
         self.hand.append(deck.drawCard())
@@ -100,9 +97,13 @@ class Player2(object):
             card.show()
             
     def getValues(self):
-        for i in self.hand:
-            self.values.append(i.showValue())
-        
+        if self.ctr == 0:
+            self.ctr += 2
+            for i in self.hand:
+                self.values.append(i.showValue())
+        else:
+            self.values.append(self.hand[-1].showValue())
+            
         return sum(self.values)
 
     
