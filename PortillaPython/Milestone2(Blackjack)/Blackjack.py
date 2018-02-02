@@ -22,38 +22,44 @@ You need to alert the player of wins, losses, busts, etc...
         # If the dealer busts, then it's an automatic player win
         # If the player busts it's an automatic player loss
         
+        
+
 
 import deckofcards
 
 
-def dealerLogic(dealerCount):
-    if dealerCount < 18:
-        dealer.draw(deck)
-        print("Dealer draws")
-        dealer.showHand()
-        dealerCount = dealer.getValues()
-        print("Dealer has:", dealerCount)
-    elif y > 21:
-        print("Dealer loses!")
-    else:
-        print("Dealer stays with", dealerCount)
-        dealer.showHand()
+def newDeck():
+    deck = deckofcards.Deck()
+    deck.shuffle()
+    
+    return deck
 
+def playerChoice(flag):
+    choice = input("Would you like to stay or hit?(s/h):" )
+    if choice == "s":
+        return flag
+    else:
+        flag = True
+        return flag
+    
+
+    
 # Variable initialization
 stayFlag = False
 playFlag = True
 
 playerAmount = 100.00
 dealerAmount = 100.00
+betAmount = 5.00
 
 bustCount = 0
 winCount = 0
 lossCount = 0
 
 # Deck and player/dealer calls to start the game
-deck = deckofcards.Deck()
-deck.shuffle()
+deck = newDeck()
 
+"""
 player = deckofcards.Player()
 dealer = deckofcards.Player2()
 
@@ -67,46 +73,22 @@ dealer.draw(deck).draw(deck)
 dealer.showHand()
 y = dealer.getValues()
 print("Dealer has:", y) 
-
-while playFlag:
+"""
+playAgain = "y"
+ctr = 0
+while playFlag and ctr <= 100:
+    ctr += 1
     
-    # Draw case
-    if x == 21 and y == 21:
-        print("It's a draw!")
+    if playerAmount < 5.00:
+        print("Sorry you don't have enough!")
+        break
+    elif dealerAmount < 5.00:
+        print("You beat the house!")
     
-    print("")
-    
-    # Dealer logic
-
-        
-    # Player logic
-    if y < 18:
-        player.draw(deck)
-        print("Player draws")
-        player.showHand()
-        x = player.getValues()
-        print("Player has:", x)
-    elif y > 21:
-        print("Player loses!")
-    else:
-        print("Player stays with", x)
-        player.showHand()
-    
-    #playerChoice == input("Would you like to stay or hit?")
-
-    if x >= 21:
-        print("Player loses!")
-        lossCount += 1
-    elif y >= 21:
-        print("Dealer loses!")
-        winCount += 1
-        
-    playAgain = "y"# input("Would you like to play again?(y/n): ")
-    if playAgain  == "y":
+    if playAgain  == "y" and playerAmount > 5.00 and dealerAmount > 5.00:
         playFlag = True
-        deck = deckofcards.Deck()
-        deck.shuffle()
-        
+        deck = newDeck()
+                
         player = deckofcards.Player()
         dealer = deckofcards.Player2()
             
@@ -120,14 +102,70 @@ while playFlag:
         dealer.showHand()
         y = dealer.getValues()
         print("Dealer has:", y)
-        
     else:
         playFlag = False
-        break
+        break   
+    
+    # Draw case
+    if x == 21 and y == 21:
+        print("It's a draw!")
+    
+    print("")
+    
+    # Dealer logic
+    if y < 18:
+        dealer.draw(deck)
+        print("Dealer draws")
+        dealer.showHand()
+        y = dealer.getValues()
+        print("Dealer has:", y)
+    elif y > 21:
+        print("Dealer loses!")
+    else:
+        print("Dealer stays with", y)
+        dealer.showHand()
+
+    if y > 21:
+        playAgain = "y" # input("Would you like to play again?(y/n): ")
+        winCount += 1
+        dealerAmount -= betAmount
+        playerAmount += betAmount
+        print("Dealer has:", dealerAmount)
+        continue
+        
+    # Player logic
+    if y <= 18 and stayFlag == False:
+        player.draw(deck)
+        print("Player draws")
+        player.showHand()
+        x = player.getValues()
+        print("Player has:", x)
+    elif y > 21:
+        print("Player loses!")
+    else:
+        print("Player stays with", x)
+        player.showHand()
+    
+    if x > 21:
+        playAgain = "y" # input("Would you like to play again?(y/n): ")
+        lossCount += 1
+        playerAmount -= betAmount
+        dealerAmount += betAmount
+        print("You have:", playerAmount)
+        continue
+        
     
     
-print("Wins: ", winCount)
-print("Losses: ", lossCount)
+
+
+
+print("Wins:", winCount)
+print("Losses:", lossCount)
+print("Amount:", playerAmount)
+
+
+
+
 """
 def keepPlaying(data):
     data = input("Keep playing Y or N?: ")
@@ -158,5 +196,16 @@ while userInput != "N" or userInput != "n":
     
     cardCtr += 1
     print(cardCtr)
+    
+    
+    
+***
+        
+    if y >= 21:
+        winCount += 1
+        continue
+    else: 
+        pass
+        # stayFlag == playerChoice(stayFlag)
     
 """
