@@ -44,7 +44,7 @@ def playerChoice(flag):
     
 
     
-# Variable initialization
+# Variable, stats, and deck initilization
 stayFlag = False
 playFlag = True
 
@@ -56,26 +56,13 @@ bustCount = 0
 winCount = 0
 lossCount = 0
 
-# Deck and player/dealer calls to start the game
-deck = newDeck()
-
-"""
-player = deckofcards.Player()
-dealer = deckofcards.Player2()
-
-player.draw(deck).draw(deck)
-player.showHand()
-x = player.getValues()
-print("Player has:", x) 
-
-print("")
-dealer.draw(deck).draw(deck)
-dealer.showHand()
-y = dealer.getValues()
-print("Dealer has:", y) 
-"""
 playAgain = "y"
 ctr = 0
+
+deck = newDeck()
+
+
+
 while playFlag and ctr <= 100:
     ctr += 1
     
@@ -84,8 +71,10 @@ while playFlag and ctr <= 100:
         break
     elif dealerAmount < 5.00:
         print("You beat the house!")
+        break
     
-    if playAgain  == "y" and playerAmount > 5.00 and dealerAmount > 5.00:
+    
+    if playAgain  == "y":
         playFlag = True
         deck = newDeck()
                 
@@ -154,16 +143,11 @@ while playFlag and ctr <= 100:
         print("You have:", playerAmount)
         continue
         
-    
-    
-
-
-
 print("Wins:", winCount)
 print("Losses:", lossCount)
 print("Amount:", playerAmount)
-
-
+print()
+print("After", ctr, " games you won an avrage of", playerAmount/ctr, "per hand")
 
 
 """
@@ -207,5 +191,21 @@ while userInput != "N" or userInput != "n":
     else: 
         pass
         # stayFlag == playerChoice(stayFlag)
+        
+
+player = deckofcards.Player()
+dealer = deckofcards.Player2()
+
+player.draw(deck).draw(deck)
+player.showHand()
+x = player.getValues()
+print("Player has:", x) 
+
+print("")
+dealer.draw(deck).draw(deck)
+dealer.showHand()
+y = dealer.getValues()
+print("Dealer has:", y) 
+
     
 """
