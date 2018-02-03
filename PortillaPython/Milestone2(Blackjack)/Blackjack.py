@@ -17,9 +17,6 @@ You need to alert the player of wins, losses, busts, etc...
 """       
 import deckofcards
 
-# TODO: 3.  Why is quitting after hitting
-
-
 def newDeck():
     """Function to create a new deck of cards
     
@@ -50,8 +47,6 @@ def stayChoice(flag):
     Raises:
         N/A
     """
-    print(flag)
-    print(type(flag))
     flag = input("Would you like to stay or hit?(s/h):" )
     if flag == "s":
         return True
@@ -59,7 +54,36 @@ def stayChoice(flag):
     else:
         print("flag was h, returning false")
         return False
-      
+    
+def betting(amountAlreadyBet, playerCashAmount):
+    """Function to determine the bet amount that the player bets
+    
+    Args:
+        amountAlreadyBet: How much the player has already bet
+        playerCashAmount: The amount of $$$ a player has in the bank
+        
+    Returns:
+        betAmount: The amount the player has chosen to bet
+        
+    Raises:
+        N/A
+        
+    """
+    print("Bet amounts are in $5.00 increments")
+    print("")
+
+    betAmount = input("How much do you want to bet")
+    betAmount = float(betAmount)
+    
+    if betAmount < 5.00:
+      print("Enter a higher bet amount!")
+      betting(amountAlreadyBet, playerCashAmount)
+    elif float(betAmount) > float(playerCashAmount):
+      print("You don't have that much to bet!")
+      betting(amountAlreadyBet, playerCashAmount)
+    else:
+        return float(betAmount + amountAlreadyBet)
+    
 # Variable, stats, and deck initilization
 stayFlag = False
 playFlag = True
@@ -77,9 +101,10 @@ ctr = 0
 
 deck = newDeck()
 
-
 while playFlag:
     ctr += 1
+    
+    # Stopping the game if there's not enough bank
     if playerCashAmount < 5.00:
         print("Sorry you don't have enough!")
         break
@@ -87,9 +112,11 @@ while playFlag:
         print("You beat the house!")
         break
     
+    # Starting if the player wants a new game
     if playAgain  == "y":
         playFlag = True
         deck = newDeck()
+        betAmount = 5.00
                 
         player = deckofcards.Player()
         dealer = deckofcards.Player2()
@@ -136,6 +163,7 @@ while playFlag:
         continue
     else:
         print("You have:", playerCardTotal)
+        betAmount = betting(betAmount, playerCashAmount)
         stayFlag = stayChoice(stayFlag)
         
         # Player logic
@@ -148,6 +176,7 @@ while playFlag:
         else:
             print("Player stays with", playerCardTotal)
     
+    # Bust logic
     if playerCardTotal > 21:
         print("Player loses")
         playAgain = input("Would you like to play again?(y/n): ")
@@ -155,10 +184,10 @@ while playFlag:
         playerCashAmount -= betAmount
         dealerCashAmount += betAmount
         print("You have:", playerCashAmount)
-        print("GREATER THAN 21 LOGIC")
         continue
     
-    if playerCardTotal < 21 and stayFlag == True:
+    # Checking other cases
+    if playerCardTotal <= 21:
         if dealerCardTotal > playerCardTotal:
             print("Player loses with:", playerCardTotal)
             playAgain = input("Would you like to play again?(y/n): ")
@@ -166,7 +195,6 @@ while playFlag:
             playerCashAmount -= betAmount
             dealerCashAmount += betAmount
             print("You have:", playerCashAmount)
-            print("PLAYER CARD TOTAL STAYFLAG LOGIC")
             continue
         elif playerCardTotal > dealerCardTotal:
             print("Dealer loses with:", dealerCardTotal, "YOU WIN!")
@@ -174,13 +202,15 @@ while playFlag:
             winCount += 1
             dealerCashAmount -= betAmount
             playerCashAmount += betAmount
-            print("PLAYER CARD TOTAL > DEALER CARD TOTAL LOGIC")
             continue           
         else:
             print("It's a tie!!!")
+            print("You have:", playerCashAmount)
             playAgain = input("Would you like to play again?(y/n): ")
 
-# Display score/statistics
+
+# Display score/statistics at the end
+print("Player card total:", playerCardTotal, "Dealer card total:", dealerCardTotal)
 print("")
 print("Wins:", winCount)
 print("Losses:", lossCount)
