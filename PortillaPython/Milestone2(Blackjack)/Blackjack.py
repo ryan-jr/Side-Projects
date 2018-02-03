@@ -18,7 +18,8 @@ You need to alert the player of wins, losses, busts, etc...
 import deckofcards
 
 # TODO: 3.  Why is quitting after hitting
-# TODO: 4.  Why aren't card totals summing properly?
+
+
 def newDeck():
     """Function to create a new deck of cards
     
@@ -49,10 +50,14 @@ def stayChoice(flag):
     Raises:
         N/A
     """
+    print(flag)
+    print(type(flag))
     flag = input("Would you like to stay or hit?(s/h):" )
     if flag == "s":
         return True
+        print("flag was s, returning true")
     else:
+        print("flag was h, returning false")
         return False
       
 # Variable, stats, and deck initilization
@@ -75,14 +80,12 @@ deck = newDeck()
 
 while playFlag:
     ctr += 1
-    
     if playerCashAmount < 5.00:
         print("Sorry you don't have enough!")
         break
     elif dealerCashAmount < 5.00:
         print("You beat the house!")
         break
-    
     
     if playAgain  == "y":
         playFlag = True
@@ -130,8 +133,7 @@ while playFlag:
         winCount += 1
         dealerCashAmount -= betAmount
         playerCashAmount += betAmount
-        
-        pass
+        continue
     else:
         print("You have:", playerCardTotal)
         stayFlag = stayChoice(stayFlag)
@@ -141,7 +143,7 @@ while playFlag:
             player.draw(deck)
             print("Player draws")
             player.showHand()
-            x = player.getValues()
+            playerCardTotal = player.getValues()
             print("Player has:", playerCardTotal)
         else:
             print("Player stays with", playerCardTotal)
@@ -153,6 +155,7 @@ while playFlag:
         playerCashAmount -= betAmount
         dealerCashAmount += betAmount
         print("You have:", playerCashAmount)
+        print("GREATER THAN 21 LOGIC")
         continue
     
     if playerCardTotal < 21 and stayFlag == True:
@@ -163,12 +166,16 @@ while playFlag:
             playerCashAmount -= betAmount
             dealerCashAmount += betAmount
             print("You have:", playerCashAmount)
+            print("PLAYER CARD TOTAL STAYFLAG LOGIC")
+            continue
         elif playerCardTotal > dealerCardTotal:
             print("Dealer loses with:", dealerCardTotal, "YOU WIN!")
             playAgain = input("Would you like to play again?(y/n): ")
             winCount += 1
             dealerCashAmount -= betAmount
             playerCashAmount += betAmount
+            print("PLAYER CARD TOTAL > DEALER CARD TOTAL LOGIC")
+            continue           
         else:
             print("It's a tie!!!")
             playAgain = input("Would you like to play again?(y/n): ")
