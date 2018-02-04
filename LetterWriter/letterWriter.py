@@ -9,21 +9,40 @@ Created on Sat Feb  3 11:42:36 2018
 
 from tkinter import *
 from fpdf import FPDF
+import uuid
 
+
+
+def retrieveInput():
+    uniqueLetterID = str(uuid.uuid4())
+    fileFormat = ".pdf"
+    uniqueLetterFormat = uniqueLetterID + fileFormat
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", "B", 16)
+    inputValue = textArea.get("1.0", "end-1c")
+    pdf.multi_cell(40, 10, inputValue)
+    pdf.output(uniqueLetterFormat, "f")
+
+
+# https://stackoverflow.com/questions/14824163/how-to-get-the-input-from-the-tkinter-text-box-widget
+    
+    
+# Creating the general Tkinter window and text area
 root = Tk()
 title = root.title("Welcome!")
-textArea = Text(root, height=100, width=80)
+textArea = Text(root, height=25, width=50)
 textArea.pack()
-quote = " lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
-textArea.insert(END, quote)
+userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
+                    command = lambda: retrieveInput())
+userButton.pack()
 root.mainloop()
 
 
-pdf = FPDF()
-pdf.add_page()
-pdf.set_font("Arial", "B", 16)
-pdf.cell(40, 10, quote)
-pdf.output("firstTry.pdf", "f")
+# Creating a PDF file
+
+
+
 """
 User Stories:
     
