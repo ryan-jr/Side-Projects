@@ -13,7 +13,6 @@ The player must be able to pick the betting amount
 You need to keep track of the players total money
 You need to alert the player of wins, losses, busts, etc...
 
-# Let's extend it to play 100 times, and after 100 times calculate win %
 """       
 import deckofcards
 
@@ -102,7 +101,6 @@ ctr = 0
 deck = newDeck()
 
 while playFlag:
-    ctr += 1
     
     # Stopping the game if there's not enough bank
     if playerCashAmount < 5.00:
@@ -114,6 +112,7 @@ while playFlag:
     
     # Starting if the player wants a new game
     if playAgain  == "y":
+        ctr += 1
         playFlag = True
         deck = newDeck()
         betAmount = 5.00
