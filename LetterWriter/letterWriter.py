@@ -6,28 +6,62 @@ Created on Sat Feb  3 11:42:36 2018
 """
 
 # Creating a PDF writer
-
+# FPDF Docs: https://pyfpdf.readthedocs.io/en/latest/Tutorial/index.html
 from tkinter import *
 from fpdf import FPDF
 import uuid
+import datetime
 
+# Types of letters: Invoice, Welcome to Service, Disconnection of Service
+
+# All letters need to be dated, have a letterhead, have a greeting/salutation.
+
+# Create a preview letter button so a user does not have to navigate to the PDF
+
+# What if a user wants to create a new letter/email?
 
 
 def retrieveInput():
+    # Creating unique identifier for the letter for tracking/accounting
+    # And setting up the datetime for the letter header
     uniqueLetterID = str(uuid.uuid4())
+    dt = str(datetime.datetime.now().date())
     fileFormat = ".pdf"
     uniqueLetterFormat = uniqueLetterID + fileFormat
+    
+    # Creating the PDF
     pdf = FPDF()
     pdf.add_page()
+    
+    headers = ["Powerful Python", "A Python Productivity Blog", 
+               "555 Fake Street", "Wilmington, DE", "555-555-5555"
+               "PowerfulPython@fakeaddress.com"]
+    
+    # Header Section
+    # This is more direct than the fpdf header class, because
+    # that class has to be overridden, this is more explict/readable
+    # fpdf.cell(w, h = 0, txt = '', border = 0, ln = 0, align = '', fill = False, link = '')
     pdf.set_font("Arial", "B", 16)
+    pdf.cell(40, 10, headers[0], 0, 2, "L")
+    pdf.set_font("Arial", "", 16)
+    pdf.cell(40, 10, headers[1], 0, 2, "L")
+    pdf.cell(40, 10, headers[2], 0, 2, "L")
+    pdf.cell(40, 10, headers[3], 0, 2, "L")
+    pdf.cell(40, 10, headers[4], 0, 2, "L")
+    pdf.multi_cell(40, 25, dt)
+    pdf.ln(h = 2)
+    
+    # Main Body
+    pdf.set_font("Arial", "", 16)
     inputValue = textArea.get("1.0", "end-1c")
+    
     pdf.multi_cell(40, 10, inputValue)
     pdf.output(uniqueLetterFormat, "f")
 
+def previewLetter(fileName):
+    pass
 
-# https://stackoverflow.com/questions/14824163/how-to-get-the-input-from-the-tkinter-text-box-widget
-    
-    
+
 # Creating the general Tkinter window and text area
 root = Tk()
 title = root.title("Welcome!")
