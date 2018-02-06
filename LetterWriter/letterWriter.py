@@ -46,8 +46,14 @@ def retrieveInput():
     # fpdf.cell(w, h = 0, txt = '', border = 0, ln = 0, align = '', fill = False, link = '')
     # fpdf.line(x1, y1, x2, y2)
     pdf.set_font("Arial", "B", 16)
+    pdf.set_x(180)
+    pdf.image("pythonLogo.png", w = 20, h = 25, type = "PNG")
+    pdf.set_x(0)
+    pdf.set_y(0)
     pdf.cell(40, 10, headers[0], 0, 2, "L")
     pdf.set_font("Arial", "", 16)
+    
+    
     pdf.cell(40, 10, headers[1], 0, 2, "L")
     pdf.cell(40, 10, headers[2], 0, 2, "L")
     pdf.cell(90, 10, headers[3], 0, 2, "L") 
@@ -62,7 +68,7 @@ def retrieveInput():
     pdf.multi_cell(180, 10, inputValue)
     
     # Salutation/signoff
-    pdf.set_y(245)
+    pdf.set_y(250)
     pdf.cell(40, 5, "Regards,", 0, 2, "L")
     pdf.cell(40, 5, "The powerful Python Team", 0, 2, "L")
     
