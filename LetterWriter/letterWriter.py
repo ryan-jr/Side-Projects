@@ -12,9 +12,9 @@ from fpdf import FPDF
 import uuid
 import datetime
 
-# Types of letters: Invoice, Welcome to Service, Disconnection of Service
+# Types of letters: Invoice, Welcome to Service, Custom (Complete)
 
-# All letters need to be dated, have a letterhead, have a greeting/salutation.
+# All letters need to be dated, have a letterhead, have a greeting/salutation. (Complete)
 
 # Create a preview letter button so a user does not have to navigate to the PDF
 
@@ -86,20 +86,20 @@ def previewLetter(fileName):
 # Creating the general Tkinter window and text area
 root = Tk()
 title = root.title("Letter/Email Generation Tool")
-textArea = Text(root, height=25, width=50)
+textArea = Text(root, height=35, width=150)
 textArea.pack()
 userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
                     command = lambda: retrieveInput())
 
 # Letter or Email choice
 letterOrEmail = StringVar(root)
-letterOrEmail.set("one") # default value
+letterOrEmail.set("Make a selection(Letter/Email)") # default value
 dropdown1 = OptionMenu(root, letterOrEmail, "Email", "Letter")
 
 
 # What type of letter will be sent out choice
 letterFormat = StringVar(root)
-letterFormat.set("one") # default value
+letterFormat.set("Make a selection(Letter format)") # default value
 dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
                        "Custom")
 
