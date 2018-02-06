@@ -22,6 +22,7 @@ import datetime
 
 
 def retrieveInput():
+    
     # Creating unique identifier for the letter for tracking/accounting
     # And setting up the datetime for the letter header
     uniqueLetterID = str(uuid.uuid4())
@@ -29,51 +30,80 @@ def retrieveInput():
     fileFormat = ".pdf"
     uniqueLetterFormat = uniqueLetterID + fileFormat
     
+    
     # Creating the PDF
     pdf = FPDF()
     pdf.add_page()
     
     headers = ["Powerful Python", "A Python Productivity Blog", 
-               "555 Fake Street", "Wilmington, DE", "555-555-5555"
+               "555 Fake Street", "Wilmington, DE", "555-555-5555",
                "PowerfulPython@fakeaddress.com"]
     
+    
     # Header Section
-    # This is more direct than the fpdf header class, because
+    # This is more direct than the fpdf header/footer class, because
     # that class has to be overridden, this is more explict/readable
     # fpdf.cell(w, h = 0, txt = '', border = 0, ln = 0, align = '', fill = False, link = '')
+    # fpdf.line(x1, y1, x2, y2)
     pdf.set_font("Arial", "B", 16)
     pdf.cell(40, 10, headers[0], 0, 2, "L")
     pdf.set_font("Arial", "", 16)
     pdf.cell(40, 10, headers[1], 0, 2, "L")
     pdf.cell(40, 10, headers[2], 0, 2, "L")
-    pdf.cell(40, 10, headers[3], 0, 2, "L")
-    pdf.cell(40, 10, headers[4], 0, 2, "L")
-    pdf.multi_cell(40, 25, dt)
-    pdf.ln(h = 2)
-    
-    # Main Body
+    pdf.cell(90, 10, headers[3], 0, 2, "L") 
+    pdf.cell(100, 10, headers[4], 0, 2, "L")
+    pdf.cell(40, 10, dt, 0, 2, "L")    
+    pdf.line(10,70,190,70)
+
+    # Main Body Section
     pdf.set_font("Arial", "", 16)
     inputValue = textArea.get("1.0", "end-1c")
+    pdf.cell(40, 10, " ", 0, 2, "L")
+    pdf.multi_cell(180, 10, inputValue)
     
-    pdf.multi_cell(40, 10, inputValue)
+    # Salutation/signoff
+    pdf.set_y(245)
+    pdf.cell(40, 5, "Regards,", 0, 2, "L")
+    pdf.cell(40, 5, "The powerful Python Team", 0, 2, "L")
+    
+    # Footer Section
+    pdf.line(10,270,190,270)
+    
+    # Output all of the above to PDF
     pdf.output(uniqueLetterFormat, "f")
-
+    
+    
 def previewLetter(fileName):
     pass
 
 
 # Creating the general Tkinter window and text area
 root = Tk()
-title = root.title("Welcome!")
+title = root.title("Letter/Email Generation Tool")
 textArea = Text(root, height=25, width=50)
 textArea.pack()
 userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
                     command = lambda: retrieveInput())
+
+# Letter or Email choice
+letterOrEmail = StringVar(root)
+letterOrEmail.set("one") # default value
+dropdown1 = OptionMenu(root, letterOrEmail, "Email", "Letter")
+
+
+# What type of letter will be sent out choice
+letterFormat = StringVar(root)
+letterFormat.set("one") # default value
+dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
+                       "Custom")
+
+# Generating the buttons/window
+dropdown1.pack()
+dropdown2.pack()
 userButton.pack()
 root.mainloop()
 
 
-# Creating a PDF file
 
 
 
