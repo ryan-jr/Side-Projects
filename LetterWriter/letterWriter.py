@@ -11,14 +11,21 @@ from tkinter import *
 from fpdf import FPDF
 import uuid
 import datetime
+import os
 
 # Types of letters: Invoice, Welcome to Service, Custom (Complete)
 
 # All letters need to be dated, have a letterhead, have a greeting/salutation. (Complete)
 
-# Create a preview letter button so a user does not have to navigate to the PDF
+# TODO: Create a preview letter button so a user does not have to navigate to the PDF(Complete)
 
-# What if a user wants to create a new letter/email?
+# TODO: Put everything in a class so that it
+#       can be functionalized, actually have
+#       resizing, and not rely on globals, and
+#       have dropdown menus actually work
+
+# TODO: Create options for the letter type and if it will be email of physical
+
 
 
 def retrieveInput():
@@ -30,7 +37,8 @@ def retrieveInput():
     fileFormat = ".pdf"
     uniqueLetterFormat = uniqueLetterID + fileFormat
     
-    
+    global filename
+    filename = uniqueLetterFormat
     # Creating the PDF
     pdf = FPDF()
     pdf.add_page()
@@ -78,9 +86,17 @@ def retrieveInput():
     # Output all of the above to PDF
     pdf.output(uniqueLetterFormat, "f")
     
+    return uniqueLetterFormat
     
-def previewLetter(fileName):
-    pass
+def previewLetter():
+    path  = filename
+    
+    
+    os.startfile(path)
+    
+    
+    
+    
 
 
 # Creating the general Tkinter window and text area
@@ -91,23 +107,30 @@ textArea.pack()
 userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
                     command = lambda: retrieveInput())
 
-# Letter or Email choice
+# Letter or Email choice/dropdown menu
 letterOrEmail = StringVar(root)
 letterOrEmail.set("Make a selection(Letter/Email)") # default value
 dropdown1 = OptionMenu(root, letterOrEmail, "Email", "Letter")
 
 
-# What type of letter will be sent out choice
+# What type of letter will be sent out choice/dropdown menu
 letterFormat = StringVar(root)
 letterFormat.set("Make a selection(Letter format)") # default value
 dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
                        "Custom")
 
+# Preview letter button
+previewButton = Button(root, height = 3, width = 10, text = "Preview letter", 
+                       command = lambda: previewLetter())
+
 # Generating the buttons/window
 dropdown1.pack()
 dropdown2.pack()
 userButton.pack()
+previewButton.pack()
 root.mainloop()
+
+
 
 
 
