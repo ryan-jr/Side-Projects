@@ -67,3 +67,38 @@ Stories:
 
 * The goal in preparing the short stories is to see what people are interested in, what they ask questions about, and what you can do better commnicate your abilities.  So pick stories that you want to highlight the best parts of things.
 
+Questions:
+
+* Make a list of questions you want to ask, and information you hope to get at the event.  See if there are developers from companies you want to work at, and try and ask questions of them.  
+
+* Having a clear list of questions, and list of people that you want to talk to(if one is available) can help you make the most of your time at an event.
+
+At the event:
+
+* Participate in at least 2 distinct converations (See below on "How to Network"), if you meet someone you want to follow up with, see if they have a business card, if not get their contact email/linked in/twitter (some way to keep in contact with them).  
+
+* Make sure you have something to take notes with, small notebook/pen.
+
+After the event:
+
+* What 3 things went well?
+
+* What 3 things you said whent talking about yourself worked well?
+
+* What 3 things did not go well/as well as expected?
+
+* What 3 things did you say that did not work/didn't resonate?  What might you change about them?
+
+* What 3 people/companies/ideas do you want to follow up on?
+
+
+Notes:
+
+* You don't need to be perfect to make connections.
+
+* Ask open ended questions(not yes/no questions)(e.g. How do you feel about..., What has your experience been with...)
+
+* To start conversation you can catch up on some tech news and ask people if they've heard about it/their thoughts on it.
+
+
+
