@@ -100,5 +100,26 @@ Notes:
 
 * To start conversation you can catch up on some tech news and ask people if they've heard about it/their thoughts on it.
 
+## How to Network:
 
+A.  1 on 1 conversations
 
+* Find spaces where people congregate(usually near food)
+
+* Make eye contact and introduce yourself(e.g. "Hey, I don't think I've met you yet, my name is X")
+
+* Provide topics to open the conversation(e.g. "Hi, I'm X, what brings you to (Name of event)? or Hi I'm X, how long have you been (doing thing/event)")
+
+* Try and drive the conversation toward the event that you two are attending (AKA: The thing you have in common)(e.g. "Hi I'm X, what do you think of the talks so far", or "It's my first time here, what about you?")
+
+B. Joining a group conversation
+
+* Approach near an opening, if the group momentarily stops speaking and looks your way, introduce yourself(E.g. "Hi everyone I'm X, how's everyone liking the event so far?")
+
+* If the group doesn't break off conversation/look your way, try and make eye contact with someone who's disengaged from the group, this is a good point/spot to start up a side conversation.
+
+* Once you've identified the topic of group conversation, contribute positive comments in a small way to alert people to your presence.  Things like "Great", "Congratulations", and "Neat" often work well here.
+
+* Interject short questions to the main person speaking in the group if you get a chance (E.g "How did you do that?", "When did that happen?", "How did you come up with that?")
+
+* If there's space for a larger interjection engage with the main speaker by asking for more information ("You know that's interesting, I've always wondered about that, Can you tell me more about that/how you did that?", "How long have you been a part of company/project", "Sounds like you love your job, what's the best part?", "That's an impressive project, how did you get started?")
