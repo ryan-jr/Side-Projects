@@ -19,12 +19,15 @@ import os
 
 # TODO: Create a preview letter button so a user does not have to navigate to the PDF(Complete)
 
-# TODO: Put everything in a class so that it
-#       can be functionalized, actually have
-#       resizing, and not rely on globals, and
-#       have dropdown menus actually work
+# TODO: Make it so that the button's don't dissappear(Complete)
 
-# TODO: Create options for the letter type and if it will be email of physical
+# TODO: Place the buttons in different places(Complete)
+
+# TODO: Create other text inputs for first name/last name, or company name
+
+# TODO: Create options for the letter type and if it will be email of physical(Complete)
+
+# TODO: Make the dropdowns actually do something
 
 
 
@@ -94,16 +97,13 @@ def previewLetter():
     
     os.startfile(path)
     
-    
-    
-    
-
-
 # Creating the general Tkinter window and text area
 root = Tk()
+
+root.minsize(20, 20)
 title = root.title("Letter/Email Generation Tool")
-textArea = Text(root, height=35, width=150)
-textArea.pack()
+textArea = Text(root, height=25, width=150)
+
 userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
                     command = lambda: retrieveInput())
 
@@ -123,18 +123,20 @@ dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
 previewButton = Button(root, height = 3, width = 10, text = "Preview letter", 
                        command = lambda: previewLetter())
 
-# Generating the buttons/window
-dropdown1.pack()
-dropdown2.pack()
-userButton.pack()
-previewButton.pack()
+# Generating the buttons/window and sizing the window so that buttons 
+# don't dissapear 
+root.update()
+dropdown1.pack(side="top", fill="both", expand=True, padx=2, pady=2)
+dropdown2.pack(side="top", fill="both", expand=True, padx=2, pady=2)
+
+textArea.pack()
+userButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
+previewButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
+root.geometry()
+root.update()
+root.geometry() 
+root.minsize(root.winfo_width(), root.winfo_height())
 root.mainloop()
-
-
-
-
-
-
 
 """
 User Stories:
