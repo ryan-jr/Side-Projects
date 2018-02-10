@@ -93,9 +93,11 @@ def retrieveInput():
     
 def previewLetter():
     path  = filename
-    
-    
     os.startfile(path)
+    
+def optionChanged(*args):
+    print ("the user chose the value {}".format(letterOrEmail.get()))
+    print(*args)
     
 # Creating the general Tkinter window and text area
 root = Tk()
@@ -111,6 +113,8 @@ userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
 letterOrEmail = StringVar(root)
 letterOrEmail.set("Make a selection(Letter/Email)") # default value
 dropdown1 = OptionMenu(root, letterOrEmail, "Email", "Letter")
+letterOrEmail.trace("w", optionChanged)
+print(optionChanged)
 
 
 # What type of letter will be sent out choice/dropdown menu
