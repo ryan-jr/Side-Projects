@@ -95,9 +95,11 @@ def previewLetter():
     path  = filename
     os.startfile(path)
     
-def optionChanged(*args):
+def letterOrEmailDropdownMenu(*args):
     print ("the user chose the value {}".format(letterOrEmail.get()))
-    print(*args)
+    
+def letterFormatDropdownMenu(*args):
+    print ("the user chose the value {}".format(letterFormat.get()))
     
 # Creating the general Tkinter window and text area
 root = Tk()
@@ -113,8 +115,8 @@ userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
 letterOrEmail = StringVar(root)
 letterOrEmail.set("Make a selection(Letter/Email)") # default value
 dropdown1 = OptionMenu(root, letterOrEmail, "Email", "Letter")
-letterOrEmail.trace("w", optionChanged)
-print(optionChanged)
+letterOrEmail.trace("w", letterOrEmailDropdownMenu)
+
 
 
 # What type of letter will be sent out choice/dropdown menu
@@ -122,6 +124,8 @@ letterFormat = StringVar(root)
 letterFormat.set("Make a selection(Letter format)") # default value
 dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
                        "Custom")
+letterFormat.trace("w", letterFormatDropdownMenu)
+
 
 # Preview letter button
 previewButton = Button(root, height = 3, width = 10, text = "Preview letter", 
