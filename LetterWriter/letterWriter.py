@@ -100,6 +100,11 @@ def letterOrEmailDropdownMenu(*args):
     
 def letterFormatDropdownMenu(*args):
     print ("the user chose the value {}".format(letterFormat.get()))
+    # TODO: Set the get in a conditional so that if get == x,
+    # Then go into another function so that things can be written to the
+    # TextArea/PDF
+    # TODO: Find out how to write to the TextArea
+    # https://stackoverflow.com/questions/18346206/python-tkinter-how-to-insert-text-at-the-beginning-of-the-text-box
     
 # Creating the general Tkinter window and text area
 root = Tk()
@@ -124,8 +129,8 @@ letterFormat = StringVar(root)
 letterFormat.set("Make a selection(Letter format)") # default value
 dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
                        "Custom")
-letterFormat.trace("w", letterFormatDropdownMenu)
-
+x = letterFormat.trace("w", letterFormatDropdownMenu)
+print("This is x:", x)
 
 # Preview letter button
 previewButton = Button(root, height = 3, width = 10, text = "Preview letter", 
