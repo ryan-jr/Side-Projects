@@ -31,8 +31,12 @@ import os
 
 # TODO: Create the image/billing invoice
 
-def retrieveInput(string):
+def retrieveInput(string=""):
+    print("This is retrieveInput")
+    print(string)
+    print(type(string))
     if string == "Standard":
+        print("FIRST CONDITION MET!!!")
         print("standard")
         # Creating unique identifier for the letter for tracking/accounting
         # And setting up the datetime for the letter header
@@ -92,7 +96,6 @@ def retrieveInput(string):
         
         return uniqueLetterFormat
     else:
-        print("Billing invoice")
         # Creating unique identifier for the letter for tracking/accounting
         # And setting up the datetime for the letter header
         uniqueLetterID = str(uuid.uuid4())
@@ -122,7 +125,7 @@ def retrieveInput(string):
         pdf.set_y(0)
         pdf.cell(40, 10, headers[0], 0, 2, "L")
         pdf.set_font("Arial", "", 16)
-        
+        # pdf.image(name, x = None, y = None, w = 0, h = 0, type = '', link = '')
         
         pdf.cell(40, 10, headers[1], 0, 2, "L")
         pdf.cell(40, 10, headers[2], 0, 2, "L")
@@ -132,7 +135,8 @@ def retrieveInput(string):
         pdf.line(10,70,190,70)
     
         # Main Body Section
-        pdf.image("BillingInvoice.png", w = 50, h = 70, type = "PNG")
+        pdf.image("BillingInvoice.jpg",x = 50, y = 80, w = 100, h = 140, type = "JPG")
+        print("This should print the billing invoice png")
         
         # Salutation/signoff
         pdf.set_y(250)
@@ -148,6 +152,7 @@ def retrieveInput(string):
         return uniqueLetterFormat
     
 def previewLetter():
+    print("Preview letter here")
     path  = filename
     os.startfile(path)
     
@@ -163,9 +168,12 @@ def letterOrEmailDropdownMenu(*args):
 def letterFormatDropdownMenu(*args):
     print ("the user chose the value {}".format(letterFormat.get()))
     if letterFormat.get() == "Billing Invoice":
+        global billingInvoice
+        billingInvoice = "Invoice"
         textArea.insert("1.0", """Billing invoice to be added/filled out upon preview""")
         retrieveInput("Invoice")
     elif letterFormat.get() == "Introduction":
+        billingInvoice = "Standard"
         textArea.insert("1.0", """    On behalf of the entire Powerful Python staff, we'd like to take this opportunity to welcome you as a new customer. We are thrilled to have you with us.\n\n"""
 
 """    At Powerful Python, we pride ourselves on offering our customers responsive, competent and excellent service. Our customers are the most important part of our business, and we work tirelessly to ensure your complete satisfaction, now and for as long as you are a customer.\n\n"""
@@ -173,6 +181,7 @@ def letterFormatDropdownMenu(*args):
 """    Thank you again for entrusting Powerful Python with your most important business needs. We are honored to serve you.\n\n""")
     else:
         textArea.insert("1.0", """As this is a custom letter, fill it out as is appropriate""")
+        billingInvoice = "Standard"
         
 # Creating the general Tkinter window and text area
 root = Tk()
@@ -180,8 +189,6 @@ root = Tk()
 root.minsize(20, 20)
 title = root.title("Letter/Email Generation Tool")
 textArea = Text(root, height=25, width=170)
-userButton = Button(root, height = 3, width = 10, text = "Copy to letter",
-                    command = lambda: retrieveInput("Standard"))
 
 # Letter or Email choice/dropdown menu
 letterOrEmail = StringVar(root)
@@ -189,19 +196,20 @@ letterOrEmail.set("Make a selection(Letter/Email)") # default value
 dropdown1 = OptionMenu(root, letterOrEmail, "Email", "Letter")
 letterOrEmail.trace("w", letterOrEmailDropdownMenu)
 
-
 # What type of letter will be sent out choice/dropdown menu
 letterFormat = StringVar(root)
 letterFormat.set("Make a selection(Letter format)") # default value
 dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
                        "Custom")
 x = letterFormat.trace("w", letterFormatDropdownMenu)
-print("This is x:", x)
+print(x)
 
 # Preview letter button
 previewButton = Button(root, height = 3, width = 10, text = "Preview letter", 
                        command = lambda: previewLetter())
 
+copyButton = Button(root, height = 3, width = 10, text = "Copy to letter",
+                    command = lambda: retrieveInput(billingInvoice))
 # Generating the buttons/window and sizing the window so that buttons 
 # don't dissapear 
 root.update()
@@ -209,7 +217,7 @@ dropdown1.pack(side="top", fill="both", expand=True, padx=2, pady=2)
 dropdown2.pack(side="top", fill="both", expand=True, padx=2, pady=2)
 
 textArea.pack()
-userButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
+copyButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
 previewButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
 root.geometry()
 root.update()
