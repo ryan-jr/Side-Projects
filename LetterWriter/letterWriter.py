@@ -29,15 +29,10 @@ import os
 
 # TODO: Send out stuff via an email client.
 
-# TODO: Create the image/billing invoice
+# TODO: Create the image/billing invoice(complete)
 
 def retrieveInput(string=""):
-    print("This is retrieveInput")
-    print(string)
-    print(type(string))
     if string == "Standard":
-        print("FIRST CONDITION MET!!!")
-        print("standard")
         # Creating unique identifier for the letter for tracking/accounting
         # And setting up the datetime for the letter header
         uniqueLetterID = str(uuid.uuid4())
@@ -136,7 +131,6 @@ def retrieveInput(string=""):
     
         # Main Body Section
         pdf.image("BillingInvoice.jpg",x = 50, y = 80, w = 100, h = 140, type = "JPG")
-        print("This should print the billing invoice png")
         
         # Salutation/signoff
         pdf.set_y(250)
@@ -152,21 +146,26 @@ def retrieveInput(string=""):
         return uniqueLetterFormat
     
 def previewLetter():
-    print("Preview letter here")
     path  = filename
     os.startfile(path)
     
 def letterOrEmailDropdownMenu(*args):
-    print ("the user chose the value {}".format(letterOrEmail.get()))
     if letterOrEmail.get() == "Email":
         # Placeholder for now
-        print("This is an Email")
+        top = Toplevel()
+        top.title("About this app...")
+        msg = Message(top, text="Email")
+        Entry(top,text="First:").pack()
+        Entry(top,text="Second:").pack()
+        msg.pack()
     else:
         # Placeholder for now
-        print("This is a Letter")
+        top = Toplevel()
+        top.title("Letter")
+        msg = Message(top, text="goodbye world")
+        msg.pack()
     
 def letterFormatDropdownMenu(*args):
-    print ("the user chose the value {}".format(letterFormat.get()))
     if letterFormat.get() == "Billing Invoice":
         global billingInvoice
         billingInvoice = "Invoice"
@@ -188,6 +187,7 @@ root = Tk()
 
 root.minsize(20, 20)
 title = root.title("Letter/Email Generation Tool")
+
 textArea = Text(root, height=25, width=170)
 
 # Letter or Email choice/dropdown menu
@@ -202,7 +202,6 @@ letterFormat.set("Make a selection(Letter format)") # default value
 dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
                        "Custom")
 x = letterFormat.trace("w", letterFormatDropdownMenu)
-print(x)
 
 # Preview letter button
 previewButton = Button(root, height = 3, width = 10, text = "Preview letter", 
@@ -216,6 +215,7 @@ root.update()
 dropdown1.pack(side="top", fill="both", expand=True, padx=2, pady=2)
 dropdown2.pack(side="top", fill="both", expand=True, padx=2, pady=2)
 
+
 textArea.pack()
 copyButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
 previewButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
@@ -223,6 +223,10 @@ root.geometry()
 root.update()
 root.geometry() 
 root.minsize(root.winfo_width(), root.winfo_height())
+
+
+
+
 root.mainloop()
 
 """
