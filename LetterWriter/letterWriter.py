@@ -156,14 +156,30 @@ def letterOrEmailDropdownMenu(*args):
         top = Toplevel()
         top.title("About this app...")
         msg = Message(top, text="Email")
-        Entry(top,text="First:").pack()
-        Entry(top,text="Second:").pack()
+        Entry(top,text="Enter Email").pack()
+        Entry(top,text="Confirm Email").pack()
         msg.pack()
     else:
         # Placeholder for now
         top = Toplevel()
         top.title("Letter")
-        msg = Message(top, text="goodbye world")
+        msg = Message(top, text="Address Info")
+        msg.pack()
+        e = Entry(top)
+        f = Entry(top)
+        g = Entry(top)
+        h = Entry(top)
+        i = Entry(top)
+        e.insert(END, "Address Field 1(Street address, P.O. Box, etc...")
+        f.insert(END, "Address Field 2(APT #, etc...")
+        g.insert(END, "City")
+        h.insert(END, "State")
+        i.insert(END, "ZIP")
+        e.pack()
+        f.pack()
+        g.pack()
+        h.pack()
+        i.pack()
         msg.pack()
     
 def letterFormatDropdownMenu(*args):
@@ -205,10 +221,10 @@ dropdown2 = OptionMenu(root, letterFormat, "Introduction", "Billing Invoice",
 x = letterFormat.trace("w", letterFormatDropdownMenu)
 
 # Preview letter button
-previewButton = Button(root, height = 3, width = 10, text = "Preview letter", 
+previewButton = Button(root, height = 3, width = 10, text = "Preview", 
                        command = lambda: previewLetter())
 
-copyButton = Button(root, height = 3, width = 10, text = "Copy to letter",
+copyButton = Button(root, height = 3, width = 10, text = "Generate letter/email",
                     command = lambda: retrieveInput(billingInvoice))
 # Generating the buttons/window and sizing the window so that buttons 
 # don't dissapear 
