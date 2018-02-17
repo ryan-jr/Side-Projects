@@ -6,7 +6,7 @@ Created on Sat Dec  2 14:40:17 2017
 """
 
 import pygame, sys
-from pygame.locals import *
+from pygame import *
 
 # Number of FPS
 FPS = 200
@@ -97,11 +97,7 @@ def main():
         drawPaddle(paddle1)
         drawPaddle(paddle2)
         drawBall(ball)
-       
-# TODO: ball and drawArena() are breaking things...find out why
-        ball = moveBall(ball, ballDirX, ballDirY)
-        pygame.display.update()
-        FPSCLOCK.tick(FPS)
+
         
 if __name__=='__main__':
     main()

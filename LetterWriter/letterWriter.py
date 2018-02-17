@@ -171,17 +171,19 @@ def letterOrEmailDropdownMenu(*args):
         top = Toplevel()
         top.title("Letter")
         msg = Message(top, text="Address Info")
-        msg.pack()
+
         e = Entry(top)
         f = Entry(top)
         g = Entry(top)
         h = Entry(top)
         i = Entry(top)
+        
         e.insert(END, "Address Field 1(Street address, P.O. Box, etc...")
         f.insert(END, "Address Field 2(APT #, etc...")
         g.insert(END, "City")
         h.insert(END, "State")
         i.insert(END, "ZIP")
+        
         e.pack()
         f.pack()
         g.pack()
