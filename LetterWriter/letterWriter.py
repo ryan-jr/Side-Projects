@@ -156,8 +156,15 @@ def letterOrEmailDropdownMenu(*args):
         top = Toplevel()
         top.title("About this app...")
         msg = Message(top, text="Email")
-        Entry(top,text="Enter Email").pack()
-        Entry(top,text="Confirm Email").pack()
+        emailField = Entry(top)
+        confirmEmailField = Entry(top)
+        
+        
+        emailField.insert(END, "Enter Email")
+        confirmEmailField.insert(END, "Confirm Email")
+        
+        emailField.pack()
+        confirmEmailField.pack()
         msg.pack()
     else:
         # Placeholder for now
