@@ -44,7 +44,6 @@ ballYSpeed = 5
 ballDir = [-5, 5]
 ball = {"x":random.randint(0, width), "y":random.randint(0, height), "radius":16}
 
-
 BLACK = (0,0,0)
 WHITE = (255,255,255)
 
@@ -84,31 +83,37 @@ while True:
     elif (ball["y"]) + (ball["radius"]) >= height:
         ballYSpeed = -5
         
+    if paddle1["score"] == 5:
+        winner =font.render("Player 1 Wins!", False, WHITE)
+        screen.blit(winner, ((width / 2) - 80, ((height/2) -50)))
+        ballXSpeed = 0
+        ballYSpeed = 0
+    elif paddle2["score"] == 5:
+        winner =font.render("Player 2 Wins!", False, WHITE)
+        screen.blit(winner, ((width / 2) - 80, ((height/2) - 50)))
+        ballXSpeed = 0
+        ballYSpeed = 0
+        
+        
     # Paddle detection
     if ball["x"] <= (paddle1["x"] + paddleWidth) and (ball["y"] >= paddle1["y"] and ball["y"] <= (paddle1["y"] + paddleHeight)):
-        print("Collision")
         ballXSpeed = 5
     if ball["x"] >= paddle2["x"] and ball["y"] >= paddle2["y"] and ball["y"] <= (paddle2["y"] + paddleHeight):
-        print("Collision")
         ballXSpeed = -5
         
         
     ball["x"] += ballXSpeed
-    ball["y"] += ballXSpeed
+    ball["y"] += ballYSpeed
     
     for event in pygame.event.get():
         if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
             pygame.quit()
             sys.exit(0)
         elif event.type == KEYDOWN:
-            print(event.key)
             keys[event.key] = True
         elif event.type == KEYUP:
-            print(event.key)
-            keys[event.key] = False
-            
+            keys[event.key] = False        
         
-            
     # Player controls
     # Player 1
     if keys[K_w] and paddle1["y"] > 0:
