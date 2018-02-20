@@ -5,18 +5,14 @@ Created on Sat Feb 17 02:16:14 2018
 @author: rjr
 """
 
-
-# https://www.youtube.com/watch?v=gykTkxzku3Y
-
 import pygame, sys
 from pygame.locals import *
 import random
 
-
-
 pygame.init()
 pygame.font.init()
 
+# Initialize necessary stats/variables/settings
 width = 640
 height = width / 16 * 9 # 360
 FPS = 30
@@ -24,7 +20,8 @@ timer = pygame.time.Clock()
 screen = pygame.display.set_mode((width, int(height)))
 keys = [None] * 275
 font = pygame.font.Font("origa___.ttf", 15)
-
+BLACK = (0,0,0)
+WHITE = (255,255,255)
 
 # Player paddles
 paddleSpeed = 5
@@ -35,20 +32,13 @@ paddleHeight = 100
 paddle1 = {"x":paddleMargin, "y":50, "score":0}
 paddle2 = {"x":(width - (paddleWidth + paddleMargin)), "y":50, "score":0}
 
-
-
-
 # ball
 ballXSpeed = 5
 ballYSpeed = 5
 ballDir = [-5, 5]
 ball = {"x":random.randint(0, width), "y":random.randint(0, height), "radius":16}
 
-BLACK = (0,0,0)
-WHITE = (255,255,255)
-
-
-
+# Main game loop
 while True:
     screen.fill(BLACK)
     timer.tick(FPS)
@@ -101,7 +91,6 @@ while True:
     if ball["x"] >= paddle2["x"] and ball["y"] >= paddle2["y"] and ball["y"] <= (paddle2["y"] + paddleHeight):
         ballXSpeed = -5
         
-        
     ball["x"] += ballXSpeed
     ball["y"] += ballYSpeed
     
@@ -109,7 +98,7 @@ while True:
         if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
             pygame.quit()
             sys.exit(0)
-        elif event.type == KEYDOWN:
+        elif event.type ==  KEYDOWN:   
             keys[event.key] = True
         elif event.type == KEYUP:
             keys[event.key] = False        
@@ -128,8 +117,5 @@ while True:
         paddle2["y"] += paddleSpeed
         
     # End player controls
-        
-                
-    
     pygame.display.update()
     
