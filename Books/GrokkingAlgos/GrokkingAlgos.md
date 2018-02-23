@@ -22,3 +22,43 @@
 
 * With the knapsack problem you either take the item or you don't, you can't take half or a quarter of an item.  
 
+* You can make the columns more granular to include half/quarter pounds etc... if you so choose
+
+* Dynamic programming only works when each subproblem is unique/discrete(AKA: Dynamic programming only works when it does not depend on other subproblems)
+
+* Dynamic programming is useful when you're trying to optimize something given a constraint.  (e.g. maximize the value of the goods stolen, constrained by the size of the knapsack)
+
+* Some tips to come up with a dynamic programming solution:
+
+```
+- Every dynamic programming solution involves a grid
+
+- The values in the cells are usually what you're trying to optimize(e.g. the value of the goods in the knapsack problem)
+
+- Each cell is a subproblem, so think about how you can divide you problem into subproblems(this will help you figure out what the X/Y axis are supposed to be)
+
+* You can also use dynamic programming to figure out the longest common substring/subsequence
+
+
+* Dynamic programming is used for things like git diff and word wrap in text programs.
+
+* Recap:
+
+```
+
+- Dynamic programming is useful when you're trying to optimize something given a cosntraint
+
+- You can use dynamic programming when the problem can be broken into discrete subproblems
+
+- Every dynamic programming solution involves a grid
+
+- The values in the cells are usually what you're trying to optimize
+
+- Each cell is a subproblem, so think about how you can divide you problem into subproblems
+
+- There is no single formula for calculating a dynamic programming solution
+
+```
+
+
+
