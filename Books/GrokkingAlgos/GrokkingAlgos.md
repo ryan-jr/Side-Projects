@@ -62,3 +62,11 @@
 
 
 
+### Grokking Algos Ch 10: K-nearest neighbors
+
+* K-Nearest Neighbors(KNN) is useful for things like recomendation engines.
+
+* KNN starts out by plotting every user on a graph, plotted by similarity so that those with similar tastes are plotted closer together.  
+
+* Feature extraction is a unique set of characteristics of a user or node that is being graphed(e.g. how much they liked X movie, or how highly they rate X type of music)
+
