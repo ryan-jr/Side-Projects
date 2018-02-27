@@ -70,3 +70,6 @@
 
 * Feature extraction is a unique set of characteristics of a user or node that is being graphed(e.g. how much they liked X movie, or how highly they rate X type of music)
 
+* If we're calculating these on a graph we can use the distance formula if we have 2 x points and 2 y points, but what happens if we have a lot more x/y points(e.g. ratings)?
+
+* For more x/y points the distance formula stays the same, but instead of distance it tells us how similar the set of numbers we plugged into the formula are.   
