@@ -73,3 +73,61 @@
 * If we're calculating these on a graph we can use the distance formula if we have 2 x points and 2 y points, but what happens if we have a lot more x/y points(e.g. ratings)?
 
 * For more x/y points the distance formula stays the same, but instead of distance it tells us how similar the set of numbers we plugged into the formula are.   
+
+* The average of a set of multiple ratings is a regression
+
+* With KNN, there are 2 basic things you'll do:
+
+```
+
+Classification: Categorization into a group
+
+Regression: Predicting a response
+
+
+```
+
+* With a set of features (e.g. ratings), that we can compare to a past set of features and their outcomes we can predict(with some accuracy) what someone may like, etc...(Think econometrics).
+
+* Another common formula used with KNN is Cosine Similarity(Outside the scope of Grokking Algos)
+
+* Part of the magic of KNN is picking good features, e.g. those that correlate directly to the movies you're trying to recommend.  
+
+* Good features don't have bias/minimized bias, and correlate to to the movies you're trying to recommend.
+
+* KNN is an example that can lead to machine learning, the first step of any machine learning algo is training.  E.g taking a set of data and using an algo to determine how correct/incorrect it is on a given set of data.  
+
+* Recap:
+
+```
+
+* KNN is used for classication and regression and is used for looking at the KNN.
+
+* Classication is categorization into a group, while regression is used for prediction(like a number)
+
+* Feature extraction means converting an item into a list of numbers/features/characteristics into a list of numbers that can be compared
+
+```
+
+### Grokking Algos Ch 11: Where to go Next
+
+* Trees
+
+* Inverted Indexes
+
+* Fourier transform
+
+* Parallel algos
+
+* Map reduce
+
+* Bloom filters and HyperLogLog
+
+* The SHA Algos
+
+* Locality sensitive Hashing
+
+* Diffie Hellman Key Exchange
+
+* Linear programming
+
