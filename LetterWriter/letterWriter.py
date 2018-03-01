@@ -150,22 +150,55 @@ def previewLetter():
     path  = filename
     os.startfile(path)
     
+"""
+v = StringVar()
+
+e = Entry(master, textvariable=v)
+e.pack()
+
+v.set("a default value")
+s = v.get()
+
+lambda x: True if x % 2 == 0 else False
+"""
+    
+
+
+    
+# Create a button for the forms that are generated
 def letterOrEmailDropdownMenu(*args):
+    
     if letterOrEmail.get() == "Email":
-        # Placeholder for now
         top = Toplevel()
-        top.title("About this app...")
+        top.title("Enter Email Address")
         msg = Message(top, text="Email")
+        
         emailField = Entry(top)
         confirmEmailField = Entry(top)
-        
+    
         
         emailField.insert(END, "Enter Email")
         confirmEmailField.insert(END, "Confirm Email")
         
+        # On clicking the button get the input from the text entry fields
+        # If both are the same display success
+        # Else display try again
+        
+        
         emailField.pack()
         confirmEmailField.pack()
+        
+        confirmButton = Button(top, text = "Confirm input", command=lambda:True if emailField.get() == confirmEmailField.get() else False)
+        confirmButton.pack()
+        
+        
         msg.pack()
+        if confirmButton == True:
+            print("Yay!")
+        else:
+            print("Nay!")
+            print(confirmButton)
+        
     else:
         # Placeholder for now
         top = Toplevel()
@@ -189,7 +222,10 @@ def letterOrEmailDropdownMenu(*args):
         g.pack()
         h.pack()
         i.pack()
+        confirmButton.pack()
         msg.pack()
+        confirmButton = Button(top, text = "Confirm input")
+        
     
 def letterFormatDropdownMenu(*args):
     if letterFormat.get() == "Billing Invoice":
@@ -220,7 +256,7 @@ textArea = Text(root, height=25, width=170)
 letterOrEmail = StringVar(root)
 letterOrEmail.set("Make a selection(Letter/Email)") # default value
 dropdown1 = OptionMenu(root, letterOrEmail, "Email", "Letter")
-letterOrEmail.trace("w", letterOrEmailDropdownMenu)
+z = letterOrEmail.trace("w", letterOrEmailDropdownMenu)
 
 # What type of letter will be sent out choice/dropdown menu
 letterFormat = StringVar(root)
@@ -233,8 +269,13 @@ x = letterFormat.trace("w", letterFormatDropdownMenu)
 previewButton = Button(root, height = 3, width = 10, text = "Preview", 
                        command = lambda: previewLetter())
 
+# Creating the letter/email
 copyButton = Button(root, height = 3, width = 10, text = "Generate letter/email",
                     command = lambda: retrieveInput(billingInvoice))
+
+sendButton = Button(root, height = 3, width = 10, text = "Send letter/email")
+print(z)
+
 # Generating the buttons/window and sizing the window so that buttons 
 # don't dissapear 
 root.update()
@@ -243,8 +284,10 @@ dropdown2.pack(side="top", fill="both", expand=True, padx=2, pady=2)
 
 
 textArea.pack()
+sendButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
 copyButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
 previewButton.pack(side="bottom", fill="both", expand=True, padx=2, pady=2)
+
 root.geometry()
 root.update()
 root.geometry() 
