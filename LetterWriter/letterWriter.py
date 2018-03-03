@@ -188,7 +188,7 @@ def letterOrEmailDropdownMenu(*args):
         emailField.pack()
         confirmEmailField.pack()
         
-        confirmButton = Button(top, text = "Confirm input", command=lambda:True if emailField.get() == confirmEmailField.get() else False)
+        confirmButton = Button( top, text = "Confirm input", command=lambda:True if emailField.get() == confirmEmailField.get() else False)
         confirmButton.pack()
         
         
