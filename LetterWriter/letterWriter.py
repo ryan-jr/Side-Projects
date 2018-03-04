@@ -9,10 +9,12 @@ Created on Sat Feb  3 11:42:36 2018
 # Creating a PDF writer
 # FPDF Docs: https://pyfpdf.readthedocs.io/en/latest/Tutorial/index.html
 from tkinter import *
+from tkinter import StringVar
 from fpdf import FPDF
 import uuid
 import datetime
 import os
+
 
 # Types of letters: Invoice, Welcome to Service, Custom(Complete)
 
@@ -150,54 +152,37 @@ def previewLetter():
     path  = filename
     os.startfile(path)
     
-"""
-v = StringVar()
-
-e = Entry(master, textvariable=v)
-e.pack()
-
-v.set("a default value")
-s = v.get()
-
-lambda x: True if x % 2 == 0 else False
-"""
-    
-
-
-    
 # Create a button for the forms that are generated
 def letterOrEmailDropdownMenu(*args):
     
     if letterOrEmail.get() == "Email":
+
         top = Toplevel()
+        
         top.title("Enter Email Address")
+        
         msg = Message(top, text="Email")
         
         emailField = Entry(top)
-        confirmEmailField = Entry(top)
-    
         
-        emailField.insert(END, "Enter Email")
-        confirmEmailField.insert(END, "Confirm Email")
+               
+        #v.set("Default value")
         
         # On clicking the button get the input from the text entry fields
         # If both are the same display success
         # Else display try again
-        
-        
+                
         emailField.pack()
-        confirmEmailField.pack()
         
-        confirmButton = Button( top, text = "Confirm input", command=lambda:True if emailField.get() == confirmEmailField.get() else False)
+        
+         
+        confirmButton = Button(top, text = "Confirm input", command = lambda: getEmail(emailField))
+        
         confirmButton.pack()
-        
+        print(emailField.get())
         
         msg.pack()
-        if confirmButton == True:
-            print("Yay!")
-        else:
-            print("Nay!")
-            print(confirmButton)
+        
         
     else:
         # Placeholder for now
@@ -226,6 +211,12 @@ def letterOrEmailDropdownMenu(*args):
         msg.pack()
         confirmButton = Button(top, text = "Confirm input")
         
+def getEmail(email):
+    global emailData
+    emailData = email.get()
+    
+    print(emailData)
+
     
 def letterFormatDropdownMenu(*args):
     if letterFormat.get() == "Billing Invoice":
@@ -246,7 +237,8 @@ def letterFormatDropdownMenu(*args):
         
 # Creating the general Tkinter window and text area
 root = Tk()
-
+global v 
+v = StringVar()
 root.minsize(20, 20)
 title = root.title("Letter/Email Generation Tool")
 
@@ -274,7 +266,6 @@ copyButton = Button(root, height = 3, width = 10, text = "Generate letter/email"
                     command = lambda: retrieveInput(billingInvoice))
 
 sendButton = Button(root, height = 3, width = 10, text = "Send letter/email")
-print(z)
 
 # Generating the buttons/window and sizing the window so that buttons 
 # don't dissapear 
