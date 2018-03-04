@@ -14,7 +14,20 @@ from fpdf import FPDF
 import uuid
 import datetime
 import os
+import smtplib
 
+"""
+from email.MIMEMultipart import MIMEMultipart
+from email.MIMEText import MIMEText
+
+### DELETE THE FOLLOWING LINES
+fromaddy = ""
+toaddy = ""
+msg = MIMEMultipart()
+msg["From"] = fromaddy
+msg["To"] = toaddy
+msg["Subject"] = "An email from Powerful Python"
+"""
 
 # Types of letters: Invoice, Welcome to Service, Custom(Complete)
 
@@ -214,7 +227,6 @@ def letterOrEmailDropdownMenu(*args):
 def getEmail(email):
     global emailData
     emailData = email.get()
-    
     print(emailData)
 
     
