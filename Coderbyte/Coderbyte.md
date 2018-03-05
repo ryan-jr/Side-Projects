@@ -47,7 +47,20 @@ def LongestWord(sen):
 # instances in which numbers are part of the string, and to cover instances
 # in which a prior word is longer than/of equal length to the word currently
 # being evaluated
+# Examples of formerly failed test cases are included below
 
+"""
+print(LongestWord("hello world"))
+print(LongestWord("this is some sort of sentence" ))
+print(LongestWord("longest word!!" ))
+print(LongestWord("a beautiful sentence^&!" ))
+print(LongestWord("oxford press" ))
+print(LongestWord("123456789 98765432"  ))
+print(LongestWord("letter after letter!!" ))
+print(LongestWord( "a b c dee" ))
+print(LongestWord("a confusing /:sentence:/[ this is not!!!!!!!~"))
+
+"""
 
 def LongestWord(sen): 
     
@@ -80,7 +93,7 @@ def LongestWord(sen):
                     longestWord += character
 
         # Catch all
-        
+
         else:
             pass
           
