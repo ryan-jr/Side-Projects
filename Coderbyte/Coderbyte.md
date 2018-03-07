@@ -4,11 +4,11 @@
 
 ### Question 1: Longest Word
 
-```
+
 
 Have the function LongestWord(sen) take the sen parameter being passed and return the largest word in the string. If there are two or more words that are the same length, return the first word from the string with that length. Ignore punctuation and assume sen will not be empty. 
 
-```
+
 
 
 
@@ -104,7 +104,7 @@ def LongestWord(sen):
 
 * Solution Explanation/thought process:
 
-```
+
 
 When I first saw the problem I was thinking of diffrent ways to approach it between lists or hasmaps/dictionaries, but a list through Python's .split seemed to be the most straightforward.  After going with that I knew I had to loop through each word and compare it in some way.  
 
@@ -114,15 +114,13 @@ Comparing just the alpha also turned out to be an issue becuase there were test 
 
 The runtime should be roughly O(n^2) because we touch every item/word in the wordList, and then on top of that touch every character in each item/word.  
 
-```
+
 
 
 ### Question 2: Factorial
 
 
 * Question:
-
-```
 
 
 Using the Python language, have the function FirstFactorial(num) take the num parameter being passed and return the factorial of it (e.g. if num = 4, return (4 * 3 * 2 * 1)). For the test cases, the range will be between 1 and 18 and the input will always be an integer.
@@ -138,7 +136,7 @@ Input:8
 
 Output:40320
 
-```
+
 
 ```Python3
 
@@ -171,20 +169,20 @@ print(firstFactorial(3))
 
 * Solution Explanation/thought process:
 
-```
+
 
 So this one was pretty straightforward since I have a handle on recursion, but the thing that threw me at first was returning FirstFactorial(num * num - 1), when I needed to only get the factorial of the second term.  For me, in this instance recursion feels naturaly, but it's also possible to use the iterative version of this
 
 
-```
+
 
 
 ### Question 3: Reverse a string
 
-```
+
 Have the function FirstReverse(str) take the str parameter being passed and return the string in reversed order. For example: if the input string is "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH. 
 
-```
+
 
 
 * Answer 3:
@@ -207,16 +205,16 @@ print FirstReverse(raw_input())
 
 * Solution Explantion/Thought process:
 
-```
+
 
 This one is fairly straightforward with Python's builtin reversed function.  I got stuck for a minute when I just used str1 = reversed(str), which returned an object(a reverse iterator) which has to have a list applied to it.  From there we apply a join to the list and assign that to the variable we want to return.  
 
-```
+
 
 
 ### Question 4: Letter Changes
 
-```
+
 Have the function LetterChanges(str) take the str parameter being passed and modify it using the following algorithm. Replace every letter in the string with the letter following it in the alphabet (ie. c becomes d, z becomes a). Then capitalize every vowel in this new string (a, e, i, o, u) and finally return this modified string. 
 
 
@@ -226,7 +224,7 @@ Input: "coderbyte"
 Output: "dpEfsczUf"
 
 
-```
+
 
 
 * Answer 4:
@@ -277,7 +275,6 @@ def LetterChanges(str):
 
 * Solution Explantion/Thought process:
 
-```
 
 So this one was more of a challenge for me from listing out all of the alphabet/vowels, and then breaking down the problem into solveable steps. 
 
@@ -287,12 +284,12 @@ From there I loop through return data to find any vowels and upper case them as 
 
 Because the for loops are separate, rather than nested the runtime is O(n), not 2 * O(n) since with big O we drop the constant(s).
 
-```
+
 
 
 ### Question 5: Simple Adding
 
-```
+
 Have the function SimpleAdding(num) add up all the numbers from 1 to num. For example: if the input is 4 then your program should return 10 because 1 + 2 + 3 + 4 = 10. For the test cases, the parameter num will be any number from 1 to 1000. 
 
 Use the Parameter Testing feature in the box below to test your code with different arguments.
@@ -303,7 +300,7 @@ Input: 4
 Output: 10
 
 
-```
+
 
 * Answer 5:
 
@@ -329,21 +326,16 @@ def SimpleAdding(num):
 
 * Solution Explantion/Thought process:
 
-```
 
 For this one, reduce would be a perfect choice, but it's not part of Python 3 so I opted to append everything from 0 up to and EXCLUDING the paramater provided into a list, then appending the paramater itself.  After that I sequentially added the numbers together into the total to be returned.  
 
 Like the one before, this uses 2 for separate for loops and as such is O(n)
 
-```
+
 
 
 ### Question 6: Letter Capitalize
 
-
-* Answer
-
-```
 
 Have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space. 
 
@@ -351,9 +343,6 @@ Test Case:
 Input: "argument goes here"
 Output: "Argument Goes Here"
 
-
-
-```
 
 
 ```Python3
@@ -372,10 +361,9 @@ def LetterCapitalize(str):
 
 * Explanation
 
-```
+
 
 This one splits every word passed in via str into the wordArr, we then loop through each word in wordArr, taking care to append each word into newArr, but not before replacing the first character of each word with its uppercase equivalent.  At the end we have to join each word together with a space so that we return a complete sentence. 
 
 This one runs in constant time as well.  
 
-```
