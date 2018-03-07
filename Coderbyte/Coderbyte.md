@@ -338,3 +338,44 @@ Like the one before, this uses 2 for separate for loops and as such is O(n)
 ```
 
 
+### Question 6: Letter Capitalize
+
+
+* Answer
+
+```
+
+Have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space. 
+
+Test Case:
+Input: "argument goes here"
+Output: "Argument Goes Here"
+
+
+
+```
+
+
+```Python3
+
+def LetterCapitalize(str):
+  wordArr = str.split(" ")
+  newArr = []
+  for word in wordArr:
+    newArr.append(word.replace(word[0], word[0].upper()))
+    
+    
+  return " ".join(newArr)
+
+
+```
+
+* Explanation
+
+```
+
+This one splits every word passed in via str into the wordArr, we then loop through each word in wordArr, taking care to append each word into newArr, but not before replacing the first character of each word with its uppercase equivalent.  At the end we have to join each word together with a space so that we return a complete sentence. 
+
+This one runs in constant time as well.  
+
+```
