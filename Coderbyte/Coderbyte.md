@@ -115,7 +115,7 @@ Comparing just the alpha also turned out to be an issue becuase there were test 
 The runtime should be roughly O(n^2) because we touch every item/word in the wordList, and then on top of that touch every character in each item/word.  
 
 
-
+***
 
 ### Question 2: Factorial
 
@@ -175,7 +175,7 @@ So this one was pretty straightforward since I have a handle on recursion, but t
 
 
 
-
+***
 
 ### Question 3: Reverse a string
 
@@ -210,7 +210,7 @@ print FirstReverse(raw_input())
 This one is fairly straightforward with Python's builtin reversed function.  I got stuck for a minute when I just used str1 = reversed(str), which returned an object(a reverse iterator) which has to have a list applied to it.  From there we apply a join to the list and assign that to the variable we want to return.  
 
 
-
+***
 
 ### Question 4: Letter Changes
 
@@ -285,7 +285,7 @@ From there I loop through return data to find any vowels and upper case them as 
 Because the for loops are separate, rather than nested the runtime is O(n), not 2 * O(n) since with big O we drop the constant(s).
 
 
-
+***
 
 ### Question 5: Simple Adding
 
@@ -332,7 +332,7 @@ For this one, reduce would be a perfect choice, but it's not part of Python 3 so
 Like the one before, this uses 2 for separate for loops and as such is O(n)
 
 
-
+***
 
 ### Question 6: Letter Capitalize
 
@@ -366,4 +366,58 @@ def LetterCapitalize(str):
 This one splits every word passed in via str into the wordArr, we then loop through each word in wordArr, taking care to append each word into newArr, but not before replacing the first character of each word with its uppercase equivalent.  At the end we have to join each word together with a space so that we return a complete sentence. 
 
 This one runs in constant time as well.  
+
+***
+
+### Question 7: Letter Capitalize
+
+
+Have the function SimpleSymbols(str) take the str parameter being passed and determine if it is an acceptable sequence by either returning the string true or false. The str parameter will be composed of + and = symbols with several letters between them (ie. ++d+===+c++==a) and for the string to be true each letter must be surrounded by a + symbol. So the string to the left would be false. The string will not be empty and will have at least one letter. 
+
+Test Cases:
+
+1. For the input "+d+" your output was incorrect. The correct answer is true.
+2. For the input "+d===+a+" your output was incorrect. The correct answer is false.
+3. For the input "aaaa" your output was incorrect. The correct answer is false.
+4. For the input "+z+z+z+" your output was incorrect. The correct answer is true.
+5. For the input "+a=" your output was incorrect. The correct answer is false.
+6. For the input "2+a+a+" your output was incorrect. The correct answer is true.
+7. For the input "+a++" your output was incorrect. The correct answer is true.
+8. For the input "+z+z+==+a+" your output was incorrect. The correct answer is true.
+9. For the input "==a+" your output was incorrect. The correct answer is false.
+10. For the input "b" your output was incorrect. The correct answer is false.
+
+
+```Python 3
+
+def SimpleSymbols(str): 
+    
+    balanceDict = {}
+    charList = []
+    for i in str:
+        charList.append(i)
+        
+    for char in charList:
+      if char in balanceDict:
+        balanceDict[char] += 1 
+      else:
+        balanceDict[char] = 1
+       
+    if "+" not in balanceDict:
+      return "false"
+    elif balanceDict["+"] != 0 and balanceDict["+"] % 2 == 0:
+      return "true"
+    else:
+      return "false"
+
+```
+
+
+* Solution/Explanation:
+
+Ok, this one was certainly a challenge and took me longer than it should have (about an hour or so), because I should have realized sooner that balance was a key part of the algorithm/analysis.  This one is similar to parens or bracket balance challenges, but with a twist.  
+
+I started out trying to solve this by putting everything in a list and analyzing the position of the "+"'s within that list/if they surrounded an alphabetic character, but that method failed, so I opted for this which was sucessful in MOST cases, absent some edge cases(usually with an odd amount of + signs)
+
+This will run in O(n) time with the two separate loops as well as the O(1) append/lookup operations.  
 
