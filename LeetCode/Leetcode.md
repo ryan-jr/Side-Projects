@@ -39,9 +39,7 @@ return [0, 1]
 
 * Solution Explanation/thought process:
 
-
-
-So this one was pretty straightforward since I have a handle on recursion, but the thing that threw me at first was returning FirstFactorial(num * num - 1), when I needed to only get the factorial of the second term.  For me, in this instance recursion feels naturaly, but it's also possible to use the iterative version of this
+This one was a challenge in a good way and I really liked it.  Originally I wanted to use nested for loops with a second array of [1:], but after that failed consistently, I admittedly looked up the answer after struggling with this for 45 minutes.  The answer makes sense, but was slightly non-intuitive for me as it requires using the target(AKA: solution/answer) as part of the answer in the code.  But overall this should have a runtime of O(n) and a space complexity of O(n) due to using the loop and having to store the list, but luckily dictionaries have an O(1) lookup time.  
 
 
 
