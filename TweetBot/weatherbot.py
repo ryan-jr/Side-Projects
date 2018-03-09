@@ -11,7 +11,7 @@ apiUrlBase = "http://api.openweathermap.org/data/2.5/weather?id="
 def getInfo(apiUrlBase, weatherID="2172797"):
     apiUrl = apiUrlBase + weatherID + "&appid=" + config.weatherApiKey + "&units=imperial"
     response = requests.get(apiUrl)
-
+    print(response.headers)
     if response.status_code == 200:
         return json.loads(response.content.decode("utf-8"))
     else:
