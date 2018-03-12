@@ -2,6 +2,9 @@
 
 * https://doc.lagout.org/programmation/python/Data%20Structures%20and%20Algorithms%20in%20Python%20[Goodrich,%20Tamassia%20&%20Goldwasser%202013-03-18].pdf
 
+
+## Ch 1: Stacks and Queues
+
 ### Stack
 
 * Stacks are collections of objects that are last in first out(LIFO)
@@ -252,4 +255,72 @@ len(S)
 * Decks are available from python's collections class, and will guarantee O(1) operations at eitherend, but O(n) time worst case operations.  
 
 
+
+
+**** Add More stuff here from page 248 ***
+
+
+## Ch 7: Linked Lists
+
+* Python lists are good but have some disadvantages including the length of a dynamic array might be longer than the number of elements stored, Amoritized bounds for operations may be poor for real time systems, insertions/deletions at interior positions of an array are expensive.  
+
+* Linked lists are an alterantive to an array based sequence such as python's lists.  
+
+* Array based sequences and linked lists keep elements in a certain order, but using a different style.  
+
+* Array based implementations have more centralized representations with one large chunk of memory accomodating refrences to many elements.  
+
+* Linked lists use nodes for a more distributed representation being allocated for each element, with each node maintaining a refrence to its element and one or more rferences to neighboring nodes to represent the linear order of the sequence of the whole.  
+
+* While linked list elements cannot be efficeintly access by a numeric index(i.e. we cannot tell if a node is the first, fifth, or twentieth just by examining it)
+
+### Singly linked lists
+
+* Singly linked lists in their simplest form are a collection of nodes that overall form a linear sequence, with each node storing a reference to an object that is an element of the sequence(itself), and a refrence to the next node of the list.  
+
+* Singly linked list instances maintain a "head" identifier to identify the first node of the list and a "tail" identifier to identify the last node of the list.  Such lists will often also use a Null or None to denote the end of the list.  
+
+* Starting at the head and following each nodes next reference, we can reach the tail of the list, and we identify the tail node as the node that has None/null as its next reference.  
+
+* The above process is known as traversing the list, walking the list, link hopping, or pointer hopping.  
+
+* A linked list is a collaboration of many objects, with each node represented as a unique object with each instance storing a refrence to its element and a reference to the next node(or None).
+
+* At a minimum the list must keep a reference to the head of the list, otherwise there would be no way to locate the head node, or any other node.  
+
+* Most linked lists also have a size of the list ot avoid the need to traverse the list in full to count the nodes, most linked lists will also include a refrence to the tail of the list in order to avoid a full traversal to find the end of the list.  
+
+##### Inserting an item at the head of a linked list
+
+* An important property of a singly linked list is that it does not ahve a prdetermined fixed size, but rather uses a size proportional to the current number of elements, meaning we can easily insert an element at the head of the list.  
+
+* To insert an item at the head of the list we first create a new node, set the element of that node, set the next link/identifier to refer to the current head, and then set the lists head to point to the new node.  
+
+```Python3
+def addFirst(L, e)
+"""
+Adding a new node as the head node
+L: list(AKA: linked list)
+e: element
+"""
+
+# Create new node instance storing a ref to element e
+newest = Node(e)
+
+# Set the new nodes next ref to the old head node
+newest.next = L.head
+
+# Set variable head to ref the new node 
+L.head = newest
+
+# Increment the node counter
+L.size  = L.size + 1
+
+
+```
+
+
+##### Inserting an item at the tail of a linked list
+
+* 
 
