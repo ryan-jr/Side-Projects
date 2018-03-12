@@ -322,5 +322,125 @@ L.size  = L.size + 1
 
 ##### Inserting an item at the tail of a linked list
 
-* 
+* Much like a head insertion we create a new node, assign its next ref to None, set the refrence of the tail to point to the new node, and update the tail refrence itself to the new node.
 
+```Python3
+
+def addLast(L, e)
+	# Create new node instance storing ref to element e
+	newest = Node(e)
+
+	# Set new node's next ref to the None object
+	newest.next = None 
+
+	# Make old tail node point to newest node
+	L.tail.next = newest
+
+	# Set var tail to ref the new node
+	L.tail = newest
+
+	# Increment the node count 
+	L.size = L.size + 1
+
+```
+
+
+##### Removing an element from a linked list
+
+* Removing an element from the head of a singly linked list is pretty much the reverse operation of inserting a new element at the head
+
+```Python3
+def removeFirst(L):
+	if L.head is None:
+		raiseError("The list is empty")
+
+	# Make head point to next node(or None)
+	L.head - L.head.next
+
+	# Decrement the node count
+	L.size = L.size - 1
+
+
+```
+
+* Unfortunatley we can't easily delete the last node of a singly linked list, because we have to be able to access the node before the last node in order to remove the last node, and the only way to do that is start from the head and traverse the list, which could be time/resource intensive.  
+
+##### Implementing a stack w/ a singly linked list
+
+* To implement a stack we efficently insert/delete items in constant time only at the head, and orient the top of the stack at the head of the list.  
+
+* To represent indiivual nodes of the list, we use a _Node class
+
+```Python3
+class _Node:
+	__slots___ = "_element", "_next"
+
+	# Initialize node fields, refrence a users element, and ref the next node
+	def __init__(self, element, next):
+		self._element = element
+		self._next = next 
+
+
+```
+
+* In the above we define __slots__ to streamline memory usage since there may be many node instances in a single list.  
+
+```Python3
+
+class LinkedStack:
+	"""LIFO Stack implementation using a singly linked list"""
+
+
+	# Node class
+	class _Node:
+	"""Nonpublic class for storing a singly linked node"""
+	__slots___ = "_element", "_next"
+
+	# Initialize node fields, refrence a users element, and ref the next node
+	def __init__(self, element, next):
+		self._element = element
+		self._next = next 
+
+	# Stack methods below
+	def __init__(self):
+		"""Create an empty stack"""
+
+		# Ref the head node
+		self._head = None
+
+		# Number of stack elements
+		self._size = 0
+
+	def __len__(self):
+		"""Return the number of elements in the stack"""
+		return self._size
+
+	def isEmpty(self):
+		"""Return true if the stack is empty"""
+		return self._size == 0 
+
+	def push(self, e):
+		"""Add element e to the top of the stack"""
+
+		# Create and link a new node 
+		self._head = self._Node(e, self._head)
+		self._size += 1
+
+	def top(self):
+		"""Return(but don't remove) the element at the top of the stack
+		Raise Empty exception if stack is empty
+		"""
+
+		if self.isEmpty():
+			raise Empty("Stack is empty")
+		return self._head._element
+
+	def pop(self):
+
+
+
+
+```
+
+
+# STOPPED ON PAGE 262
