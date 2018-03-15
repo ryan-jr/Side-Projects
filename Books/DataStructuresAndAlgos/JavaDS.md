@@ -121,20 +121,19 @@ You must use a linked list to keep the list of items for this program.
 The database should have the following fields:
 First Name
 Last Name
-Course Code
+Course Code 
 Grade
 
 The program should have the following menu:
 Press 1 to insert a new record
 Press 2 to delete a record
 Press 3 to search the database(by last name)
-Press 4 to pritn a range in the database
+Press 4 to print a range in the database
 Press 5 to to find the class average for the course
 Press 9 to quit
 
 
-
-The insert function should work regardless of position.  Position 0 refers to the posion before the first record.  Any positon greater than the length of the database should be put as the last postion.  
+The insert function should work regardless of position.  Position 0 refers to the position before the first record.  Any positon greater than the length of the database should be put as the last postion.  
 
 Similarly the delete postion should work for any position.  Make sure it works even when deleting the first, last, or middle records.
 
