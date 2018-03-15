@@ -72,4 +72,37 @@ https://www.youtube.com/watch?v=rXET0bup-vg&list=PLC617CBC8385356FF&index=2
 * Polymorphism calls for dyanmic binding which means that the binding cannot occur until runtime.  
 
 
-# Stopped at 50 minutes
+* JAVA INTERFACES
+* Interfaces are a convenient way to define operations on a collection
+* USING STACKS
+* Helpful for solving certain types of problems(undo operation in an application, keeps track of the most recent operations)
+　
+* POSTFIX EXPRESSIONS
+　
+* In a postfix expression the operator comes after the operands e.g. 3 4 + 2 * would be written in infix as (3 + 4) * 2.  
+　
+* Scan for L to R, determine if the next toke is an operator or operaand, if operand push it on the stack, if an operator pop the stack twice to get the two operands.  
+　
+* EXCEPTIONS
+　
+* Collctions must always manage problem situations carefully(e.g. removing something from an empty stack)
+　
+* The designer of the collection determines how it might be handled
+　
+* Or might a structure be full(e..g. the underlying structure might run out of memory).  
+　
+* Thus capacity managment is a thing
+　
+* Generally we should not pass along an error/raise an implementation issue with the user unless there is a good reason to do so
+　
+* Exceptions can generally be handled 3 ways:
+　
+```
+Not handled at all
+Handle the exception where it occurs
+Handle the exception at another point in the program
+```
+　
+* When not handled the program will generally terminate, if yo uhandle the excpetion where it occurs usually there is a try/catch/else statement.  
+　
+***
