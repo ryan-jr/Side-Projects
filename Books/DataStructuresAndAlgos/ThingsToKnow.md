@@ -1,6 +1,19 @@
 https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name
 
 
+
+https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
+
+
+https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+
+
+https://www.quora.com/How-can-one-be-well-prepared-to-answer-data-structure-algorithm-questions-in-interviews
+
+
+https://medium.freecodecamp.org/coding-interviews-for-dummies-5e048933b82b
+
+http://ai.stanford.edu/users/sahami/CS2013/final-draft/CS2013-final-report.pdf
 ```
 
 An objective response:
