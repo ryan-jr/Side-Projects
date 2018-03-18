@@ -159,3 +159,86 @@ A: False
 The rate 3^N is a faster growth rate than a cubic rate
 
 ```
+
+
+
+##### Big O Analysis of Algos and Finding Time Complexity
+
+* Runtime is proportional to the number of primitive operations executed during runtime.
+
+* To find the runtime we need to express the number of primitive operations executed during runtime in terms of N
+
+* For Big O analysis we aren't interested in how much time an operation takes on a computer, but rather how many times the operations is executed.
+
+* A big part of this is looking at operations where the number of iterations depend on N
+
+
+```
+
+In a loop if we do something like:
+
+while i >= 1:
+	i /= 2
+
+OR
+
+while i < n:
+	i *= 2
+
+Because of the logarithmic nature of the operation on N, (decrementing in the first case, incrementing in the latter), the runtime will always be O(log(n)) since the base/constant doesn't matter.  
+
+```
+
+
+* For nested loops we care more about the inner loop because the inner loop will always execute more times than the outer loop.  Oftentimes the runtime of the inner loop will be n * n (N^2)
+
+* For if/else statements we consider the runtime to be that of which the runtime is larger(e.g. when the if statement is N^2 and the else statement is O(n) we would say the runtime is N^2))
+
+* For a loop that performs an operation a constant number of times (such as for i in range(5)) we would say that it is O(1)
+
+
+##### Best, Average, and Worst Case Analysis
+
+* The best, average, and worst case gives us the minimum, average, and maximum runtime of an algorithm for input size N
+
+* In most cases we use the worst case runtime as it will tell us that the algo will perform no worse than that case, and the best case does not occur very often.  
+
+
+##### Common Complexities
+
+O(1): Constant runtime (same time for any input size)
+
+O(log(n)) Logarithmic (Usually an algo that reduces the operation/size each time through, binary search, etc...)
+
+O(n) Linear (When each element is touched/processed)
+
+O(n log n) Linear Logrithmic
+
+O(N^2) Quadratic (Usually nested for loops)
+
+O(N^3) Cubic (matrix multiplication etc...)
+
+O(N^k) Polynomial
+
+O(x^N) Exponential
+
+##### Abstract Data Types
+
+* ADT is a concept that defines a data type logically
+
+* An ADT specicfies a set of data and a set of operations that can be performed on the data.  
+
+* So a stack ADT could be carried out with a singly linked list, a doubly linked, list or an array.  
+
+* Data strucutre is the implementation of the ADT
+
+```
+ADT: Logical view of data and the operations to manipulate the data
+
+Data Structure: Actual representation of data and methods/algos to manipulate the data
+
+The ADT is the what, the data structure is the how
+```
+
+* An ADT specification is often called an interface
+
