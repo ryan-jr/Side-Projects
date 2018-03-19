@@ -160,6 +160,7 @@ The rate 3^N is a faster growth rate than a cubic rate
 
 ```
 
+<<<<<<< HEAD
 
 
 ##### Big O Analysis of Algos and Finding Time Complexity
@@ -242,3 +243,59 @@ The ADT is the what, the data structure is the how
 
 * An ADT specification is often called an interface
 
+=======
+***
+
+### Section 2: Linked Lists
+　
+##### Lecture 14: Introduction
+　
+* We have seen the list Abstract Data Type, and it can be implemented with an Array or with a Linked list.  
+
+* Arrays maintain items in a sequential order, but with Linked Lists, there is no sequential order but rather the order is maintained with a link that points to the next item.  
+
+* A node is a combonation of the item/object that is being stored along with the pointer/ref to the next object.  
+
+* We need to know where the first node(start) is but after that we can figure out the rest of the nodes.  
+
+* A linked list is a dynamic data structure made up of nodes
+
+* Dynamic in this case means that we/the structure can allocated/deallocate memory as needed
+```
+OK so a point of confusion for me was understanding that a linked list can be ARRAY BASED.  
+This is confusing because arrays are CONTIGUOUS MEMORY, whereas linked lists are nonsequential/contiguous.  
+For a linked list to be array based the node is stored in a single element array(e.g. [Node]) that points to another single element array.
+In order to dynamically allocate we may need to create several empty arrays
+　
+```
+* Insertion/deletion of elements is easier in linked lists as we do not need to shift the entire array, only update the pointer/ref to the next and/or previous node.  
+
+* The disadavantages of linked lists include that efficent random access is not possible(due to no indexing), and that implementation requires extra memory due to the link that is required for each item.  
+
+* Linked list variants are: Singly linked list, doubly linked list, circular linked list, linked list w/ header node, sorted linked list.  
+　
+* Single linked list contains the object and the link to the next node.  
+
+* Doubly linked list contains the obeject the the link(s) to the next/previous node.  
+　
+```Python3
+
+class Node:
+def __init__(self, value):
+    self.info = value
+    self.link = None
+class SingleLinkedList:
+def __init__(self, value):
+    self.start = None
+def displayList(self):
+    pass
+def countNodes(self):
+    pass
+def search(self, x):
+    pass
+
+
+```
+　
+##### Lecture 15: Traversing a linked list
+　
