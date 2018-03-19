@@ -299,3 +299,92 @@ def search(self, x):
 　
 ##### Lecture 15: Traversing a linked list
 　
+* Traversal means visiting a node once
+
+* To move a refrence forward we set the ref of p = p.link
+
+* Keep in mind that p.link is the next node
+
+* To traverse a linked list we would do:
+
+```Python3
+
+# first node
+p = self.start 
+
+print(p.info)
+ctr = 0
+while p is not None
+	ctr += 1
+	p = p.link
+
+	print(p.info)
+	print(ctr)
+
+```
+
+
+```Python 3
+# Code for Linked List
+
+class Node:
+	def __init__(self, value):
+		self.info = value
+		self.link = None
+
+class SingleLinkedList:
+	
+	def __init__(self):
+		self.start = None
+
+	def displayList(self):
+		if self.start is None:
+			print("List is empty")
+			return
+		else:
+			print("List is:  ")
+			p = self.start
+			while p is not None:
+				print(p.info)
+				p = p.link
+			print()
+
+	def countNodes(self):
+		p = self.start
+		ctr = 0
+
+		while p is not None:
+			ctr += 1
+			p = p.link
+
+		print("The number of nodes in the list is:", ctr)
+
+	def search(self, x):
+	position = 1
+	p = self.start
+	while p is not None:
+		if p.info is x:
+			print("The term is:", x, "which is at position", position)
+			return x
+
+		elif p.info is not x:
+			position += 1
+			p = p.link
+			continue
+
+	print(x, "was not found!")
+
+
+
+
+dataList = SingleLinkedList()
+
+dataList.createList
+
+
+```
+
+
+##### Lecture 16: Finding refs in a single linked list
+
+* 
