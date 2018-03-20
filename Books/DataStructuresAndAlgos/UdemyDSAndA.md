@@ -387,4 +387,293 @@ dataList.createList
 
 ##### Lecture 16: Finding refs in a single linked list
 
-* 
+* To find the ref to second to last item in the list:
+
+```
+
+# This finds the second to last node, because p.link.link will "look ahead" one ref and get that data
+
+p = self.start
+while p.link.link is not None:
+	p = p.link
+
+
+# To find a node w/ particular info
+# Let's say we have to find x(a particular value that we want)
+
+p = self.start
+while p is not None:
+	if p.info == x:
+		break
+	p = p.link
+
+
+# To find a predecessor node w/ particular info
+
+p = self.start
+while p.link is not None:
+	if p.link.info == x:
+		break
+	p = p.link
+
+
+# To find ref to a node at a particular position(at position k)
+
+p = self.start
+ctr = 1
+while ctr < k and p is not None:
+	p = p.link
+	ctr += 1
+
+
+
+
+```
+
+
+
+##### Lecture 17: Insertion in a single linked list
+
+* There are multiple insertion cases including, at the beginning, into an empty list, at the end, and between nodes.
+
+* To insert a new node we allocate a node, and associate it with a temp variable:
+
+```Python3
+
+# What the Node class looks like:
+"""
+def __init__(self, value):
+	self.info = value
+	self.link = None
+
+
+
+
+```
+
+* To insert at the beginning:
+
+```Python 3
+
+# Setting up the node order correctly
+
+temp = Node(data)
+temp.link = self.start
+
+
+self.start = temp
+
+```
+
+* Inserting a Node in an empty list
+
+```
+self.start = temp
+
+
+```
+
+* Inserting at the End
+
+```
+
+p = self.start
+while p.link is not None
+	p = p.link
+
+p.link = temp
+
+```
+
+
+### Lecture 18: Insertion in a singly linked list
+
+* Inserting between nodes
+
+```Python3
+
+
+# This updates the temp node so that temp will take the current link from p and point to the correct next node.
+temp.link = p.link
+
+# This updates p so that p.link points to the temp node.  
+p.link = temp
+
+```
+
+* Insertion after a node
+
+```python3
+
+# Insert a new node after the node having value x
+
+p = self.start
+while p is not None:
+	if p.info == x:
+		break
+	p = p.link
+	temp = p.link
+	p.link = temp
+
+```
+
+* Insertion before a node
+
+```Python3
+
+
+p = self.start
+while p is not None:
+	if p.info == x:
+		break
+	p = p.link
+	temp.link = p.link
+	p.link = temp
+
+
+
+```
+
+
+* Insertion at a given position
+
+```Python3
+
+# Given value k, insert at k position
+
+# Insert between 3, and 4, 4 now becomes position 5/shift everything right by 1
+
+p = self.start
+ctr = 1
+
+while ctr < k - 1 and p is not None
+	p = p.link
+	ctr += 1
+
+temp.link = p.link
+p.link = temp
+
+
+```
+
+
+
+##### Deletion in a singly linked list
+
+* These cases are much the same as insertion with deletion of the first node, deletion of the only node, deletion between nodes in the list, deletion at the end
+
+```
+# PSUEDOCODE For deletion of the first node
+
+self.start = self.start.link
+
+```
+
+```
+# PSUEDOCODE for deletion of the only node
+self.start = None
+```
+
+```
+# PSUEDOCODE for deletion between nodes in the list
+
+p.link = p.link.link
+
+```
+
+```
+# PSUEDOCODE for deletion at the end of the list
+
+p.link = None
+
+```
+
+```Python3
+
+# Actual methods to be used
+
+def deleteNode(self, x):
+		
+	if self.start is None:
+		print("List is empty")
+		return
+
+	# Deletion of first node
+	if self.start.info == x:
+		self.start = self.start.link
+		return
+
+	# Deletion betwen nodes/at the end
+	p = self.start
+	while p.link is not None:
+		if p.link.info == x:
+			brea
+		p = p.link
+
+
+	if p.link is None:
+		print("Element", x, "not in list")
+	else:
+		p.link = p.link.link
+
+def deleteFirstNode(self):
+	if self.start == None:
+		return
+	self.start = self.start.link
+
+def deleteLastNode(self):
+
+	if self.start is None:
+		return
+
+	if self.start.link is None:
+		self.start = None
+		return
+
+	p = self.start
+	while p.link.link is not None:
+		p = p.link
+	p.link = None
+
+```
+
+
+##### Reversing a single linked list
+
+* For this we need 3 refs: prev, p, next
+
+```
+
+# PSUEDOCODE to reverse a singly linked list
+
+prev = None
+p = self.start
+while p is not None:
+	next = p.link
+	p.link = prev
+	prev = p
+	p = next
+self.start = prev
+
+```
+
+
+```Python3
+
+# Code to reverse a singly linked list
+
+def reverseList(self):
+	prev = None
+	p = self.start
+	while p is not None:
+		next = p.link
+		p.link = prev
+		prev = p
+		p = next
+	self.start = prev
+
+
+```
+
+
+
