@@ -248,6 +248,53 @@ The ADT is the what, the data structure is the how
 
 ### Section 2: Linked Lists
 　
+```
+All linked list lecture notes
+
+* List ADTs can be implemented using Arrays, or with a linked list
+
+* Linked list are not contiguous
+
+* Links are refs to the next item in the list, the list item and the link are a Node.  
+
+* Linked lists are a dynamic data strucutre made up of nodes(e.g. it does not have a fixed size and can allocate memory as needed)
+
+* Insertion/deletion of elements is easier
+
+* lists can be used to implement ADTs such as data types like lists, stacks and queues.  
+
+* Lists require more memory, and random access is an issue due to the sequential nature.
+
+* The node class has info and a  link which is set to none, and the  link list class has the init which creates a start which is set to None
+
+* To traverse a linked list we need to move the refrence forward by getting the refrence from the link(in the case of getting the first node we need to get the ref from start)
+
+* We break/stop when the ref is None.  This means that we can use a loop, and as we are using a loop it means that we can initialize and use a counter
+
+* To find a ref to the last node we loop through the list and when the loop hits None, it will be the last node of the list
+
+* To find the second to last node we loop through until p.link.link is None
+
+* To find a node with particualar info, we break when we find the argument that is passed into the function in p.info (e.g. p.info == x)
+
+* To find a ref to a predecessor of a node with particular info(e.g. the node before the one with the info we want to find) we would use(if p.link.info == x) in the loop 
+
+* To find a ref to a node at a particular position we pass the argument k(the node at the position we want) and use (while ctr < k and p is not None)
+
+* To insert a new node we have to create a temp Node and set the proper refs/link
+
+
+* OK THE CONCEPT THAT I HAVEN'T been able to wrap my head around is that there are TWO pieces to each Node in the linked list, and the LINK points to the next piece of data, NOT the next link in the chain, but the next NODE.  
+
+* To insert a node at the begininning of a list we need to make sure that self.start = temp since start was originally None
+
+* To insert a node at the end of a list we find the ref at the end/last node of the list and we update p.link = temp in order to insert the node at the end of the list
+
+* To insert a node between two nodes we need to make sure that temp.link = p.link(so we can get the ref to the next node), then we need to make sure that p.link = temp(so that the node we're going in front of refs to the temp(aka new) node)
+
+* To insert after a node that has a given value
+```
+
 ##### Lecture 14: Introduction
 　
 * We have seen the list Abstract Data Type, and it can be implemented with an Array or with a Linked list.  
