@@ -44,10 +44,13 @@ if __name__ == "__main__":
 
 
 """
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 086c2d82708dd34108c16b0bc348976e1f584c6d
 https://stackoverflow.com/questions/27839195/reading-a-json-string-typeerror-string-indices-must-be-integers
 jsonify(json.loads(
 # Example JSON objects
