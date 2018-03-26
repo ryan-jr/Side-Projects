@@ -19,12 +19,9 @@ app = Flask(__name__)
 def index():
 
 	
-	pageSanitized = jsonify(json.loads(json_util.dumps(mydb.Test.find())))
+	pageSanitized = jsonify(json.loads(json_util.dumps(mydb.test.find())))
 	
-
-
-	return "Hello world"
-	return pageSanitized
+	return pageSanitized["County"]
 	#return newPage
 
 if __name__ == "__main__":
