@@ -25,7 +25,7 @@ class Card(object):
     
   
   def addST(self, time, data):
-    print("Hello, the current time is:", datetime.datetime.now())
+    print("Hello, the current time is:",  datetime.datetime.now())
     print("*" * 100)
     print("Short term tasks")
     print(self.st)
