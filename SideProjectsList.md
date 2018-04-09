@@ -19,3 +19,25 @@ E.  Common Interview Structures (Pair Programming, Tell us about X projects, Whi
 
 4.  Udemy/Coursera classes, etc...
 
+5.  P1xt github - Python Job Ready Guide
+
+6. Tyler Mcginnis - React Course
+
+7.  CS 50 web programming
+
+8.  https://news.slashdot.org/story/18/04/08/0024220/berkeley-offers-its-data-science-course-online-for-free
+
+9.  https://github.com/P1xt/p1xt-guides/blob/master/job-ready-python-edition.md#why-is-it-so-much-longer-than-the-other-job-ready-guide
+
+10.  https://github.com/thundergolfer/interview-with-python
+
+11.  Is there a way to get public transportation data, and regularly update it?
+
+```
+
+https://tfl.gov.uk
+
+```
+
+
+
