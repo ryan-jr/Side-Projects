@@ -139,4 +139,267 @@ def index():
 
 * Flask is designed in routes, which are associated w/ the website address you want to go to
 
-* 
+* Flask can create a dynamic page by specifying in the route what kind of information will be taken in
+
+```
+
+@app.route("/<string:name>")
+def hello(name):
+	name = name.capitalize()
+	return f"Hello, {name}!"	# String formatting, we can also throw HTML in here.
+
+```
+
+* For us to render and actual HTML page we need to import render_template
+
+```
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+	return render_template("index.html")
+
+```
+
+* The argument in render_template is telling flask to look in the templates directory and find/return/display index.html
+
+* If we wnated to add variables to Flask/the HTML page we would do:
+
+```
+### app.py
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+
+	# Setting the variable
+	headline = "Hello, world!"
+
+	# Returning the variable
+	return render_template("index.html", headline=headline)
+
+
+### index.html
+ # boilerplate tags here
+
+ <body>
+ 	{{headline}}
+ </body>
+
+ # closing boilerplate here
+```
+
+* Note that we can update the variable as we want and it will change what is displayed in the HTML page.  
+
+
+* Using this information we can build a simple website that can check and see if it is a certain day/holiday
+
+```
+
+# app.py
+
+from flask import Flask, render_template
+import datetime
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+	now = datetime.datetime.now()
+	new_year = now.month == 1 and now.day == 1
+	return render_template("index.html", new_year = new_year)
+
+# index.html
+
+# Boilerplate html
+
+<body>
+	{% if new_year %}  # {% %} introduces python syntax into HTML
+		<h1> Happy new Year! </h1>
+	}
+	{% else %}
+		<h1>No!</h1>
+	{% endif %}
+</body>
+
+# Closing boilerplate HTML
+
+```
+
+* We could put the Python inside the flask app.py, but if we generate more applications, having the code inside the HTML can help keep it more modular/clear
+
+* It is possible to use JS with flask apps
+
+
+* Looping w/ Flask
+
+* We do it pretty much the same as we would in python, but we just wrap it in {% for x in names %}   and end it with {% endfor %}.
+
+* If we wanted to have each of those names in their own separate paragraph or in a bullet point in a list we would use <p>/<li>{{ x }}</p>/</li>
+
+* Note that when you inspect the HTML, it will not show the {{%%}} at all, only the HTML
+
+* How to link routes back and forth
+
+
+```
+# app.py
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+	return render_template("index.html")
+
+@app.route("/more")
+def more():
+	return render_tempate("more.html")
+
+
+
+# index.html
+
+# boilerpalte html
+
+<body>
+<h1> First Page</h1>
+
+# note URL for and the route/function that it's linked to
+<a href ="{{ url_for("more") }}">See more...</a> 
+
+
+
+
+# more.html
+
+# boilerpalte html
+
+<body>
+<h1> More Page</h1>
+
+# note URL for and the route/function that it's linked to
+<a href ="{{ url_for("index") }}">Go back...</a> 
+
+```
+
+* What if we want to abstract away all the boilerplate code and just extend it/add on to it/use it as a template?
+
+* For this, we would use template inheritance
+
+
+
+```
+
+# layout.html
+
+# boilerplate html
+
+ <body>
+	<h1>{% block heading %} {% endblck %}</h1>
+
+	{% block body %}
+	{% endblock %}
+ </body>
+# end boilerplate html
+
+# index.html
+
+{% extends "layout.html" %}
+
+{% block heading %}
+	First page
+{% endblock %}
+
+{% block body %}
+	<p> Stuff goes here </p>
+<a href = "{{ url_for("more") }}">See more...</a>
+
+{% endblock %}
+
+```
+
+* Template inheritance lets you make a change once, and have it reflected in the other files/html pages
+
+* Forms!!!
+
+```
+# app.py
+
+from flask import Flask, render_template, request	# request is important
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+	return render_template("index.html")
+
+@app.route("/hello", methods=["POST"])
+def hello():
+	name = request.form.get("name")	# notice how we know what form to get based upon the name provided
+	return render_template("hello.html" name=name)
+
+
+
+# index.html
+
+{% extends "layout.html" %}
+
+{% block heading %}
+	First Page
+{% endblock %}
+
+{% block body %}
+	<form action="{{ url_for('hello') }}" method="post">
+		<input type="text" name="name" placeholder="Enter your name"
+		<button>Submit</submit>
+	</form>
+{% endblock %}
+
+
+
+# hello.html
+
+{% extends "layout.html" %}
+	Hello!
+{% endblock %}
+
+{% block body %}
+	Hello, {{ name }}!
+{% endblock %}
+
+
+
+```
+
+* Submitting data to a server uses the post method, getting data from a server uses get method(s)
+
+* To accept multiple types of requests we would update the @ line to read @app.route("/hello", methods=["POST", "GET"])
+
+
+
+* Storing information in sessions!
+
+
+* For a note taking application we would have an empty list, and where if there were a POST request, wee would get info from the notes form and append the note to the list, and then we would return the page we want, passing in the notes list
+
+* The issue with the note list, is that it's a global variable, meaning here's only one notepad.  To solve this we import session as well as/and from flask_session import Session
+
+* In the index function we would use
+
+```
+notes = []
+
+@app.route
+def index():
+	if session.get("notes") is None:
+		session["notes"] = []
+		
+	if request.method == "POST":
+		note = request.form.get("note")
+		session["notes"].append(note)

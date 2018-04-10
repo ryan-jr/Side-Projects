@@ -618,3 +618,13 @@ When you get an offer:
  13  Celebrate again! Whether or not you’ve decided to take this offer, this is still a win. Congrats!
 
 ```
+
+### Useful links:
+
+```
+https://www.youtube.com/watch?v=O6nFJzW-SDg Viking Codeschool Greg Kardmant Lessons Learned the Hard Way
+
+https://www.youtube.com/watch?v=G4QAsKKQSMc Joseph Lozano: Surviving the first 90 days as a new developer
+
+
+```
