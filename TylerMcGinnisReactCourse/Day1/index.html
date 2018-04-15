@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title>React App</title>
+ <script type="text/babel" crossorigin type="text/babel" src="https://unpkg.com/react@16/umd/react.development.js" type = "text/babel></script>
+ <script type="text/babel" crossorigin type="text/babel" src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" type = "text/babel></script>
+
+
+
+
+
+</head>
+<body>
+
+
+<div id="app">Hello World!</div>
+
+<script type = "text/babel>
+var name = "Ryan";
+var handle = "@rjr";
+
+
+function NameComponent (props) {
+     return React.createElement(
+          "h1",
+          null,
+          props.name,
+     )
+
+}
+
+
+
+function HandleComponent (props) {
+     return React.createElement(
+          "h3",
+          null,
+          props.handle,
+     )
+
+}
+
+
+// The HTML Version of what's going on below would look like:
+var headerElement = React.createElement(
+     "h1",
+     { id: "header" },
+     "Ryan",
+     name
+
+     )
+
+var nameElement = React.createElement (
+     "h3",
+     null,
+     name
+     )
+
+var handleElement = React.createElement( 
+     "div",
+     { id: "container" },
+     React.createElement(NameComponent, { name: "Ryan" }),
+     React.createElement(HandleComponent, { handle: "@rjr" }),
+     )
+
+function NameComponent (props) {
+     return <h1>{props.name}</h1>
+}
+
+function HandleComponent (props) {
+     return <h4>{props.handle}</h4>
+}
+
+function App() {
+     return (
+          <div id="container">
+
+          <NameComponenet name="Ryan" />
+          <HandleComponent handle="@rjr" />
+          // Please note that with name and handle since they are already variables above we could write them out as name={ name } and handle={ handle } respectively.  
+
+
+          </div>
+     )
+
+
+ReactDOM.render(
+     <App />,
+     Document.getElementById("app")
+)
+}
+
+var wrapperElement = React.createElement("div", { id: "container"},
+     nameElement, 
+     handleElement
+     )
+
+console.log(headerElement);
+
+          ReactDOM.render(wrapperElement, document.getElementById("app"))
+</script>
+
+
+
+</body>
+
+
+</html>
