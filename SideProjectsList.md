@@ -10,7 +10,7 @@ B.  Resume/Cover letter writing/tips
 C.  Behavioral Questions and Answers
 D.  Common Interveiw questions for (Front End, Back End(Java, Python, JS)), Trivia Questions(What is a linked list, etc...)
 E.  Common Interview Structures (Pair Programming, Tell us about X projects, Whiteboard interviewing)
-
+F.  https://hackernoon.com/learn-to-code-in-2018-get-hired-and-have-fun-along-the-way-b338247eed6a
 
 
 2.  Python projects 500 lines
