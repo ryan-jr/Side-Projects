@@ -1,7 +1,17 @@
+.banner-inner {
+
+    background-color: #7C0A02;
+}
+
+.favicon {
+
+    background-color: #7C0A02;
+}
+
 .menuButton {
     float: right;
     margin-top: 1%;
-    background-color: #008CBA;
+    background-color: white;
     font-size: 12px;
     border-radius: 12px;
     width: 10%;
