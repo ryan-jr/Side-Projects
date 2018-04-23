@@ -160,7 +160,7 @@ The rate 3^N is a faster growth rate than a cubic rate
 
 ```
 
-<<<<<<< HEAD
+
 
 
 ##### Big O Analysis of Algos and Finding Time Complexity

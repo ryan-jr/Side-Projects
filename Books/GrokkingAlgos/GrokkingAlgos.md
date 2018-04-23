@@ -236,3 +236,4 @@ Lienar programming is used to maximize something given constraints.  Graph probl
 Linear programming uses the Simplex algo(ironically enough) and is related to optimization theory.  
 
 ```
+
