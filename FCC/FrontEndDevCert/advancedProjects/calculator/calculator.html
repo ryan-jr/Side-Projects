@@ -6,18 +6,19 @@
 
     <title>JS Calculator</title>
   </head>
+   <script type="text/javascript" src="calculator.js" >  </script>
   <body>
-  <button id="one" class="numButton"> 1 </button>
-  <button id="two" class="numButton"> 2 </button>
-  <button id="three" class="numButton"> 3 </button>
-  <button id="four" class="numButton"> 4 </button>
-  <button id="five" class="numButton"> 5 </button>
-  <button id="six" class="numButton"> 6 </button>
-  <button id="seven" class="numButton"> 7 </button>
-  <button id="eight" class="numButton"> 8 </button>
-  <button id="two" class="numButton" "> 9 </button>
+  <button id="one" class="numButton" onclick="showDiv()">1</button>
+  <button id="two" class="numButton">2 </button>
+  <button id="three" class="numButton">3 </button>
+  <button id="four" class="numButton">4 </button>
+  <button id="five" class="numButton">5 </button>
+  <button id="six" class="numButton">6 </button>
+  <button id="seven" class="numButton">7 </button>
+  <button id="eight" class="numButton">8 </button>
+  <button id="two" class="numButton" ">9 </button>
 
-  <button id="zero" class="numButton"> 0 </button>
+  <button id="zero" class="numButton">0 </button>
 
   <button id="division" class="opButton"> / </button>
   <button id="subtraction" class="opButton"> X </button>
@@ -25,33 +26,9 @@
   <button id="multiplication" class="opButton"> - </button>
 
 
-
-  <img id="window" src="assets\calculationWindow.png"/>
-  <!--
-  <img id="three" class="numButton" src="assets\three.png" />
-  <img id="four" class="numButton" src="assets\four.png"/>
-  <img id="five" class="numButton" src="assets\five.png"/>
-  <img id="six" class="numButton" src="assets\six.png"/">
-  <img id="seven" class="numButton" src="assets\seven.png"/>
-  <img id="eight" class="numButton" src="assets\eight.png"/">
-  <img id="nine" class="numButton" src="assets\nine.png"/>
-  <img id="zero" src="assets\zero.png"/>
-
-
-  <img id="dec" class="numButton" src="assets\dec.png"/>
-  
-
-  <img id="division" class="numButton" src="assets\division.png"/>
-  <img id="subtraction" class="numButton" src="assets\subtraction.png"/>
-  <img id="addition" class="numButton" src="assets\addition.png"/>
-  <img id="multiplication" class="numButton" src="assets\multiplication.png"/>
-  <img id="equals" class="numButton" src="assets\equals.png"/>
-  !-->
-  
-
-
-
-
+  <div id="window" style="display:none;">Hello
+ 	 <img style:"display:inline;" src="assets\calculationWindow.png"/>
+ </div>
 
   
   </body>
