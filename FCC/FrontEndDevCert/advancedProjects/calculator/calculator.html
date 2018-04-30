@@ -8,17 +8,18 @@
   </head>
    <script type="text/javascript" src="calculator.js" >  </script>
   <body>
-  <button id="one" class="numButton" onclick="showDiv()">1</button>
-  <button id="two" class="numButton">2 </button>
-  <button id="three" class="numButton">3 </button>
-  <button id="four" class="numButton">4 </button>
-  <button id="five" class="numButton">5 </button>
-  <button id="six" class="numButton">6 </button>
-  <button id="seven" class="numButton">7 </button>
-  <button id="eight" class="numButton">8 </button>
-  <button id="two" class="numButton" ">9 </button>
+  <button id="two" class="numButton"  onclick="showDiv(this.id)" value="2">2 </button>
+  <button id="one" class="numButton"  onclick="showDiv(this.id)" value="1">1</button>
+  
+  <button id="three" class="numButton" onclick="showDiv()">3 </button>
+  <button id="four" class="numButton" onclick="showDiv()">4 </button>
+  <button id="five" class="numButton" onclick="showDiv()">5 </button>
+  <button id="six" class="numButton" onclick="showDiv()">6 </button>
+  <button id="seven" class="numButton" onclick="showDiv()">7 </button>
+  <button id="eight" class="numButton" onclick="showDiv()">8 </button>
+  <button id="two" class="numButton" " onclick="showDiv()">9 </button>
 
-  <button id="zero" class="numButton">0 </button>
+  <button id="zero" class="numButton" onclick="showDiv()">0 </button>
 
   <button id="division" class="opButton"> / </button>
   <button id="subtraction" class="opButton"> X </button>
