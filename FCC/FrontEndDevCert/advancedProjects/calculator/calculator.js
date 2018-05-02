@@ -3,14 +3,26 @@
 var calculationHolder = []
 
 function showDiv(clickedId) {
+
+	var data = Number(clickedId);
 	document.getElementById("window").style.display="";
 
 
 	// https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button
-	console.log(document.getElementById("one"));
-	console.log(document.getElementById("two"));
+	// https://www.w3schools.com/js/js_output.asp
+	// https://www.w3schools.com/jsref/jsref_isnan.asp
+	// https://stackoverflow.com/questions/2801601/why-does-typeof-nan-return-number
+	document.getElementById("window").innerHTML = clickedId;
 
-	console.log(clickedId)
+	if (isNaN(clickedId) === false) {
+
+		console.log(clickedId, "is a number!");
+	} else {
+
+		console.log(clickedId, "is Not A Number!");
+	}
+
+
 
 
 }
