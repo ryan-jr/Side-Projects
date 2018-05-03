@@ -1,0 +1,38 @@
+<!-- HTML !-->
+
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>Radio Button and Dropdown Menu(s)</title>
+    <meta charset = "UTF-8" />
+    <script src="boilerplate.js"></script>
+  </head>
+  <body>
+    <h1>Form Demo</h1>
+		<form>
+		  <h3> Gender </h3>
+		  <input type="radio" name="gender" value="male" checked> Male<br>
+		  <input type="radio" name="gender" value="female"> Female<br>
+		</form>
+
+		<form>
+			<h3> Is this selected? </h3>
+			<input type="radio" name="selected" value="Yes"> Yes <br>
+			<input type="radio" name="selected" value="No"> No <br>
+		</form>
+
+	<!-- The second value will be selected initially -->
+	<select id="genericName"> 
+	  <option value="value1">Value 1</option> 
+	  <option value="value2" selected>Value 2</option>
+	  <option value="value3">Value 3</option>
+	</select>
+
+	<br>
+	<br>
+	<input type="submit" onclick="boilerplateFunction()">
+
+	<div id="outputArea"> </div>
+
+  </body>
+</html>
