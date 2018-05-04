@@ -1,10 +1,92 @@
 // JS code here
 
-var calculationHolder = []
+var calculationHolder = [];
+var numberHolder = "";
+
+// TODO: Access the last element unless it is an operand and add to the string in/at that element
+// TODO: If it is an operand, create a new element in the array 
+// TODO: Find/create a way to loop through the array and perform calculations
+// TODO: With the result of the calculations display them to the screen
+// TODO: Make sure that the "=", ends everything else and does stuff
+
+function numberCalculation(clickedId) {
+
+
+	if (clickedId === "1") {
+			console.log("one!");
+			var input = 1;
+			calculationHolder.push(input);
+
+	}  else if (clickedId === "2") {
+		console.log("two");
+		var input = 2;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "3") {
+		console.log("three");
+		input = 3;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "4") {
+		console.log("four");
+		input = 4;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "5") {
+		console.log("five");
+		input = 5;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "6") {
+		console.log("six");
+		input = 6;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "7") {
+		console.log("seven");
+		input = 7;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "8") {
+		console.log("eight");
+		input = 8;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "9") {
+		console.log("nine");
+		input = 9;
+		calculationHolder.push(input);
+
+	} else if (clickedId === "0") {
+		console.log("zero");
+		input = 0;
+		calculationHolder.push(input);
+	} else if (clickedId === "/") {
+		console.log("/");
+		input = "/";
+		calculationHolder.push(input);
+	} else if (clickedId === "*") {
+		console.log("*");
+		input = "*";
+		calculationHolder.push(input);
+	} else if (clickedId === "+") {
+		console.log("+");
+		input = "+";
+		calculationHolder.push(input);
+	} else if (clickedId === "-") {
+		console.log("-");
+		input = "-";
+		calculationHolder.push(input);
+	} 
+
+	console.log(calculationHolder);
+}
+
 
 function showDiv(clickedId) {
 
 	var data = Number(clickedId);
+	var calcNumber = ""
 	document.getElementById("window").style.display="";
 
 
@@ -17,69 +99,24 @@ function showDiv(clickedId) {
 	if (isNaN(clickedId) === false) {
 
 		console.log(clickedId, "is a number!");
+		numberCalculation(clickedId);
+
 	} else {
 
 		console.log(clickedId, "is Not A Number!");
+		numberCalculation(clickedId);
 	}
-
 
 
 
 }
-
-
-	/* 
-	if (document.getElementById("one") == true) {
-		console.log("one!");
-		var newInput = 1;
-		calculationHolder.push(newInput);
-	} else if (document.getElementById("two") == true) {
-		console.log("two");
-		var input = 2;
-		calculationHolder.push(input);
-
-	} 
-
-	else if (input === "three") {
-		console.log("three");
-		input = 3;
-		calculationHolder.push(input);
-
-	} else if (document.getElementById("four")) {
-		console.log("four");
-		input = 4;
-		calculationHolder.push(input);
-	} else if (document.getElementById("five")) {
-		console.log("five");
-		input = 5;
-		calculationHolder.push(input);
-	} else if (document.getElementById("six")) {
-		console.log("six");
-		input = six;
-		calculationHolder.push(input);
-	} else if (document.getElementById("seven")) {
-		console.log("seven");
-		input = 7;
-		calculationHolder.push(input);
-	} else if (document.getElementById("eight")) {
-		console.log("eight");
-		input = 8;
-		calculationHolder.push(input);
-	} else if (document.getElementById("nine")) {
-		console.log("nine");
-		input = 9;
-		calculationHolder.push(input);
-	} else if (document.getElementById("zero")) {
-		console.log("zero");
-		input = 0;
-		calculationHolder.push(input);
-	}
-
-
-
-*/
 	
-	//console.log(calculationHolder);
+
+
+
+
+	
+	
 
 /*
 	for(i = 0; i < calculationHolder.length; i++) {
