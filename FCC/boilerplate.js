@@ -34,6 +34,7 @@ function boilerplateFunction() {
 	   Raises: N/A
 	*/
 
+	// Getting value(s) from radio button(s)
 	var genderRadio = document.querySelector("input[name=gender]:checked");
 	var genderValue = genderRadio ? genderRadio.value : "";
 	console.log(genderValue);
@@ -52,13 +53,28 @@ function boilerplateFunction() {
 	}
 
 	var selectionDropdown = document.getElementById("genericName");
-	var userOutput = selectionDropdown.options[selectionDropdown.selectedIndex].text;
-	console.log(userOutput);
+	var userSelection = selectionDropdown.options[selectionDropdown.selectedIndex].value;
+	console.log(userSelection);
+	console.log(typeof(userSelection));
 
-	document.getElementById("outputArea").innerHTML = userOutput, selectionValue, genderValue;
+	if (userSelection == "value1") {
+
+		console.log("Value1!");
+	} else if (userSelection == "value2") {
+
+		console.log("Value2!!");
+	} else if (userSelection == "value3") {
+
+		console.log("Value3!!!");
+	} else {
+
+		console.log("No Value Selected :(");
+	}
+
+	document.getElementById("outputArea").innerHTML = userSelection, selectionValue, genderValue;
 	document.getElementById("outputArea").innerHTML = selectionValue;
 	document.getElementById("outputArea").innerHTML = genderValue;
-	document.getElementById("outputArea").innerHTML = (userOutput + selectionValue + genderValue);
+	document.getElementById("outputArea").innerHTML = (userSelection + selectionValue + genderValue);
 
 }
 
