@@ -2,6 +2,7 @@
 
 var calculationHolder = [];
 var numberHolder = "";
+var clickedString = "";
 
 // TODO: Access the last element unless it is an operand and add to the string in/at that element
 // TODO: If it is an operand, create a new element in the array 
@@ -9,23 +10,39 @@ var numberHolder = "";
 // TODO: With the result of the calculations display them to the screen
 // TODO: Make sure that the "=", ends everything else and does stuff
 
+
+
+// Make it so that numbers push onto the array and operands push onto the array their operand AND an empty string
+// That way if a numberString needs to be concatenated/added onto it can be added to the array by replacing the last element
+// And this makes it so that the last element after an operand is NOT the operand itself
+
 function numberCalculation(clickedId) {
 
+	// Checking to make sure the array isn't empty first (and that it exists)
+	// https://stackoverflow.com/questions/24403732/check-if-array-is-empty-does-not-exist-js/24403771
+	// https://www.w3schools.com/jsref/jsref_push.asp
 
-	if (clickedId === "1") {
+	clickedString += clickedId;
+
+	if (calculationHolder === undefined || calculationHolder.length == 0) {
+    		calculationHolder.push("zzz");
+
+	}	else if (clickedId === "1") {
 			console.log("one!");
-			var input = 1;
-			calculationHolder.push(input);
+			console.log(calculationHolder);
+			calculationHolder.shift();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
+
+
 
 	}  else if (clickedId === "2") {
-		console.log("two");
-		var input = 2;
-		calculationHolder.push(input);
+			console.log("two");
+			calculationHolder.push(clickedString);
 
 	} else if (clickedId === "3") {
-		console.log("three");
-		input = 3;
-		calculationHolder.push(input);
+			console.log("three");
+			calculationHolder.push(clickedString);
 
 	} else if (clickedId === "4") {
 		console.log("four");
@@ -79,7 +96,14 @@ function numberCalculation(clickedId) {
 		calculationHolder.push(input);
 	} 
 
+
 	console.log(calculationHolder);
+	console.log(calculationHolder[0]);
+	if (calculationHolder[0] === "zzz") {
+		console.log(calculationHolder.shift());
+		calculationHolder.push(clickedString);
+
+	}
 }
 
 
