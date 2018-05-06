@@ -30,7 +30,7 @@ function numberCalculation(clickedId) {
 	}	else if (clickedId === "1") {
 			console.log("one!");
 			console.log(calculationHolder);
-			calculationHolder.shift();
+			calculationHolder.pop();
 			calculationHolder.push(clickedString);
 			console.log(calculationHolder);
 
@@ -38,62 +38,93 @@ function numberCalculation(clickedId) {
 
 	}  else if (clickedId === "2") {
 			console.log("two");
+			console.log(calculationHolder);
+			calculationHolder.pop();
 			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
+
 
 	} else if (clickedId === "3") {
 			console.log("three");
+			console.log(calculationHolder);
+			calculationHolder.pop();
 			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "4") {
-		console.log("four");
-		input = 4;
-		calculationHolder.push(input);
+			console.log("four");
+			console.log(calculationHolder);
+			calculationHolder.pop();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "5") {
-		console.log("five");
-		input = 5;
-		calculationHolder.push(input);
+			console.log("five");
+			console.log(calculationHolder);
+			calculationHolder.pop();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "6") {
-		console.log("six");
-		input = 6;
-		calculationHolder.push(input);
+			console.log("six");
+			console.log(calculationHolder);
+			calculationHolder.pop();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "7") {
-		console.log("seven");
-		input = 7;
-		calculationHolder.push(input);
+			console.log("seven");
+		 	console.log(calculationHolder);
+			calculationHolder.pop();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "8") {
-		console.log("eight");
-		input = 8;
-		calculationHolder.push(input);
+			console.log("eight");
+			console.log(calculationHolder);
+			calculationHolder.pop();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "9") {
-		console.log("nine");
-		input = 9;
-		calculationHolder.push(input);
+			console.log("nine");
+			console.log(calculationHolder);
+			calculationHolder.pop();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "0") {
 		console.log("zero");
 		input = 0;
-		calculationHolder.push(input);
+		calculationHolder.push(clickedId)
+
 	} else if (clickedId === "/") {
 		console.log("/");
 		input = "/";
 		calculationHolder.push(input);
+		calculationHolder.push("");
+		clickedString = "";
+
 	} else if (clickedId === "*") {
 		console.log("*");
 		input = "*";
 		calculationHolder.push(input);
+		calculationHolder.push("");
+		clickedString = "";
+
 	} else if (clickedId === "+") {
 		console.log("+");
 		input = "+";
 		calculationHolder.push(input);
+		calculationHolder.push("");
+		clickedString = "";
+
 	} else if (clickedId === "-") {
 		console.log("-");
 		input = "-";
 		calculationHolder.push(input);
+		calculationHolder.push("");
+		clickedString = "";
 	} 
 
 
@@ -104,6 +135,8 @@ function numberCalculation(clickedId) {
 		calculationHolder.push(clickedString);
 
 	}
+
+	console.log(calculationHolder);
 }
 
 
