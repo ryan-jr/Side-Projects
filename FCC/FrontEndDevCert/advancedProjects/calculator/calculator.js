@@ -3,6 +3,7 @@
 var calculationHolder = [];
 var numberHolder = "";
 var clickedString = "";
+var finalResult = "";
 
 // TODO: Access the last element unless it is an operand and add to the string in/at that element
 // TODO: If it is an operand, create a new element in the array 
@@ -16,13 +17,39 @@ var clickedString = "";
 // That way if a numberString needs to be concatenated/added onto it can be added to the array by replacing the last element
 // And this makes it so that the last element after an operand is NOT the operand itself
 
+function calculationLoop(calculationArr) {
+	// Function to calculation the numbers/operands contained in the array
+	// Args: 
+	//		calculationArr: Array of strings that are either integers or operands
+	// Returns:
+	//		finalResult: String of the result of the calculation
+	// Raises:
+	//		N/A
+	console.log("Function!!!");
+	var tempHolder1 = 0;
+	console.log(calculationArr.length);
+	tempHolder1 = eval(calculationHolder.join(" "));
+	// https://stackoverflow.com/questions/13077923/how-can-i-convert-a-string-into-a-math-operator-in-javascript
+	return tempHolder1;
+
+}
+
 function numberCalculation(clickedId) {
 
 	// Checking to make sure the array isn't empty first (and that it exists)
 	// https://stackoverflow.com/questions/24403732/check-if-array-is-empty-does-not-exist-js/24403771
 	// https://www.w3schools.com/jsref/jsref_push.asp
 
-	clickedString += clickedId;
+
+	// Pass block if = so we don't add it to the calculation string
+	if (clickedId === "=") {
+		
+
+	} else {
+
+		clickedString += clickedId;
+	}
+	
 
 	if (calculationHolder === undefined || calculationHolder.length == 0) {
     		calculationHolder.push("zzz");
@@ -94,42 +121,53 @@ function numberCalculation(clickedId) {
 			console.log(calculationHolder);
 
 	} else if (clickedId === "0") {
-		console.log("zero");
-		input = 0;
-		calculationHolder.push(clickedId)
+			console.log("zero");
+			console.log(calculationHolder);
+			calculationHolder.pop();
+			calculationHolder.push(clickedString);
+			console.log(calculationHolder);
 
 	} else if (clickedId === "/") {
-		console.log("/");
-		input = "/";
-		calculationHolder.push(input);
-		calculationHolder.push("");
-		clickedString = "";
+			console.log("/");
+			input = "/";
+			calculationHolder.push(input);
+			calculationHolder.push("");
+			clickedString = "";
 
 	} else if (clickedId === "*") {
-		console.log("*");
-		input = "*";
-		calculationHolder.push(input);
-		calculationHolder.push("");
-		clickedString = "";
+			console.log("*");
+			input = "*";
+			calculationHolder.push(input);
+			calculationHolder.push("");
+			clickedString = "";
 
 	} else if (clickedId === "+") {
-		console.log("+");
-		input = "+";
-		calculationHolder.push(input);
-		calculationHolder.push("");
-		clickedString = "";
+			console.log("+");
+			input = "+";
+			calculationHolder.push(input);
+			calculationHolder.push("");
+			clickedString = "";
 
 	} else if (clickedId === "-") {
-		console.log("-");
-		input = "-";
-		calculationHolder.push(input);
-		calculationHolder.push("");
+			console.log("-");
+			input = "-";
+			calculationHolder.push(input);
+			calculationHolder.push("");
+			clickedString = "";
+	}
+
+	if (clickedId === "=") {
+		console.log("Equals!");
 		clickedString = "";
+		finalResult = calculationLoop(calculationHolder);
+		console.log(finalResult, "returned!");
+		calculationHolder.length = 0;
 	} 
 
 
 	console.log(calculationHolder);
 	console.log(calculationHolder[0]);
+
 	if (calculationHolder[0] === "zzz") {
 		console.log(calculationHolder.shift());
 		calculationHolder.push(clickedString);
