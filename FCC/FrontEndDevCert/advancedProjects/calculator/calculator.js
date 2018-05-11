@@ -5,11 +5,13 @@ var numberHolder = "";
 var clickedString = "";
 var finalResult = "";
 
-// TODO: Access the last element unless it is an operand and add to the string in/at that element
-// TODO: If it is an operand, create a new element in the array 
-// TODO: Find/create a way to loop through the array and perform calculations
-// TODO: With the result of the calculations display them to the screen
-// TODO: Make sure that the "=", ends everything else and does stuff
+// TODO: Access the last element unless it is an operand and add to the string in/at that element (COMPLETE)
+// TODO: If it is an operand, create a new element in the array (COMPLETE)
+// TODO: Find/create a way to loop through the array and perform calculations (COMPLETE/Eval)
+// TODO: With the result of the calculations display them to the screen (IN PROGRESS)
+// TODO: Make sure that the "=", ends everything else and does stuff (IN PROGRESS)
+// TODO: Update it so that operands display to the calculation window (this is a result of how you add an empty element after an operand)
+// TODO: Display the final result to the window (Clear the array after the eval add the result to it, display it, and then clear the array again?)
 
 
 
@@ -50,7 +52,7 @@ function numberCalculation(clickedId) {
 		clickedString += clickedId;
 	}
 	
-
+	// I could probably refactor this to just do things if 
 	if (calculationHolder === undefined || calculationHolder.length == 0) {
     		calculationHolder.push("zzz");
 
@@ -185,11 +187,8 @@ function showDiv(clickedId) {
 	document.getElementById("window").style.display="";
 
 
-	// https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button
-	// https://www.w3schools.com/js/js_output.asp
-	// https://www.w3schools.com/jsref/jsref_isnan.asp
-	// https://stackoverflow.com/questions/2801601/why-does-typeof-nan-return-number
-	document.getElementById("window").innerHTML = clickedId;
+
+	
 
 	if (isNaN(clickedId) === false) {
 
@@ -202,7 +201,11 @@ function showDiv(clickedId) {
 		numberCalculation(clickedId);
 	}
 
-
+	// https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button
+	// https://www.w3schools.com/js/js_output.asp
+	// https://www.w3schools.com/jsref/jsref_isnan.asp
+	// https://stackoverflow.com/questions/2801601/why-does-typeof-nan-return-number
+	document.getElementById("window").innerHTML = calculationHolder[calculationHolder.length - 1];
 
 }
 	
