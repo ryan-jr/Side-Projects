@@ -163,6 +163,7 @@ function numberCalculation(clickedId) {
 		clickedString = "";
 		finalResult = calculationLoop(calculationHolder);
 		console.log(finalResult, "returned!");
+		document.getElementById("window").innerHTML = finalResult;
 		calculationHolder.length = 0;
 	} 
 
@@ -194,18 +195,26 @@ function showDiv(clickedId) {
 
 		console.log(clickedId, "is a number!");
 		numberCalculation(clickedId);
+		document.getElementById("window").innerHTML = calculationHolder[calculationHolder.length - 1];
 
 	} else {
 
 		console.log(clickedId, "is Not A Number!");
 		numberCalculation(clickedId);
+		document.getElementById("window").innerHTML = calculationHolder[calculationHolder.length - 2];
+	}
+
+	if (finalResult != "") {
+
+		document.getElementById("window").innerHTML = finalResult;
+		finalResult = "";
 	}
 
 	// https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button
 	// https://www.w3schools.com/js/js_output.asp
 	// https://www.w3schools.com/jsref/jsref_isnan.asp
 	// https://stackoverflow.com/questions/2801601/why-does-typeof-nan-return-number
-	document.getElementById("window").innerHTML = calculationHolder[calculationHolder.length - 1];
+	
 
 }
 	
