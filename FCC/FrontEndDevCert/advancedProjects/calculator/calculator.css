@@ -4,6 +4,11 @@
 
 }
 
+#/ {
+    color: blue;
+}
+
+
 .numButton {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -11,7 +16,6 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
 }
 
@@ -22,6 +26,7 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
 }
+
+
