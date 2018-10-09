@@ -1,0 +1,78 @@
+<script src="https://cdn.rawgit.com/oscarmorrison/md-page/5833d6d1/md-page.js"></script><noscript>
+
+
+#  Documentation Page
+
+---
+
+### Learning Resources
+
+Some introductory technologies to web development are HTML, CSS3, Bootstrap, jQuery, and Javascript.  
+
+If you want to learn these technolgies the following pages/resources are recommended:
+
+
+### HTML
+
+[W3 Schools HTML](https://www.w3schools.com/html/default.asp) - Useful tutorials/walkthroughs for HTML.  
+
+[Mozilla Developers Network(MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS) - Useful explainers, tutorials, and examples for all technologies integral to the Web.  
+
+[Wikipedia - HTML](https://en.wikipedia.org/wiki/HTML) - Wikipedia Page on HTML.  
+
+### CSS
+
+[W3 Schools CSS](https://www.w3schools.com/css/default.asp) - Useful tutorials/walkthroughs for CSS. 
+
+[Mozilla Developers Network(MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS) - Useful explainers, tutorials, and examples for all technologies integral to the Web. 
+
+[Wikipedia - CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Wikipedia Page on CSS.  
+
+### Bootstrap
+
+[W3 Schools Bootstrap](https://www.w3schools.com/bootstrap/default.asp) - Useful tutorials/walkthroughs for Bootstrap. 
+
+[Boostrap Documentation Page](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Documentation/Quick Start for Bootstrap.
+
+[Wikipedia - Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) - Wikipedia Page on Bootstrap.  
+
+### Javascript
+
+[W3 Schools Javascript](https://www.w3schools.com/js/default.asp) - Useful tutorials/walkthroughs for Javascript. 
+
+[Mozilla Developers Network(MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Useful explainers, tutorials, and examples for all technologies integral to the Web. 
+
+### jQuery
+
+[W3 Schools jQuery](https://www.w3schools.com/jquery/default.asp) - Useful tutorials/walkthroughs for jQuery. 
+
+---
+
+### Coding Resources
+
+```
+
+These are additional resources to practice/implement code.
+
+```
+
+- [Free Code Camp](https://learn.freecodecamp.org/) - An excellent resource that will walk you through everything you need to know about web development, and then some.
+
+- [repl.it](https://repl.it/languages) - A great sandbox to test out code.  
+
+---
+
+### Final Notes
+
+* Google is your friend.
+
+A good framework/process to follow is:
+
+> Read: Read about the language/framework/thing you want to do first.
+> Search: Try searching for keywords about the thing you want to accomplish.
+> Ask: Reach out and ask someone.
+
+
+
+
+
